@@ -7,7 +7,7 @@ const NETS := preload("res://net_server.gd")
 const MOTD := "Добро пожаловать на сервер ПРОВИНЦИЯ RP! Приятной игры."
 const SNAPSHOT_HZ := 15.0
 
-var net: Node
+var net
 var port := 7777
 var max_players := 100
 var peers := {}   # id -> {"nick": String, "state": Dictionary}

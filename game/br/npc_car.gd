@@ -130,7 +130,7 @@ func _maybe_turn() -> void:
 			if rng_turn():
 				var new_axis := "z" if axis == "x" else "x"
 				var new_line := k
-				var new_dir := 1 if rng.randf() < 0.5 else -1
+				var new_dir := 1 if randf() < 0.5 else -1
 				axis = new_axis
 				line = new_line
 				dir = new_dir

@@ -4,7 +4,7 @@ extends Node
 const TL := preload("res://br/texture_lib.gd")
 const UTIL := preload("res://br/util.gd")
 
-var world: Node = null
+var world = null
 var active := false
 var points: Array = []
 var idx := 0

@@ -5,7 +5,7 @@ extends Control
 const UTIL := preload("res://br/util.gd")
 const CB := preload("res://br/city_builder.gd")
 
-var world: Node = null
+var world = null
 var mode := "walk"            # walk | car
 var touchscreen := false
 

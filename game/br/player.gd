@@ -107,7 +107,7 @@ func car_controls() -> Dictionary:
 	steer = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	handbrake = Input.is_action_pressed("jump")
 	if hud != null and is_instance_valid(hud):
-		var a := hud.move_axis()
+		var a: Vector2 = hud.move_axis()
 		if absf(a.x) > 0.1:
 			steer = clampf(steer + a.x, -1.0, 1.0)
 		if hud.is_held("gas"):

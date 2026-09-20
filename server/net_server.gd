@@ -2,7 +2,7 @@ extends Node
 ## Сетевой узел сервера. Имя должно быть «Net» и путь /root/RP/Net —
 ## как у клиента (см. game/br/net.gd). Сигнатуры rpc_* синхронизированы!
 
-var srv: Node = null  # main.gd
+var srv = null  # main.gd
 
 
 func sender_id() -> int:

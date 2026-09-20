@@ -6,7 +6,7 @@ const CT := preload("res://br/car_types.gd")
 
 var type_idx := 0
 var paint_idx := 0
-var driver: Node = null          # player.gd (локальный) или null
+var driver = null               # player.gd (локальный) или null
 var locked := false              # NPC-машины нельзя угнать
 var display_name := "Машина"
 
@@ -18,6 +18,10 @@ var _steer_vis := 0.0
 var _spin := 0.0
 var _lights := false
 var _braking := false
+# машина под управлением другого игрока по сети
+var remote_driven := false
+var net_target := Vector3.INF
+var net_yaw := 0.0
 
 
 func setup(t: int, c: int) -> void:

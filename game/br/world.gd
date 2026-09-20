@@ -15,15 +15,15 @@ var online := false
 var server_ip := ""
 var server_port := 7777
 var nick := "Игрок"
-var net: Node = null
+var net = null
 var net_ok := false
 
-var city: Node3D
-var player: CharacterBody3D
-var hud: Control
-var day_night: Node
-var job: Node
-var traffic: Node
+var city
+var player
+var hud
+var day_night
+var job
+var traffic
 var cars: Array = []
 var npcs: Array = []
 var remotes: Dictionary = {}   # peer_id -> remote player node
@@ -324,7 +324,7 @@ func _back_to_menu_soon() -> void:
 
 # ---------------- машины ----------------
 
-func find_car_near(p: Vector3, max_d: float = 3.0) -> Node:
+func find_car_near(p: Vector3, max_d: float = 3.0):
 	var best: Node = null
 	var best_d := max_d
 	for car in cars:
@@ -355,7 +355,7 @@ func try_enter_car(p: Node) -> void:
 
 
 func _exit_car(p: Node) -> void:
-	var car: Node = p.current_car
+	var car = p.current_car
 	var T: Dictionary = load("res://br/car_types.gd").TYPES[car.type_idx]
 	var side: Vector3 = car.global_transform.basis.x * (T.body.x * 0.5 + 0.8)
 	p.global_position = car.global_position + side + Vector3(0, 0.2, 0)

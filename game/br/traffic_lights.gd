@@ -3,7 +3,7 @@ extends Node
 
 const CYCLE := 22.0
 
-var city: Node = null
+var city = null
 var night := 0.0
 var _t := 0.0
 

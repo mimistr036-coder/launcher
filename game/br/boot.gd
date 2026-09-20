@@ -7,9 +7,9 @@ const MENUS := preload("res://br/main_menu.gd")
 const WORLDS := preload("res://br/world.gd")
 const NETS := preload("res://br/net.gd")
 
-var menu: Node = null
-var world: Node = null
-var net: Node = null
+var menu = null
+var world = null
+var net = null
 var _autotest_done := false
 
 
