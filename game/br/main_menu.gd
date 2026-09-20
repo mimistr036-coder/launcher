@@ -61,7 +61,11 @@ func _ready() -> void:
 	v.add_child(offline_btn)
 	_status = UTIL.label("", 15, Color(1, 0.6, 0.5))
 	v.add_child(_status)
-	var ver = UTIL.label("Провинция RP · клиент v1.0 · кэш загружен лаунчером", 13, Color(1, 1, 1, 0.45))
+	var cache_ver := ""
+	var vf := FileAccess.open("user://cache/version.txt", FileAccess.READ)
+	if vf != null:
+		cache_ver = vf.get_line().strip_edges()
+	var ver = UTIL.label("Провинция RP · клиент v1.0 · " + (cache_ver if cache_ver != "" else "кэш не найден"), 13, Color(1, 1, 1, 0.45))
 	ver.set_anchors_preset(Control.PRESET_BOTTOM_WIDE)
 	ver.position = Vector2(0, -26)
 	ver.custom_minimum_size = Vector2(0, 20)

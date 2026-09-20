@@ -92,6 +92,55 @@ func _autotest(mode: String) -> void:
 			print("[AUTOTEST] движение W: velocity*fwd=", dot)
 			if dot < 1.0:
 				_autotest_fail = "управление инвертировано (dot=%.2f)" % dot)
+	# тест руления: садимся в машину, жмём вправо — нос должен пойти вправо (rotation.y уменьшаться)
+	var tcar := get_tree().create_timer(1.7)
+	tcar.timeout.connect(func() -> void:
+		if world != null and world.player != null and world.cars.size() > 0:
+			var car = world.cars[0]
+			world.player.global_position = car.global_position + Vector3(2.0, 0.3, 0)
+			world.try_enter_car(world.player)
+			if world.player.current_car == null:
+				_autotest_fail = "не удалось сесть в машину"
+				return
+			world.player.current_car.rotation.y = 0.0
+			Input.action_press("move_forward")
+			Input.action_press("move_right"))
+	var tcar2 := get_tree().create_timer(2.4)
+	tcar2.timeout.connect(func() -> void:
+		Input.action_release("move_forward")
+		Input.action_release("move_right")
+		if world != null and world.player != null and world.player.current_car != null:
+			var ry: float = world.player.current_car.rotation.y
+			var spd: float = world.player.current_car.velocity.length()
+			print("[AUTOTEST] руление вправо: rotation.y=", ry, " speed=", spd)
+			if spd > 1.0 and ry > -0.05:
+				_autotest_fail = "руль инвертирован (rotation.y=%.2f)" % ry
+			world.try_enter_car(world.player))
+	# валидация геометрии города: индексы всех поверхностей в пределах вершин
+	var tgeo := get_tree().create_timer(2.0)
+	tgeo.timeout.connect(func() -> void:
+		if world == null or world.city == null:
+			return
+		var surf := 0
+		var tris := 0
+		var bad := 0
+		for geo in world.city.get_children():
+			if not (geo is MeshInstance3D) or geo.mesh == null:
+				continue
+			for sidx in range(geo.mesh.get_surface_count()):
+				var arrays := geo.mesh.surface_get_arrays(sidx)
+				if arrays == null or arrays[Mesh.ARRAY_VERTEX] == null:
+					continue
+				var verts: PackedVector3Array = arrays[Mesh.ARRAY_VERTEX]
+				var idxa: PackedInt32Array = arrays[Mesh.ARRAY_INDEX]
+				surf += 1
+				tris += idxa.size() / 3
+				for ii in idxa:
+					if ii >= verts.size():
+						bad += 1
+		print("[AUTOTEST] геометрия: поверхностей=", surf, " треугольников=", tris, " битых индексов=", bad)
+		if bad > 0:
+			_autotest_fail = "битые индексы мешей: %d" % bad)
 	if online:
 		var poll := Timer.new()
 		poll.wait_time = 0.5
@@ -105,7 +154,7 @@ func _autotest(mode: String) -> void:
 				print("[AUTOTEST] OK snapshot received, remotes=", world.remotes.size())
 				get_tree().quit(0))
 	else:
-		var t := get_tree().create_timer(3.0)
+		var t := get_tree().create_timer(3.2)
 		t.timeout.connect(func() -> void:
 			var ok := true
 			var why := ""

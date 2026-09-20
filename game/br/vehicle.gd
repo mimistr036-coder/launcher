@@ -176,7 +176,8 @@ func _physics_process(delta: float) -> void:
 		var sf := 2.0 * clampf(absf(v) / 6.0, 0.0, 1.0) * (1.0 - 0.5 * clampf(absf(v) / maxs, 0.0, 1.0))
 		if hb:
 			sf *= 1.35
-		rotate_y(st * sf * delta * (1.0 if v >= 0.0 else -1.0))
+		# st=+1 (вправо) должно поворачивать по часовой = rotation.y уменьшается
+		rotate_y(-st * sf * delta * (1.0 if v >= 0.0 else -1.0))
 		fwd = -transform.basis.z
 		velocity = fwd * v
 	else:
@@ -188,7 +189,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	# визуал колёс
 	_spin += v * delta / maxf(T.wheel_r, 0.1)
-	_steer_vis = lerpf(_steer_vis, st * 0.45, 10.0 * delta)
+	_steer_vis = lerpf(_steer_vis, -st * 0.45, 10.0 * delta)
 	for w in _wheel_pivots:
 		w.inner.rotation.x = _spin
 		if w.front:
