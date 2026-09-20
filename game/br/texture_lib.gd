@@ -161,12 +161,14 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 				img.set_pixel(clampi(wx - 1, 0, w - 1), clampi(wy + yy2, 0, h - 1), Color(0.92, 0.92, 0.9))
 				img.set_pixel(clampi(wx + ww, 0, w - 1), clampi(wy + yy2, 0, h - 1), Color(0.92, 0.92, 0.9))
 	var m := StandardMaterial3D.new()
-	m.albedo_color = color
-	m.metallic = metallic
-	m.roughness = rough
-	if unshaded:
-		m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	m.albedo_texture = ImageTexture.create_from_image(img)
+	m.emission_enabled = true
+	m.emission_texture = ImageTexture.create_from_image(emis)
+	m.emission = Color(1, 1, 1)
+	m.emission_energy_multiplier = 0.0
+	m.roughness = 0.95
 	_cache()[key] = m
+	_night_mats().append([m, 1.9])
 	return m
 
 
