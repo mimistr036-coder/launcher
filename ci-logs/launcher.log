@@ -1,11 +1,11 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
 [launcher] Проверка обновлений...
-[launcher] Скачивание кэша v7 (109 КБ)...
-ERROR: Condition "get_http_client_status() != HTTPClient::STATUS_DISCONNECTED" is true.
-   at: set_download_file (scene/main/http_request.cpp:536)
-ERROR: HTTPRequest is processing a request. Wait for completion or cancel it before attempting a new one.
-   at: request_raw (scene/main/http_request.cpp:118)
-[launcher] Ошибка запуска скачивания
-[launcher] Файл кэша не сохранился
-[LAUNCHER_AUTOTEST] TIMEOUT
+[launcher] Скачивание кэша v8 (109 КБ)...
+[launcher] Скачивание кэша... 64 КБ / 109 КБ
+[launcher] Готово! Кэш v8 установлен.
+ERROR: Cannot open file 'res://br/boot.tscn'.
+   at: load (scene/resources/resource_format_text.cpp:1367)
+ERROR: Failed loading resource: res://br/boot.tscn. Make sure resources have been imported by opening the project in the editor at least once.
+   at: _load (core/io/resource_loader.cpp:283)
+[LAUNCHER_AUTOTEST] FAIL load=true scene=<Object#null>
