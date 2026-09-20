@@ -57,20 +57,7 @@ static func _ground_mat(kind: String) -> StandardMaterial3D:
 	var img: Image
 	match kind:
 		"asphalt":
-			img = noise_img(128, 128, 0.6, 11, Color(0.36, 0.37, 0.39), 0.2)
-			var ra := RandomNumberGenerator.new()
-			ra.seed = 77
-			for k in range(6):  # редкие латанки
-				var cx := ra.randi_range(0, 127)
-				var cz := ra.randi_range(0, 127)
-				var rr := ra.randi_range(10, 20)
-				var shade := 0.31 if ra.randf() < 0.5 else 0.42
-				for dy in range(-rr, rr + 1):
-					for dx in range(-rr, rr + 1):
-						var d2 := float(dx * dx + dy * dy) / float(rr * rr)
-						if d2 <= 1.0:
-							var blend := shade * (1.0 - d2 * 0.4) + 0.36 * d2 * 0.4
-							img.set_pixel((cx + dx) % 128, (cz + dy) % 128, Color(blend, blend + 0.008, blend + 0.018))
+			img = noise_img(128, 128, 0.55, 11, Color(0.37, 0.38, 0.40), 0.13)
 		"walk":
 			# тротуарная плитка: светлая + тёмные швы сеткой
 			img = noise_img(128, 128, 0.3, 12, Color(0.66, 0.65, 0.62), 0.12)
