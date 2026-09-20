@@ -1,6 +1,1732 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
 [AUTOTEST] start mode=offline
-[AUTOTEST] OK cars=82 npcs=8 job_points=34
-ERROR: Parameter "m" is null.
-   at: mesh_get_surface_count (servers/rendering/dummy/storage/mesh_storage.h:120)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "a" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://br/city_builder.gd:121)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "ui" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://br/city_builder.gd:122)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "vi" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://br/city_builder.gd:123)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "face_c" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://br/city_builder.gd:135)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "zc" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://br/city_builder.gd:270)
+SCRIPT ERROR: Parse Error: The variable type is being inferred from a Variant value, so it will be typed as Variant. (Warning treated as error.)
+          at: GDScript::reload (res://br/city_builder.gd:130)
+ERROR: Failed to load script "res://br/city_builder.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript.cpp:2936)
+SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
+          at: _ready (res://br/world.gd:53)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _update_camera (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:196)
+[AUTOTEST] FAIL: no player
