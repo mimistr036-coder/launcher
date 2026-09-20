@@ -128,7 +128,7 @@ func _autotest(mode: String) -> void:
 			if not (geo is MeshInstance3D) or geo.mesh == null:
 				continue
 			for sidx in range(geo.mesh.get_surface_count()):
-				var arrays := geo.mesh.surface_get_arrays(sidx)
+				var arrays: Array = geo.mesh.surface_get_arrays(sidx)
 				if arrays == null or arrays[Mesh.ARRAY_VERTEX] == null:
 					continue
 				var verts: PackedVector3Array = arrays[Mesh.ARRAY_VERTEX]
