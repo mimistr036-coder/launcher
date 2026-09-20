@@ -86,10 +86,10 @@ func _build_static() -> void:
 	_chat_edit.custom_minimum_size = Vector2(340, 0)
 	_chat_edit.text_submitted.connect(_on_chat_send)
 	hb.add_child(_chat_edit)
-	var send := UTIL.button("▶", 16)
+	var send = UTIL.button("▶", 16)
 	send.pressed.connect(_on_chat_send_btn)
 	hb.add_child(send)
-	var close := UTIL.button("✕", 16)
+	var close = UTIL.button("✕", 16)
 	close.pressed.connect(_close_chat)
 	hb.add_child(close)
 	# пауза
@@ -99,7 +99,7 @@ func _build_static() -> void:
 	_pause_panel.visible = false
 	_pause_panel.process_mode = Node.PROCESS_MODE_ALWAYS
 	add_child(_pause_panel)
-	var pc := UTIL.panel_box()
+	var pc = UTIL.panel_box()
 	pc.set_anchors_preset(Control.PRESET_CENTER)
 	pc.custom_minimum_size = Vector2(360, 0)
 	_pause_panel.add_child(pc)
@@ -107,18 +107,18 @@ func _build_static() -> void:
 	pv.add_theme_constant_override("separation", 10)
 	pc.add_child(pv)
 	pv.add_child(UTIL.label("ПАУЗА", 26, Color(1, 1, 1)))
-	var resume := UTIL.button("ПРОДОЛЖИТЬ", 20)
+	var resume = UTIL.button("ПРОДОЛЖИТЬ", 20)
 	resume.pressed.connect(_toggle_pause)
 	pv.add_child(resume)
 	_quality_btn = UTIL.button("Графика: Авто", 18)
 	_quality_btn.pressed.connect(_cycle_quality)
 	pv.add_child(_quality_btn)
-	var to_menu := UTIL.button("В ГЛАВНОЕ МЕНЮ", 18)
+	var to_menu = UTIL.button("В ГЛАВНОЕ МЕНЮ", 18)
 	to_menu.pressed.connect(func() -> void:
 		_toggle_pause()
 		world.exit_to_menu())
 	pv.add_child(to_menu)
-	var quit := UTIL.button("ВЫХОД ИЗ ИГРЫ", 18)
+	var quit = UTIL.button("ВЫХОД ИЗ ИГРЫ", 18)
 	quit.pressed.connect(func() -> void: get_tree().quit())
 	pv.add_child(quit)
 	_update_quality_btn()
@@ -288,7 +288,7 @@ func set_mode(m: String) -> void:
 
 
 func notice(text: String) -> void:
-	var l := UTIL.label(text, 18, Color(1, 0.95, 0.7))
+	var l = UTIL.label(text, 18, Color(1, 0.95, 0.7))
 	l.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_notices.add_child(l)
 	_notice_list.append({"l": l, "t": 4.5})

@@ -124,7 +124,7 @@ func _scan_ahead() -> bool:
 func _maybe_turn() -> void:
 	# на перекрёстке с вероятностью поворачиваем
 	for k in range(CB.GRID + 1):
-		var lc := CB.line_coord(k)
+		var lc = CB.line_coord(k)
 		var along := global_position.x if axis == "x" else global_position.z
 		if absf(along - lc) < 0.6:
 			if rng_turn():

@@ -224,8 +224,8 @@ func _sign(text: String, pos: Vector3, height_m: float = 0.9, color: Color = Col
 # =================== ЗЕМЛЯ И ДОРОГИ ===================
 
 func _ground_and_roads() -> void:
-	var grass := TL.ground("grass")
-	var asph := TL.ground("asphalt")
+	var grass = TL.ground("grass")
+	var asph = TL.ground("asphalt")
 	var L := 2.0 * HALF + ROAD_W
 	var gsize := L + 120.0
 	# трава вокруг города
@@ -244,7 +244,7 @@ func _ground_and_roads() -> void:
 			var x1 := line_coord(i + 1) - ROAD_W * 0.5
 			_box(asph, Vector3((x0 + x1) * 0.5, -0.1, z), Vector3(x1 - x0, 0.2, ROAD_W))
 	# разметка (визуал, без коллизии)
-	var white := TL.flat(Color(0.85, 0.85, 0.82))
+	var white = TL.flat(Color(0.85, 0.85, 0.82))
 	for i in [0, 3, 7]:
 		var x := line_coord(i)
 		var z2 := -HALF + 5.0
@@ -290,7 +290,7 @@ func _blocks() -> void:
 		for j in range(GRID):
 			var area := _block_area(i, j)
 			var t := block_type(i, j)
-			var walk := TL.ground("walk")
+			var walk = TL.ground("walk")
 			var w := WALK_W
 			_box(walk, Vector3((area.x0 + area.x1) * 0.5, -0.1, area.z0 + w * 0.5),
 				Vector3(area.x1 - area.x0, 0.2, w))
@@ -354,7 +354,7 @@ func _block_default(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 			var depth: float = [14.0, 16.0, 18.0][rng.randi() % 3]
 			var h := floors * 2.8 + 0.9
 			var cols: int = clampi(roundi(wq / 4.0), 4, 12)
-			var mat := TL.facade(cols, floors, rng.randi() % 3)
+			var mat = TL.facade(cols, floors, rng.randi() % 3)
 			var pos: Vector3
 			var sz: Vector3
 			if side == 0:
@@ -383,7 +383,7 @@ func _qw(v: float) -> float:
 func _building(pos: Vector3, sz: Vector3, mat: Material, floors: int, side: int) -> void:
 	_box(mat, pos, sz, true)
 	_rects.append({"x": pos.x - sz.x * 0.5, "z": pos.z - sz.z * 0.5, "w": sz.x, "d": sz.z})
-	var roof := TL.flat(Color(0.22, 0.23, 0.26))
+	var roof = TL.flat(Color(0.22, 0.23, 0.26))
 	_box(roof, Vector3(pos.x, sz.y + 0.15, pos.z), Vector3(sz.x + 0.5, 0.3, sz.z + 0.5))
 	if rng.randf() < 0.8:
 		var sh := Vector3(minf(6.0, sz.x * 0.25), 2.2, minf(6.0, sz.z * 0.25))
@@ -394,7 +394,7 @@ func _building(pos: Vector3, sz: Vector3, mat: Material, floors: int, side: int)
 	_col_box(pos, sz)
 	# вывеска/магазин на первом этаже (только к улице)
 	if floors >= 5 and rng.randf() < 0.3:
-		var sw := TL.shop_window()
+		var sw = TL.shop_window()
 		var spos: Vector3
 		var ssz: Vector3
 		if side == 0:
@@ -480,8 +480,8 @@ func _tree(p: Vector3) -> void:
 
 
 func _bench_fixed(p: Vector3, ang: float) -> void:
-	var wood := TL.wood()
-	var metal := TL.flat(Color(0.35, 0.36, 0.4), 0.6, 0.5)
+	var wood = TL.wood()
+	var metal = TL.flat(Color(0.35, 0.36, 0.4), 0.6, 0.5)
 	var ca := cos(ang)
 	var sa := sin(ang)
 	var right := Vector3(ca, 0, sa)
@@ -498,7 +498,7 @@ func _bench_fixed(p: Vector3, ang: float) -> void:
 
 
 func _garage(p: Vector3, col: Color) -> void:
-	var m := TL.flat(col)
+	var m = TL.flat(col)
 	_box(m, p + Vector3(0, 1.5, 0), Vector3(6.0, 3.0, 4.6))
 	_box(TL.flat(col.darkened(0.4)), p + Vector3(0, 1.2, 2.32), Vector3(4.6, 2.4, 0.08))
 	_col_box(p + Vector3(0, 1.5, 0), Vector3(6.0, 3.0, 4.6))
@@ -509,7 +509,7 @@ func _block_plaza(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 	_box(TL.ground("plaza"), Vector3((cx0 + cx1) * 0.5, -0.1, (cz0 + cz1) * 0.5),
 		Vector3(cx1 - cx0, 0.2, cz1 - cz0))
 	var m := Vector3((cx0 + cx1) * 0.5, 0, (cz0 + cz1) * 0.5)
-	var stone := TL.flat(Color(0.5, 0.5, 0.52))
+	var stone = TL.flat(Color(0.5, 0.5, 0.52))
 	_box(stone, m + Vector3(0, 0.6, 0), Vector3(5, 1.2, 5))
 	_box(stone, m + Vector3(0, 1.8, 0), Vector3(3, 1.2, 3))
 	_box(TL.flat(Color(0.55, 0.56, 0.6)), m + Vector3(0, 8.5, 0), Vector3(1.4, 12, 1.4))
@@ -533,7 +533,7 @@ func _block_plaza(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 func _block_school(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 	_box(TL.ground("grass"), Vector3((cx0 + cx1) * 0.5, -0.1, (cz0 + cz1) * 0.5),
 		Vector3(cx1 - cx0, 0.2, cz1 - cz0))
-	var mat := TL.facade(9, 3, 1)
+	var mat = TL.facade(9, 3, 1)
 	var h := 3 * 3.2 + 0.9
 	var zc := cz0 + 18.0
 	var mcx := (cx0 + cx1) * 0.5
@@ -551,7 +551,7 @@ func _block_school(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 	car_spawns.append({"pos": Vector3(mcx - 12, 0, cz0 + 7), "rot": 90, "type": 1, "color": 3})
 	car_spawns.append({"pos": Vector3(mcx + 12, 0, cz0 + 7), "rot": 90, "type": 2, "color": 0})
 	# забор с проездом по центру
-	var fence := TL.flat(Color(0.45, 0.4, 0.35))
+	var fence = TL.flat(Color(0.45, 0.4, 0.35))
 	_box(fence, Vector3(mcx, 0.55, cz0 + 1.5), Vector3(24, 1.1, 0.12))
 	_box(fence, Vector3(mcx, 0.55, cz1 - 1.5), Vector3(cx1 - cx0 - 4, 1.1, 0.12))
 	_box(fence, Vector3(cx0 + 1.5, 0.55, (cz0 + cz1) * 0.5), Vector3(0.12, 1.1, cz1 - cz0 - 4))
@@ -566,7 +566,7 @@ func _block_gas(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 	_box(TL.ground("asphalt"), Vector3((cx0 + cx1) * 0.5, -0.1, (cz0 + cz1) * 0.5),
 		Vector3(cx1 - cx0, 0.2, cz1 - cz0))
 	var m := Vector3((cx0 + cx1) * 0.5, 0, (cz0 + cz1) * 0.5 + 8)
-	var roof := TL.flat(Color(0.85, 0.3, 0.2))
+	var roof = TL.flat(Color(0.85, 0.3, 0.2))
 	for px in [-8.0, 8.0]:
 		for pz in [-4.0, 4.0]:
 			_box(TL.flat(Color(0.4, 0.4, 0.45), 0.5, 0.4), m + Vector3(px, 2.5, pz), Vector3(0.4, 5.0, 0.4))
@@ -576,7 +576,7 @@ func _block_gas(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 		_box(TL.flat(Color(0.85, 0.25, 0.2)), m + Vector3(px, 0.7, 0), Vector3(0.8, 1.4, 0.5))
 		_box(TL.flat(Color(0.1, 0.1, 0.12)), m + Vector3(px, 1.0, 0.28), Vector3(0.5, 0.35, 0.06))
 		_col_box(m + Vector3(px, 0.7, 0), Vector3(0.8, 1.4, 0.5))
-	var kmat := TL.facade(4, 1, 0)
+	var kmat = TL.facade(4, 1, 0)
 	_box(kmat, Vector3(cx1 - 10, 1.6, cz0 + 8), Vector3(7, 3.2, 5), true)
 	_col_box(Vector3(cx1 - 10, 1.6, cz0 + 8), Vector3(7, 3.2, 5))
 	_sign("АЗС", m + Vector3(0, 7.2, 0), 1.6, Color(1, 0.35, 0.25))
@@ -716,8 +716,8 @@ func _lamp(p: Vector3, pole: Material, head: Material, along_z: bool) -> void:
 
 
 func _lamps_and_lights() -> void:
-	var pole := TL.flat(Color(0.32, 0.33, 0.36), 0.6, 0.5)
-	var head := TL.night_mat(Color(1.0, 0.85, 0.55), 2.4)
+	var pole = TL.flat(Color(0.32, 0.33, 0.36), 0.6, 0.5)
+	var head = TL.night_mat(Color(1.0, 0.85, 0.55), 2.4)
 	for i in [0, 3, 7]:
 		var x := line_coord(i)
 		var z := -HALF + 20.0
@@ -754,8 +754,8 @@ func _lamps_and_lights() -> void:
 
 
 func _traffic_light(p: Vector3) -> void:
-	var pole := TL.flat(Color(0.25, 0.26, 0.28), 0.5, 0.5)
-	var body := TL.flat(Color(0.16, 0.17, 0.19))
+	var pole = TL.flat(Color(0.25, 0.26, 0.28), 0.5, 0.5)
+	var body = TL.flat(Color(0.16, 0.17, 0.19))
 	_box(pole, p + Vector3(0, 2.0, 0), Vector3(0.12, 4.0, 0.12))
 	_box(body, p + Vector3(-0.25, 3.9, 0), Vector3(0.3, 0.9, 0.3))
 	_box(traffic_mats["ns_r"], p + Vector3(-0.42, 4.15, 0), Vector3(0.06, 0.2, 0.2))
@@ -768,8 +768,8 @@ func _traffic_light(p: Vector3) -> void:
 
 
 func _bus_stop(p: Vector3) -> void:
-	var pole := TL.flat(Color(0.35, 0.36, 0.4), 0.5, 0.5)
-	var roof := TL.flat(Color(0.5, 0.2, 0.2))
+	var pole = TL.flat(Color(0.35, 0.36, 0.4), 0.5, 0.5)
+	var roof = TL.flat(Color(0.5, 0.2, 0.2))
 	_box(pole, p + Vector3(-2, 1.4, 0), Vector3(0.12, 2.8, 0.12))
 	_box(pole, p + Vector3(2, 1.4, 0), Vector3(0.12, 2.8, 0.12))
 	_box(roof, p + Vector3(0, 2.9, 0), Vector3(5, 0.15, 2))

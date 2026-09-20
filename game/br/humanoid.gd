@@ -13,11 +13,11 @@ static func build(variant: int = 0) -> Node3D:
 	rng.seed = 1000 + variant
 	var root := Node3D.new()
 	root.name = "Model"
-	var jacket := TL.flat(JACKETS[abs(variant) % JACKETS.size()])
-	var pants := TL.flat(PANTS[abs(variant * 3 + 1) % PANTS.size()])
-	var skin := TL.flat(SKIN[abs(variant * 7 + 2) % SKIN.size()])
-	var shoe := TL.flat(Color(0.12, 0.12, 0.13))
-	var hair := TL.flat(Color(0.16, 0.12, 0.08))
+	var jacket = TL.flat(JACKETS[abs(variant) % JACKETS.size()])
+	var pants = TL.flat(PANTS[abs(variant * 3 + 1) % PANTS.size()])
+	var skin = TL.flat(SKIN[abs(variant * 7 + 2) % SKIN.size()])
+	var shoe = TL.flat(Color(0.12, 0.12, 0.13))
+	var hair = TL.flat(Color(0.16, 0.12, 0.08))
 	# торс
 	_part(root, "Torso", Vector3(0.44, 0.62, 0.26), jacket, Vector3(0, 1.23, 0))
 	_part(root, "Head", Vector3(0.24, 0.26, 0.24), skin, Vector3(0, 1.68, 0))

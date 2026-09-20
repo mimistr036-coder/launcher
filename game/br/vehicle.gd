@@ -33,10 +33,10 @@ func _ready() -> void:
 	collision_layer = 4
 	collision_mask = 1 | 2 | 4
 	var T: Dictionary = CT.TYPES[type_idx]
-	var paint := TL.car_paint(CT.PAINTS[paint_idx])
-	var glass := TL.car_glass()
-	var dark := TL.flat(Color(0.09, 0.09, 0.11), 0.4, 0.5)
-	var tire := TL.flat(Color(0.07, 0.07, 0.08), 0.0, 0.95)
+	var paint = TL.car_paint(CT.PAINTS[paint_idx])
+	var glass = TL.car_glass()
+	var dark = TL.flat(Color(0.09, 0.09, 0.11), 0.4, 0.5)
+	var tire = TL.flat(Color(0.07, 0.07, 0.08), 0.0, 0.95)
 	var body: Vector3 = T.body
 	var cabin: Vector3 = T.cabin
 	var wr: float = T.wheel_r

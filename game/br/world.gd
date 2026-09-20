@@ -133,7 +133,7 @@ func _spawn_player() -> void:
 func _spawn_cars() -> void:
 	var idx := 0
 	for s in city.car_spawns:
-		var car := VEH.new()
+		var car = VEH.new()
 		car.name = "Car%d" % idx
 		idx += 1
 		car.setup(int(s.type), int(s.color))
@@ -146,7 +146,7 @@ func _spawn_cars() -> void:
 func _spawn_npcs() -> void:
 	var idx := 0
 	for s in city.npc_spawns:
-		var car := NPC.new()
+		var car = NPC.new()
 		car.name = "NPC%d" % idx
 		idx += 1
 		car.setup(int(s.type), (idx * 3) % 7)
