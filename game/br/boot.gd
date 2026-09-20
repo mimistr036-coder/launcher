@@ -92,28 +92,36 @@ func _autotest(mode: String) -> void:
 			print("[AUTOTEST] движение W: velocity*fwd=", dot)
 			if dot < 1.0:
 				_autotest_fail = "управление инвертировано (dot=%.2f)" % dot)
-	# тест руления: садимся в машину, жмём вправо — нос должен пойти вправо (rotation.y уменьшаться)
+	# тест руления: машину ставим на чистый асфальт у спавна, игрок подходит и садится,
+	# жмём вправо — нос должен пойти вправо (rotation.y уменьшаться)
 	var tcar := get_tree().create_timer(1.7)
 	tcar.timeout.connect(func() -> void:
 		if world != null and world.player != null and world.cars.size() > 0:
 			var car = world.cars[0]
-			world.player.global_position = car.global_position + Vector3(2.0, 0.3, 0)
+			var sp: Vector3 = world.city.spawn_point
+			car.global_position = sp + Vector3(0, 0.5, 5.0)
+			car.rotation.y = 0.0
+			car.velocity = Vector3.ZERO
+			world.player.global_position = sp + Vector3(0, 0.2, 2.5)
 			world.try_enter_car(world.player)
 			if world.player.current_car == null:
 				_autotest_fail = "не удалось сесть в машину"
 				return
-			world.player.current_car.rotation.y = 0.0
 			Input.action_press("move_forward")
 			Input.action_press("move_right"))
-	var tcar2 := get_tree().create_timer(2.4)
+	var tcar2 := get_tree().create_timer(2.5)
 	tcar2.timeout.connect(func() -> void:
 		Input.action_release("move_forward")
 		Input.action_release("move_right")
 		if world != null and world.player != null and world.player.current_car != null:
-			var ry: float = world.player.current_car.rotation.y
-			var spd: float = world.player.current_car.velocity.length()
-			print("[AUTOTEST] руление вправо: rotation.y=", ry, " speed=", spd)
-			if spd > 1.0 and ry > -0.05:
+			var car = world.player.current_car
+			var ry: float = car.rotation.y
+			var spd: float = car.velocity.length()
+			var cy: float = car.global_position.y
+			print("[AUTOTEST] руление вправо: rotation.y=", ry, " speed=", spd, " y=", cy)
+			if cy < -1.0:
+				_autotest_fail = "машина провалилась в тесте руления (y=%.1f)" % cy
+			elif spd > 1.0 and ry > -0.05:
 				_autotest_fail = "руль инвертирован (rotation.y=%.2f)" % ry
 			world.try_enter_car(world.player))
 	# валидация геометрии города: индексы всех поверхностей в пределах вершин
