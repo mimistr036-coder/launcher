@@ -37,6 +37,9 @@ func _ready() -> void:
 	set_anchors_preset(Control.PRESET_FULL_RECT)
 	DirAccess.make_dir_recursive_absolute(CACHE_DIR)
 	base_url = str(_load_cfg().get_value("main", "updates_url", DEFAULT_URL)).strip_edges()
+	var env_url := OS.get_environment("LAUNCHER_URL")
+	if env_url != "":
+		base_url = env_url.strip_edges()
 	local_version = _read_local_version()
 	_autotest = OS.get_environment("LAUNCHER_AUTOTEST") != ""
 	_build_ui()
@@ -203,8 +206,7 @@ func _close_settings() -> void:
 
 func _set_status(t: String) -> void:
 	_status.text = t
-	if not _autotest:
-		print("[launcher] ", t)
+	print("[launcher] ", t)
 
 
 func _start_check() -> void:

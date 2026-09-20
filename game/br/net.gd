@@ -37,6 +37,7 @@ func disconnect_now() -> void:
 
 func _on_connected() -> void:
 	connected = true
+	print("[NET] подключено, отправляю регистр: ", my_nick)
 	rpc_register.rpc(my_nick)
 
 
@@ -53,6 +54,9 @@ func _on_disc() -> void:
 
 func send_state(px: float, py: float, pz: float, ry: float, anim: int,
 		car_id: int, cx: float, cy: float, cz: float, cry: float, ct: int) -> void:
+	if connected and not _dbg_state:
+		_dbg_state = true
+		print("[NET] первое состояние отправлено")
 	if connected:
 		rpc_state.rpc(px, py, pz, ry, anim, car_id, cx, cy, cz, cry, ct)
 
@@ -91,6 +95,9 @@ func rpc_sysmsg(text: String) -> void:
 
 @rpc("authority", "unreliable")
 func rpc_snapshot(data: Dictionary) -> void:
+	if not _dbg_snap:
+		_dbg_snap = true
+		print("[NET] первый снапшот: ", data.size(), " игроков")
 	if not connected:
 		connected = true
 		net_ready.emit()
