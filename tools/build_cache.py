@@ -73,7 +73,9 @@ def main() -> int:
         print("Подсказка: --force чтобы пересобрать принудительно.")
         return 0
     version = int(old.get("version", 0)) + 1
-    n = pack_files(files, PCK_PATH, engine_version=(4, 3, 0))
+    # 4.0.0 в заголовке: любой Godot 4.2+ такой кэш откроет (движок отвергает
+    # только кэш с версией СТАРШЕ своей), а формат PCK v2 читают все 4.2+.
+    n = pack_files(files, PCK_PATH, engine_version=(4, 0, 0))
     md5 = hashlib.md5(open(PCK_PATH, "rb").read()).hexdigest()
     size = os.path.getsize(PCK_PATH)
     info = {

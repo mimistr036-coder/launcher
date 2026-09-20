@@ -346,14 +346,23 @@ func _on_play() -> void:
 		_set_status("Кэша нет — нажми «ПРОВЕРИТЬ ОБНОВЛЕНИЯ»")
 		return
 	_set_status("Запуск игры...")
-	var ok := ProjectSettings.load_resource_pack(PCK_PATH, true)
-	if not ok:
-		_set_status("Не удалось открыть кэш. Скачай заново.")
+	if not _mount_cache():
 		return
 	if not ResourceLoader.exists("res://br/boot.tscn"):
 		_set_status("Кэш повреждён (нет сцены игры). Нажми «ПРОВЕРИТЬ ОБНОВЛЕНИЯ»")
 		return
 	get_tree().change_scene_to_file("res://br/boot.tscn")
+
+
+## Монтирует кэш. Возвращает true, если внутри есть сцена игры.
+func _mount_cache() -> bool:
+	var ok: bool = ProjectSettings.load_resource_pack(PCK_PATH, true)
+	if not ok:
+		var vi := Engine.get_version_info()
+		print("[launcher] load_resource_pack=false; Godot=", Engine.get_version_info().string,
+				"; путь=", ProjectSettings.globalize_path(PCK_PATH))
+		_set_status("Кэш не открылся. Нужен Godot 4.3+ (у тебя %d.%d.%d) — обнови и нажми «ПРОВЕРИТЬ ОБНОВЛЕНИЯ»." % [vi.major, vi.minor, vi.patch])
+	return ok
 
 
 func _load_news() -> void:
@@ -375,11 +384,10 @@ func _maybe_autotest_ready() -> void:
 	if not _autotest or _autotest_done:
 		return
 	_autotest_done = true
-	var ok := ProjectSettings.load_resource_pack(PCK_PATH, true)
 	var scene: PackedScene = null
-	if ok:
+	if _mount_cache():
 		scene = load("res://br/boot.tscn")
-	if ok and scene != null:
+	if scene != null:
 		print("[LAUNCHER_AUTOTEST] OK version=%d size=%d scene=found" % [local_version, int(remote.get("size", 0))])
 		get_tree().quit(0)
 	else:
