@@ -38,6 +38,7 @@ var _money_label: Label
 var _clock_label: Label
 var _fps_label: Label
 var _hint: Label
+var _ver_label: Label
 var _pause_panel: Control
 var _quality_btn: Button
 var _paused := false
@@ -66,6 +67,11 @@ func _build_static() -> void:
 	_clock_label = UTIL.label("09:00", 20, Color(0.9, 0.9, 1.0))
 	add_child(_clock_label)
 	_fps_label = UTIL.label("", 13, Color(1, 1, 1, 0.55))
+	_ver_label = UTIL.label("", 12, Color(1, 1, 0.75, 0.7))
+	var vf := FileAccess.open("user://cache/version.txt", FileAccess.READ)
+	if vf != null:
+		_ver_label.text = "кэш " + vf.get_line().strip_edges()
+	add_child(_ver_label)
 	add_child(_fps_label)
 	_hint = UTIL.label("WASD — движение · SHIFT — бег · E — сесть/выйти · ПРОБЕЛ — прыжок · T — чат · J — работа", 15, Color(1, 1, 1, 0.6))
 	add_child(_hint)
@@ -161,6 +167,7 @@ func _layout() -> void:
 	_money_label.position = Vector2(_vs.x - 150, 14)
 	_clock_label.position = Vector2(_vs.x - 150, 44)
 	_fps_label.position = Vector2(_vs.x - 150, 72)
+	_ver_label.position = Vector2(_vs.x - 150, 98)
 	_notices.position = Vector2(_vs.x * 0.5 - 200, 14)
 	_notices.custom_minimum_size = Vector2(400, 0)
 	_chat_panel.position = Vector2(12, _vs.y - 310)
