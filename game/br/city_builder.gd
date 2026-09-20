@@ -126,7 +126,7 @@ func _quad(st: SurfaceTool, pts: Array, normal: Vector3, uvs: Array) -> void:
 
 func _box(mat: Material, center: Vector3, size: Vector3, face_uv: bool = false, uv_scale: float = 4.0, top_mat: Material = null) -> void:
 	var half := size * 0.5
-	var normals := [Vector3.RIGHT, Vector3.LEFT, Vector3.UP, Vector3.BACK, Vector3.FORWARD]  # без дна
+	var normals := [Vector3.RIGHT, Vector3.LEFT, Vector3.UP, Vector3.DOWN, Vector3.BACK, Vector3.FORWARD]
 	for n in normals:
 		# ВАЖНО: abs()! у отрицательных нормалей max_axis_index без abs даёт неверную ось
 		var a: int = n.abs().max_axis_index()

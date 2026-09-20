@@ -135,7 +135,7 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 			var ww := cw - 10
 			var wh := ch - 12
 			var glass := Color(0.16, 0.21, 0.27).lightened(rng.randf() * 0.10)
-			var lit := rng.randf() < 0.22
+			var lit := rng.randf() < 0.3
 			var wc := Color(1.0, 0.75, 0.4).lightened(rng.randf() * 0.25)
 			for yy in range(wh):
 				for xx in range(ww):
