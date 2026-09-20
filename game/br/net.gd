@@ -104,17 +104,8 @@ func rpc_snapshot(data: Dictionary) -> void:
 	if not connected:
 		connected = true
 		net_ready.emit()
-	_apply_snapshot(data)
-
-
-func _apply_snapshot(data: Dictionary) -> void:
-	var tree := get_tree()
-	if tree == null or tree.current_scene == null:
-		return
-	var owner_node := get_parent()
-	if owner_node == null or not owner_node.has_method("apply_snapshot"):
-		return
-	owner_node.apply_snapshot(data)
+	if world != null and world.has_method("apply_snapshot"):
+		world.apply_snapshot(data)
 
 
 @rpc("authority", "reliable")
