@@ -31,6 +31,7 @@ static func flat(color: Color, metallic: float = 0.0, rough: float = 0.9, unshad
 	if _cache().has(key):
 		return _cache()[key]
 	var m := StandardMaterial3D.new()
+	m.cull_mode = BaseMaterial3D.CULL_DISABLED
 	m.albedo_color = color
 	m.metallic = metallic
 	m.roughness = rough
@@ -74,6 +75,7 @@ static func _ground_mat(kind: String) -> StandardMaterial3D:
 		_:
 			img = noise_img(128, 128, 0.2, 1, Color(0.55, 0.55, 0.55), 0.2)
 	var m := StandardMaterial3D.new()
+	m.cull_mode = BaseMaterial3D.CULL_DISABLED
 	m.albedo_texture = ImageTexture.create_from_image(img)
 	m.roughness = 1.0
 	return m
@@ -162,6 +164,7 @@ static func shop_window() -> StandardMaterial3D:
 
 static func night_mat(base_color: Color, base_energy: float, register: bool = true) -> StandardMaterial3D:
 	var m := StandardMaterial3D.new()
+	m.cull_mode = BaseMaterial3D.CULL_DISABLED
 	m.albedo_color = base_color
 	m.emission_enabled = true
 	m.emission = base_color
@@ -200,6 +203,7 @@ static func wood() -> StandardMaterial3D:
 	if _cache().has(key):
 		return _cache()[key]
 	var m := StandardMaterial3D.new()
+	m.cull_mode = BaseMaterial3D.CULL_DISABLED
 	m.albedo_texture = ImageTexture.create_from_image(
 		noise_img(64, 64, 0.25, 21, Color(0.45, 0.32, 0.18), 0.35))
 	m.roughness = 1.0

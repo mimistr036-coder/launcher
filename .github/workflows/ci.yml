@@ -99,6 +99,15 @@ jobs:
           GAME_AUTOTEST=shot LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.0-stable_linux.x86_64 --path game > /tmp/shot40.log 2>&1
           echo "shot40 exit: $?"
           [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-4.0.png && echo "скриншот 4.0 готов"
+          # сквозной путь пользователя: лаунчер качает кэш, монтирует и запускает игру
+          python3 tools/serve_updates.py 8092 > /tmp/http2.log 2>&1 &
+          sleep 2
+          LAUNCHER_SHOT=1 GAME_AUTOTEST=shot LAUNCHER_URL=http://127.0.0.1:8092 LIBGL_ALWAYS_SOFTWARE=1 timeout 150 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.0-stable_linux.x86_64 --path launcher > /tmp/shot-launcher.log 2>&1
+          echo "shot-launcher exit: $?"
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-via-launcher.png && echo "скриншот через лаунчер готов"
+          # крупный план: стоим на дороге, смотрим на дом через улицу
+          SHOT_POS="76,0.2,50" SHOT_YAW="-2.35" GAME_AUTOTEST=shot LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.0-stable_linux.x86_64 --path game > /tmp/shotclose.log 2>&1
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-close.png && echo "крупный план готов"
 
       - name: Save logs into repo
         if: always()
@@ -106,11 +115,11 @@ jobs:
           set +e
           rm -rf ci-logs
           mkdir -p ci-logs
-          for f in offline server client launcher http compat40 compat40-http gate shot43 shot40 shot15 shotw shotn; do
+          for f in offline server client launcher http compat40 compat40-http gate shot43 shot40 shot15 shotw shotn shot-launcher shotclose http2; do
             [ -f /tmp/$f.log ] && cp /tmp/$f.log ci-logs/$f.log
             [ -f /tmp/$f.code ] && cp /tmp/$f.code ci-logs/$f.code
           done
-          for p in city-4.3 city-4.0 city-day1534 city-west city-north; do
+          for p in city-4.3 city-4.0 city-day1534 city-west city-north city-via-launcher city-close; do
             [ -f /tmp/$p.png ] && cp /tmp/$p.png ci-logs/$p.png
           done
           # вердикт Gate для разбора в репозитории (нужен, т.к. логи джоб из песочницы не скачать)

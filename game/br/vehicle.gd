@@ -43,11 +43,13 @@ func _ready() -> void:
 	var wr: float = T.wheel_r
 	var by := wr * 0.55
 	_head_mat = StandardMaterial3D.new()
+	_head_mat.cull_mode = BaseMaterial3D.CULL_DISABLED
 	_head_mat.albedo_color = Color(0.9, 0.9, 0.8)
 	_head_mat.emission_enabled = true
 	_head_mat.emission = Color(1.0, 0.95, 0.8)
 	_head_mat.emission_energy_multiplier = 0.0
 	_tail_mat = StandardMaterial3D.new()
+	_tail_mat.cull_mode = BaseMaterial3D.CULL_DISABLED
 	_tail_mat.albedo_color = Color(0.5, 0.1, 0.08)
 	_tail_mat.emission_enabled = true
 	_tail_mat.emission = Color(1.0, 0.12, 0.08)

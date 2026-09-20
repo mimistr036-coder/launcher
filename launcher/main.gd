@@ -386,6 +386,10 @@ func _maybe_autotest_ready() -> void:
 	if not _autotest or _autotest_done:
 		return
 	_autotest_done = true
+	if OS.get_environment("LAUNCHER_SHOT") == "1":
+		# сквозной тест: скачать кэш, смонтировать и запустить игру (скриншоты делает boot)
+		get_tree().change_scene_to_file.call_deferred("res://br/boot.tscn")
+		return
 	var scene: PackedScene = null
 	var scr: Script = null
 	var bad := ""
