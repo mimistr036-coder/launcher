@@ -131,6 +131,27 @@ jobs:
           name: ci-logs-compat40
           path: /tmp/compat40.log
 
+      - name: Commit log into repo
+        if: always()
+        run: |
+          set +e
+          mkdir -p ci-logs
+          for f in compat40 compat40-http; do
+            [ -f /tmp/$f.log ] && cp /tmp/$f.log ci-logs/$f.log
+          done
+          [ -f /tmp/compat40.code ] && echo "$(cat /tmp/compat40.code)" > ci-logs/compat40.code
+          git config user.name "arena-bot"
+          git config user.email "actions@arena.local"
+          git add ci-logs
+          if ! git diff --cached --quiet; then
+            git commit -m "ci: логи совместимости с Godot 4.0 [skip ci]"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin ${{ github.ref_name }} > /dev/null 2>&1
+              if git push origin HEAD:${{ github.ref_name }}; then break; fi
+              sleep 5
+            done
+          fi
+
   apk:
     # Готовый APK лаунчера для Android + exe для Windows — без Godot у пользователя.
     runs-on: ubuntu-latest
