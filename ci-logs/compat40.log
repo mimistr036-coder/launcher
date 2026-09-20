@@ -1,17 +1,5 @@
 Godot Engine v4.0.stable.official.92bee43ad - https://godotengine.org
  
 [launcher] Проверка обновлений...
-[launcher] Кэш актуален (v18). Готов к запуску!
-SCRIPT ERROR: Parse Error: Cannot infer the type of "a" variable because the value doesn't have a set type.
-          at: GDScript::reload (res://br/city_builder.gd:121)
-SCRIPT ERROR: Parse Error: Cannot infer the type of "ui" variable because the value doesn't have a set type.
-          at: GDScript::reload (res://br/city_builder.gd:122)
-SCRIPT ERROR: Parse Error: Cannot infer the type of "vi" variable because the value doesn't have a set type.
-          at: GDScript::reload (res://br/city_builder.gd:123)
-SCRIPT ERROR: Parse Error: The variable type is being inferred from a Variant value, so it will be typed as Variant. (Warning treated as error.)
-          at: GDScript::reload (res://br/city_builder.gd:130)
-SCRIPT ERROR: Parse Error: Cannot infer the type of "face_c" variable because the value doesn't have a set type.
-          at: GDScript::reload (res://br/city_builder.gd:135)
-SCRIPT ERROR: Parse Error: Cannot infer the type of "zc" variable because the value doesn't have a set type.
-          at: GDScript::reload (res://br/city_builder.gd:270)
-[LAUNCHER_AUTOTEST] FAIL scene=<PackedScene#-9223372008568388328> boot=<GDScript#-9223372008719383273> bad_scripts=city_builder.gd 
+[launcher] Кэш актуален (v19). Готов к запуску!
+[LAUNCHER_AUTOTEST] OK version=19 size=111541 scene=found
