@@ -99,7 +99,8 @@ func rpc_sysmsg(text: String) -> void:
 func rpc_snapshot(data: Dictionary) -> void:
 	if not _dbg_snap:
 		_dbg_snap = true
-		print("[NET] первый снапшот: ", data.size(), " игроков")
+		print("[NET] первый снапшот: ", data.size(), " игроков, world=", world,
+				" has_apply=", world != null and world.has_method("apply_snapshot"))
 	if not connected:
 		connected = true
 		net_ready.emit()

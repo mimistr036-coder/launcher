@@ -5,8 +5,8 @@
 core/io/file_access_pack.cpp). Позволяет собирать кэш игры без Godot CLI —
 в проекте только текстовые ресурсы (.gd/.tscn), импорт не требуется.
 
-Пути в пакете хранятся БЕЗ префикса "res://", как это делает официальный
-экспортер.
+Пути в пакете хранятся С префиксом "res://" — как у официального экспортера
+(EditorExportPlatform::_save_pack_file кладёт p_path как есть).
 """
 import hashlib
 import struct
@@ -22,6 +22,7 @@ def _pad4(n: int) -> int:
 
 def pack_files(files: dict, out_path: str, engine_version=(4, 3, 0)) -> None:
     """files: {"br/boot.gd": bytes, ...} — пути относительно res://."""
+    files = {("res://" + k if not k.startswith("res://") else k): v for k, v in files.items()}
     names = sorted(files.keys())
     # заголовок: magic, ver, major, minor, patch, flags, file_base(u64), 16x u32, count
     header_size = 4 + 4 + 4 + 4 + 4 + 4 + 8 + 64 + 4
