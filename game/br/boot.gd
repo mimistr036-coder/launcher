@@ -66,6 +66,17 @@ func _autotest(mode: String) -> void:
 		_start_world(false, "", 0, "ТестБот")
 		if world != null and world.day_night != null and mode == "shot15":
 			world.day_night.time_h = 15.57
+		var sp := OS.get_environment("SHOT_POS")
+		var syaw := OS.get_environment("SHOT_YAW")
+		if sp != "" or syaw != "":
+			var tpose := get_tree().create_timer(0.4)
+			tpose.timeout.connect(func() -> void:
+				if world != null and world.player != null:
+					if sp != "":
+						var pp := sp.split(",")
+						world.player.global_position = Vector3(float(pp[0]), float(pp[1]), float(pp[2]))
+					if syaw != "":
+						world.cam_yaw = float(syaw)))
 		var ts := get_tree().create_timer(3.5)
 		ts.timeout.connect(func() -> void:
 			# вид сверху

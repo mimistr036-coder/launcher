@@ -49,7 +49,7 @@ func _apply(force: bool) -> void:
 		sun.shadow_enabled = base_shadow and day > 0.03
 	if moon != null:
 		moon.rotation = Vector3(deg_to_rad(72.0 * clampf(night, 0.0, 1.0) - 20.0), deg_to_rad(time_h * 15.0 + 90.0), 0.0)
-		moon.light_energy = 0.25 * night
+		moon.light_energy = 0.16 * night
 	# небо и свет среды
 	if _sky_mat != null:
 		var dusk_f := clampf(1.0 - absf(elev) * 4.0, 0.0, 1.0)

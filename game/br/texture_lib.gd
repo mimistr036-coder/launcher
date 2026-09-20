@@ -19,9 +19,9 @@ static func _night_mats():
 	return s.get_meta("night")
 
 const WALL_PALETTE := [
-	Color("d8d0bd"), Color("c9bfa8"), Color("e2ddd0"),
-	Color("b8bfc2"), Color("d1c2a3"), Color("c4b49c"),
-	Color("b5c4b1"), Color("d6caca"),
+	Color("cfc5ad"), Color("bfb49a"), Color("c9c2b4"),
+	Color("a8b0b4"), Color("c0b190"), Color("b3a48c"),
+	Color("a5b4a1"), Color("c2b0a6"),
 ]
 
 # ---------------- Базовое ----------------
@@ -57,7 +57,18 @@ static func _ground_mat(kind: String) -> StandardMaterial3D:
 	var img: Image
 	match kind:
 		"asphalt":
-			img = noise_img(128, 128, 0.5, 11, Color(0.42, 0.43, 0.45), 0.16)
+			img = noise_img(128, 128, 0.7, 11, Color(0.3, 0.31, 0.33), 0.3)
+			var ra := RandomNumberGenerator.new()
+			ra.seed = 77
+			for k in range(14):  # латанки и пятна
+				var cx := ra.randi_range(0, 127)
+				var cz := ra.randi_range(0, 127)
+				var rr := ra.randi_range(6, 18)
+				var shade := 0.24 if ra.randf() < 0.6 else 0.4
+				for dy in range(-rr, rr + 1):
+					for dx in range(-rr, rr + 1):
+						if dx * dx + dy * dy <= rr * rr:
+							img.set_pixel((cx + dx) % 128, (cz + dy) % 128, Color(shade, shade + 0.01, shade + 0.02))
 		"walk":
 			# тротуарная плитка: светлая + тёмные швы сеткой
 			img = noise_img(128, 128, 0.3, 12, Color(0.66, 0.65, 0.62), 0.12)
@@ -66,7 +77,7 @@ static func _ground_mat(kind: String) -> StandardMaterial3D:
 					img.set_pixel(i % 128, q, Color(0.5, 0.49, 0.47))
 					img.set_pixel(q, i % 128, Color(0.5, 0.49, 0.47))
 		"grass":
-			img = noise_img(128, 128, 0.18, 13, Color(0.42, 0.58, 0.28), 0.32)
+			img = noise_img(128, 128, 0.18, 13, Color(0.34, 0.48, 0.22), 0.42)
 		"plaza":
 			img = noise_img(128, 128, 0.25, 14, Color(0.68, 0.64, 0.57), 0.12)
 		"dirt":
