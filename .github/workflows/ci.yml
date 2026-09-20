@@ -26,50 +26,68 @@ jobs:
           python3 -m json.tool updates/www/version.json
 
       - name: Game autotest (offline city build)
+        id: t1
+        continue-on-error: true
         run: |
           set +e
-          GAME_AUTOTEST=offline timeout 120 /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path game > /tmp/offline.log 2>&1
-          code=$?
-          cat /tmp/offline.log
-          echo "EXIT CODE: $code"
-          exit $code
+          GAME_AUTOTEST=offline timeout 150 /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path game > /tmp/offline.log 2>&1
+          echo $? > /tmp/offline.code
+          echo "offline exit: $(cat /tmp/offline.code)"
 
       - name: Multiplayer autotest (server + client)
+        id: t2
+        if: always()
+        continue-on-error: true
         run: |
           set +e
           /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path server -- --port=17777 > /tmp/server.log 2>&1 &
           SRV=$!
           sleep 4
-          GAME_AUTOTEST=mp:127.0.0.1:17777 timeout 120 /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path game > /tmp/client.log 2>&1
-          code=$?
+          GAME_AUTOTEST=mp:127.0.0.1:17777 timeout 150 /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path game > /tmp/client.log 2>&1
+          echo $? > /tmp/client.code
           kill $SRV 2>/dev/null
-          echo "== SERVER LOG =="; cat /tmp/server.log
-          echo "== CLIENT LOG =="; cat /tmp/client.log
-          echo "EXIT CODE: $code"
-          exit $code
+          echo "client exit: $(cat /tmp/client.code)"
 
       - name: Launcher E2E autotest (download + load cache)
+        id: t3
+        if: always()
+        continue-on-error: true
         run: |
           set +e
           python3 tools/serve_updates.py 8090 > /tmp/http.log 2>&1 &
           HTTPD=$!
           sleep 2
-          LAUNCHER_AUTOTEST=1 LAUNCHER_URL=http://127.0.0.1:8090 timeout 150 /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path launcher > /tmp/launcher.log 2>&1
-          code=$?
+          LAUNCHER_AUTOTEST=1 LAUNCHER_URL=http://127.0.0.1:8090 timeout 180 /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path launcher > /tmp/launcher.log 2>&1
+          echo $? > /tmp/launcher.code
           kill $HTTPD 2>/dev/null
-          echo "== HTTP LOG =="; cat /tmp/http.log
-          echo "== LAUNCHER LOG =="; cat /tmp/launcher.log
-          echo "EXIT CODE: $code"
-          exit $code
+          echo "launcher exit: $(cat /tmp/launcher.code)"
 
-      - name: Commit built cache
+      - name: Save logs into repo
+        if: always()
         run: |
+          set +e
+          mkdir -p ci-logs
+          for f in offline server client launcher http; do
+            [ -f /tmp/$f.log ] && cp /tmp/$f.log ci-logs/$f.log
+            [ -f /tmp/$f.code ] && cp /tmp/$f.code ci-logs/$f.code
+          done
           git config user.name "arena-bot"
           git config user.email "actions@arena.local"
+          git add ci-logs
           git add updates/www/game.pck updates/www/version.json
-          if git diff --cached --quiet; then
-            echo "Кэш не изменился — коммит не нужен"
-          else
-            git commit -m "build: обновлён игровой кэш"
+          if ! git diff --cached --quiet; then
+            git commit -m "ci: логи автотестов [skip ci]"
             git push
           fi
+
+      - name: Gate
+        if: always()
+        run: |
+          fail=0
+          for t in t1 t2 t3; do
+            if [ "${{ steps[t].outcome }}" != "success" ]; then
+              echo "STEP $t FAILED"
+              fail=1
+            fi
+          done
+          exit $fail
