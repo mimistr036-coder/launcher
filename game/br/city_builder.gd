@@ -88,9 +88,12 @@ func build() -> void:
 
 # =================== ПРИМИТИВЫ ===================
 
+# SurfaceTool не имеет get_vertex_count() — считаем вершины сами
+var _st_verts: Dictionary = {}    # SurfaceTool -> int
+
 func _st_for(mat: Material) -> SurfaceTool:
 	var st: SurfaceTool = _st.get(mat)
-	if st != null and st.get_vertex_count() >= MAX_SURF_VERTS:
+	if st != null and int(_st_verts.get(st, 0)) >= MAX_SURF_VERTS:
 		# поверхность распухла — отдаём готовый меш и начинаем новую
 		var n := 0
 		for ch in get_children():
@@ -112,7 +115,8 @@ func _quad(st: SurfaceTool, pts: Array, normal: Vector3, uvs: Array) -> void:
 		st.set_normal(normal)
 		st.set_uv(uvs[k])
 		st.add_vertex(pts[k])
-	var b: int = st.get_vertex_count() - 4
+	_st_verts[st] = int(_st_verts.get(st, 0)) + 4
+	var b: int = int(_st_verts[st]) - 4
 	st.add_index(b)
 	st.add_index(b + 1)
 	st.add_index(b + 2)
@@ -209,6 +213,7 @@ func _finalize_meshes() -> void:
 
 
 func _flush_surface(mat: Material, st: SurfaceTool, idx: int) -> int:
+	_st_verts.erase(st)
 	var mesh := st.commit()
 	if mesh != null:
 		mesh.surface_set_material(0, mat)  # БЕЗ ЭТОГО ВЕСЬ ГОРОД БЕЛЫЙ

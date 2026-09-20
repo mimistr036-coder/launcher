@@ -149,7 +149,10 @@ func _autotest(mode: String) -> void:
 				if arrays == null or arrays[Mesh.ARRAY_VERTEX] == null:
 					continue
 				var verts: PackedVector3Array = arrays[Mesh.ARRAY_VERTEX]
-				var idxa: PackedInt32Array = arrays[Mesh.ARRAY_INDEX]
+				var raw_idx: Variant = arrays[Mesh.ARRAY_INDEX]
+				if raw_idx == null:
+					continue
+				var idxa: PackedInt32Array = raw_idx
 				surf += 1
 				tris += idxa.size() / 3
 				if verts.size() > 65000:
