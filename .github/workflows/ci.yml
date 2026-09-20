@@ -99,9 +99,12 @@ jobs:
           set +e
           rm -rf ci-logs
           mkdir -p ci-logs
-          for f in offline server client launcher http compat40 compat40-http gate shot43 shot40 city-4.3 city-4.0; do
+          for f in offline server client launcher http compat40 compat40-http gate shot43 shot40; do
             [ -f /tmp/$f.log ] && cp /tmp/$f.log ci-logs/$f.log
             [ -f /tmp/$f.code ] && cp /tmp/$f.code ci-logs/$f.code
+          done
+          for p in city-4.3 city-4.0; do
+            [ -f /tmp/$p.png ] && cp /tmp/$p.png ci-logs/$p.png
           done
           # вердикт Gate для разбора в репозитории (нужен, т.к. логи джоб из песочницы не скачать)
           for t in offline client launcher compat40; do
