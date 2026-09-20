@@ -185,8 +185,13 @@ func _build_camera() -> void:
 func _process(delta: float) -> void:
 	if hud != null:
 		var d: Vector2 = hud.take_cam_delta()
-		cam_yaw -= d.x * 0.005
-		cam_pitch = clampf(cam_pitch - d.y * 0.004, -1.15, 0.45)
+		var cam_inv: bool = int(UTIL.get_set("game", "cam_inv", 0)) == 1
+		if cam_inv:
+			cam_yaw += d.x * 0.005
+			cam_pitch = clampf(cam_pitch + d.y * 0.004, -1.15, 0.45)
+		else:
+			cam_yaw -= d.x * 0.005
+			cam_pitch = clampf(cam_pitch - d.y * 0.004, -1.15, 0.45)
 		if hud.consume_event("job"):
 			job.toggle()
 		if hud.consume_event("horn") and player.current_car != null:

@@ -113,6 +113,13 @@ func _build_static() -> void:
 	_quality_btn = UTIL.button("Графика: Авто", 18)
 	_quality_btn.pressed.connect(_cycle_quality)
 	pv.add_child(_quality_btn)
+	var cam_btn = UTIL.button("", 18)
+	cam_btn.pressed.connect(func() -> void:
+		var inv: bool = int(UTIL.get_set("game", "cam_inv", 0)) == 1
+		UTIL.set_set("game", "cam_inv", 0 if inv else 1)
+		_update_cam_btn(cam_btn))
+	_update_cam_btn(cam_btn)
+	pv.add_child(cam_btn)
 	var to_menu = UTIL.button("В ГЛАВНОЕ МЕНЮ", 18)
 	to_menu.pressed.connect(func() -> void:
 		_toggle_pause()
@@ -356,6 +363,11 @@ func _cycle_quality() -> void:
 		next_q = -1
 	world.apply_quality(next_q)
 	_update_quality_btn()
+
+
+func _update_cam_btn(btn: Button) -> void:
+	var inv: bool = int(UTIL.get_set("game", "cam_inv", 0)) == 1
+	btn.text = "Камера: обычная" if not inv else "Камера: инверсия"
 
 
 func _update_quality_btn() -> void:

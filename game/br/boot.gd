@@ -11,6 +11,7 @@ var menu = null
 var world = null
 var net = null
 var _autotest_done := false
+var _autotest_fail := ''
 
 
 func _ready() -> void:
@@ -75,6 +76,22 @@ func _autotest(mode: String) -> void:
 			print("[AUTOTEST] TIMEOUT")
 			get_tree().quit(1))
 	_start_world(online, ip, port, "ТестБот")
+	if not online:
+		# проверка направления: W должен вести ОТ камеры (вдоль fwd камеры)
+		var tdir := get_tree().create_timer(1.0)
+		tdir.timeout.connect(func() -> void:
+			if world != null and world.player != null:
+				world.cam_yaw = 0.0
+				Input.action_press("move_forward"))
+	var tdir2 := get_tree().create_timer(1.4)
+	tdir2.timeout.connect(func() -> void:
+		Input.action_release("move_forward")
+		if world != null and world.player != null:
+			var fwd := Vector3(-sin(world.cam_yaw), 0, -cos(world.cam_yaw))
+			var dot: float = world.player.velocity.dot(fwd)
+			print("[AUTOTEST] движение W: velocity*fwd=", dot)
+			if dot < 1.0:
+				_autotest_fail = "управление инвертировано (dot=%.2f)" % dot)
 	if online:
 		var poll := Timer.new()
 		poll.wait_time = 0.5
@@ -111,6 +128,9 @@ func _autotest(mode: String) -> void:
 				elif world.player.global_position.y < -3.0:
 					ok = false
 					why = "player fell under map (y=" + str(world.player.global_position.y) + ")"
+				elif _autotest_fail != "":
+					ok = false
+					why = _autotest_fail
 			_autotest_done = true
 			if ok:
 				print("[AUTOTEST] OK cars=", world.cars.size(), " npcs=", world.npcs.size(),

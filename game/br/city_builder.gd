@@ -24,7 +24,6 @@ var spawn_point := Vector3.ZERO
 var traffic_mats := {}            # {"ns_r": mat, ...} — маты лампочек светофоров
 
 var _st: Dictionary = {}          # Material -> SurfaceTool
-var _vc: int = 0                  # всего добавленных вершин (для индексов)
 var _colbody: StaticBody3D
 var _rects: Array = []            # прямоугольники зданий для миникарты
 var _tree_pts: Array = []         # точки занятые деревьями
@@ -99,18 +98,18 @@ func _st_for(mat: Material) -> SurfaceTool:
 
 func _quad(st: SurfaceTool, pts: Array, normal: Vector3, uvs: Array) -> void:
 	# 4 вершины + 2 треугольника (порядок вершин — по часовой снаружи, как принято в Godot)
+	# ВАЖНО: индексы отсчитываются от вершин ЭТОЙ поверхности (commit() обнуляет нумерацию)
 	for k in range(4):
 		st.set_normal(normal)
 		st.set_uv(uvs[k])
 		st.add_vertex(pts[k])
-	var b := _vc
+	var b: int = st.get_vertex_count() - 4
 	st.add_index(b)
 	st.add_index(b + 1)
 	st.add_index(b + 2)
 	st.add_index(b)
 	st.add_index(b + 2)
 	st.add_index(b + 3)
-	_vc += 4
 
 
 func _box(mat: Material, center: Vector3, size: Vector3, face_uv: bool = false, uv_scale: float = 4.0) -> void:
