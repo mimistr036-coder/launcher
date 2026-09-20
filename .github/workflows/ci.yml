@@ -62,18 +62,36 @@ jobs:
           kill $HTTPD 2>/dev/null
           echo "launcher exit: $(cat /tmp/launcher.code)"
 
+      - name: Launcher E2E on Godot 4.0 (совместимость с ПК пользователя)
+        id: t4
+        if: always()
+        continue-on-error: true
+        run: |
+          set +e
+          curl -sL -o /tmp/g40.zip https://github.com/godotengine/godot/releases/download/4.0-stable/Godot_v4.0-stable_linux.x86_64.zip
+          unzip -o /tmp/g40.zip -d /tmp
+          chmod +x /tmp/Godot_v4.0-stable_linux.x86_64
+          /tmp/Godot_v4.0-stable_linux.x86_64 --version
+          python3 tools/serve_updates.py 8091 > /tmp/compat40-http.log 2>&1 &
+          HTTPD=$!
+          sleep 2
+          LAUNCHER_AUTOTEST=1 LAUNCHER_URL=http://127.0.0.1:8091 timeout 180 /tmp/Godot_v4.0-stable_linux.x86_64 --headless --path launcher > /tmp/compat40.log 2>&1
+          echo $? > /tmp/compat40.code
+          kill $HTTPD 2>/dev/null
+          echo "compat40 exit: $(cat /tmp/compat40.code)"
+
       - name: Save logs into repo
         if: always()
         run: |
           set +e
           rm -rf ci-logs
           mkdir -p ci-logs
-          for f in offline server client launcher http; do
+          for f in offline server client launcher http compat40 compat40-http gate; do
             [ -f /tmp/$f.log ] && cp /tmp/$f.log ci-logs/$f.log
             [ -f /tmp/$f.code ] && cp /tmp/$f.code ci-logs/$f.code
           done
           # вердикт Gate для разбора в репозитории (нужен, т.к. логи джоб из песочницы не скачать)
-          for t in offline client launcher; do
+          for t in offline client launcher compat40; do
             echo "$t = '$(cat /tmp/$t.code 2>/dev/null || echo missing)'" >> ci-logs/gate.log
           done
           git config user.name "arena-bot"
@@ -94,7 +112,7 @@ jobs:
         if: always()
         run: |
           fail=0
-          for t in offline client launcher; do
+          for t in offline client launcher compat40; do
             code=$(cat /tmp/$t.code 2>/dev/null || echo 99)
             if [ "$code" != "0" ]; then
               echo "STEP $t FAILED (exit $code)"
@@ -104,63 +122,6 @@ jobs:
             fi
           done
           exit "$fail"
-
-  compat40:
-    # Проверка совместимости кэша с Godot 4.0 (как у пользователя на ПК).
-    # Не блокирует Gate — информационная.
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install Godot 4.0
-        run: |
-          curl -sL -o /tmp/g40.zip https://github.com/godotengine/godot/releases/download/4.0-stable/Godot_v4.0-stable_linux.x86_64.zip
-          unzip -o /tmp/g40.zip -d /tmp
-          chmod +x /tmp/Godot_v4.0-stable_linux.x86_64
-          /tmp/Godot_v4.0-stable_linux.x86_64 --version
-
-      - name: Build cache (PCK)
-        run: python3 tools/build_cache.py
-
-      - name: Launcher E2E on Godot 4.0
-        continue-on-error: true
-        run: |
-          set +e
-          python3 tools/serve_updates.py 8090 > /tmp/compat40-http.log 2>&1 &
-          sleep 2
-          LAUNCHER_AUTOTEST=1 LAUNCHER_URL=http://127.0.0.1:8090 timeout 180 /tmp/Godot_v4.0-stable_linux.x86_64 --headless --path launcher > /tmp/compat40.log 2>&1
-          echo $? > /tmp/compat40.code
-          echo "compat40 exit: $(cat /tmp/compat40.code)"
-
-      - name: Upload log
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ci-logs-compat40
-          path: /tmp/compat40.log
-
-      - name: Commit log into repo
-        if: always()
-        run: |
-          set +e
-          mkdir -p ci-logs
-          for f in compat40 compat40-http; do
-            [ -f /tmp/$f.log ] && cp /tmp/$f.log ci-logs/$f.log
-          done
-          [ -f /tmp/compat40.code ] && echo "$(cat /tmp/compat40.code)" > ci-logs/compat40.code
-          git config user.name "arena-bot"
-          git config user.email "actions@arena.local"
-          git add ci-logs
-          if ! git diff --cached --quiet; then
-            git commit -m "ci: логи совместимости с Godot 4.0 [skip ci]"
-            for i in 1 2 3 4 5; do
-              git fetch origin "${{ github.ref_name }}" > /dev/null 2>&1
-              git rebase FETCH_HEAD > /dev/null 2>&1
-              if git push origin HEAD:${{ github.ref_name }}; then break; fi
-              sleep 5
-            done
-          fi
 
   apk:
     # Готовый APK лаунчера для Android + exe для Windows — без Godot у пользователя.
