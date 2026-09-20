@@ -95,3 +95,95 @@ jobs:
             fi
           done
           exit $fail
+
+  compat40:
+    # Проверка совместимости кэша с Godot 4.0 (как у пользователя на ПК).
+    # Не блокирует Gate — информационная.
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Godot 4.0
+        run: |
+          curl -sL -o /tmp/g40.zip https://github.com/godotengine/godot/releases/download/4.0-stable/Godot_v4.0-stable_linux.x86_64.zip
+          unzip -o /tmp/g40.zip -d /tmp
+          chmod +x /tmp/Godot_v4.0-stable_linux.x86_64
+          /tmp/Godot_v4.0-stable_linux.x86_64 --version
+
+      - name: Build cache (PCK)
+        run: python3 tools/build_cache.py
+
+      - name: Launcher E2E on Godot 4.0
+        continue-on-error: true
+        run: |
+          set +e
+          python3 tools/serve_updates.py 8090 > /tmp/compat40-http.log 2>&1 &
+          sleep 2
+          LAUNCHER_AUTOTEST=1 LAUNCHER_URL=http://127.0.0.1:8090 timeout 180 /tmp/Godot_v4.0-stable_linux.x86_64 --headless --path launcher > /tmp/compat40.log 2>&1
+          echo $? > /tmp/compat40.code
+          echo "compat40 exit: $(cat /tmp/compat40.code)"
+
+      - name: Upload log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-logs-compat40
+          path: /tmp/compat40.log
+
+  apk:
+    # Готовый APK лаунчера для Android + exe для Windows — без Godot у пользователя.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Godot 4.3 + export templates
+        run: |
+          curl -sL -o /tmp/godot.zip https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
+          unzip -o /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.3-stable_linux.x86_64
+          curl -sL -o /tmp/tpl.tpz https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_export_templates.tpz
+          unzip -o /tmp/tpl.tpz 'templates/*' -d /tmp/tpl
+          mkdir -p ~/.local/share/godot/export_templates/4.3.stable
+          cp /tmp/tpl/templates/android_debug.apk ~/.local/share/godot/export_templates/4.3.stable/
+          cp /tmp/tpl/templates/windows_debug_x86_64.exe ~/.local/share/godot/export_templates/4.3.stable/
+          cp /tmp/tpl/templates/windows_release_x86_64.exe ~/.local/share/godot/export_templates/4.3.stable/
+
+      - name: Editor settings (SDK, JDK, debug-keystore)
+        run: |
+          mkdir -p ~/.android
+          keytool -genkeypair -keystore ~/.android/debug.keystore \
+            -storepass android -alias androiddebugkey -keypass android \
+            -dname "CN=Android Debug,O=Android,C=US" -keyalg RSA -keysize 2048 -validity 10000
+          mkdir -p ~/.config/godot
+          for name in editor_settings-4.tres editor_settings-4.3.tres; do
+            cat > ~/.config/godot/$name <<EOF
+          [export]
+
+          android/java_sdk_path="${JAVA_HOME}"
+          android/android_sdk_path="/usr/local/lib/android/sdk"
+          android/debug_keystore="${HOME}/.android/debug.keystore"
+          android/debug_keystore_user="androiddebugkey"
+          android/debug_keystore_pass="android"
+          EOF
+          done
+
+      - name: Export Android APK + Windows exe
+        run: |
+          cd launcher
+          mkdir -p builds
+          /tmp/Godot_v4.3-stable_linux.x86_64 --headless --export-debug "Android" builds/provinciya-launcher.apk
+          /tmp/Godot_v4.3-stable_linux.x86_64 --headless --export-debug "Windows" builds/provinciya-launcher.exe
+          ls -la builds/
+
+      - name: Upload builds
+        uses: actions/upload-artifact@v4
+        with:
+          name: provinciya-launcher
+          path: launcher/builds/*
+          if-no-files-found: error

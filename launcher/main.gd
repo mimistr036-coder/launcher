@@ -348,6 +348,8 @@ func _on_play() -> void:
 	_set_status("Запуск игры...")
 	if not _mount_cache():
 		return
+	print("[launcher] кэш смонтирован: boot.tscn=", FileAccess.file_exists("res://br/boot.tscn"),
+			" boot.gd=", FileAccess.file_exists("res://br/boot.gd"))
 	if not ResourceLoader.exists("res://br/boot.tscn"):
 		_set_status("Кэш повреждён (нет сцены игры). Нажми «ПРОВЕРИТЬ ОБНОВЛЕНИЯ»")
 		return
