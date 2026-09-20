@@ -18,250 +18,6 @@ WARNING: All audio drivers failed, falling back to the dummy driver.
      at: initialize (servers/audio_server.cpp:247)
 
 [AUTOTEST] start mode=shot
-SCRIPT ERROR: Parse Error: Identifier "tire" not declared in the current scope.
-          at: GDScript::reload (res://br/vehicle.gd:121)
-SCRIPT ERROR: Parse Error: Identifier "body_c" not declared in the current scope.
-          at: GDScript::reload (res://br/vehicle.gd:140)
-ERROR: Failed to load script "res://br/vehicle.gd" with error "Parse error".
-   at: load (modules/gdscript/gdscript.cpp:2936)
-SCRIPT ERROR: Parse Error: Could not resolve class "res://br/vehicle.gd".
-          at: GDScript::reload (res://br/npc_car.gd:1)
-ERROR: Failed to load script "res://br/npc_car.gd" with error "Parse error".
-   at: load (modules/gdscript/gdscript.cpp:2936)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid access to property or key 'x' on a base object of type 'Dictionary'.
-          at: _yard_point (res://br/city_builder.gd:566)
-SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
-          at: _spawn_npcs (res://br/world.gd:153)
 [GEO] Geo0 aabb_pos=(-451, -0.2, -451) aabb_size=(902, 0.25, 902)
 [BAD] Geo0 worst_dev=451
 [GEO] Geo1 aabb_pos=(-391, -0.2, -391) aabb_size=(782, 0.225, 782)
@@ -270,40 +26,40 @@ SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
 [BAD] Geo2 worst_dev=385.149993896484
 [GEO] Geo3 aabb_pos=(-379, -0.2, -379) aabb_size=(758, 0.2, 758)
 [BAD] Geo3 worst_dev=379
-[GEO] Geo4 aabb_pos=(-376, 0, -376) aabb_size=(708.0522, 14.9, 527)
+[GEO] Geo4 aabb_pos=(-376, 0, -376) aabb_size=(747, 14.9, 527)
 [BAD] Geo4 worst_dev=376
 [GEO] Geo5 aabb_pos=(-376.175, 14.9, -376.175) aabb_size=(752.35, 32.75, 752.35)
 [BAD] Geo5 worst_dev=376.174987792969
 [GEO] Geo6 aabb_pos=(-376.175, 15, -376.175) aabb_size=(752.35, 31.3, 752.35)
 [BAD] Geo6 worst_dev=376.174987792969
-[GEO] Geo7 aabb_pos=(-372.3952, 15.25, -372.2267) aabb_size=(744.1356, 32.4, 745.1772)
+[GEO] Geo7 aabb_pos=(-372.3952, 15.25, -371.338) aabb_size=(742.2245, 32.4, 744.2885)
 [BAD] Geo7 worst_dev=372.950469970703
-[GEO] Geo8 aabb_pos=(-373.57, 15, -366.57) aabb_size=(739.3, 31.7, 739.3)
+[GEO] Geo8 aabb_pos=(-373.57, 15, -366.57) aabb_size=(736.18, 31.7, 739.3)
 [BAD] Geo8 worst_dev=373.570007324219
 [GEO] Geo9 aabb_pos=(-377.195, 13.09, -377.195) aabb_size=(754.39, 32.36, 754.39)
 [BAD] Geo9 worst_dev=377.195007324219
 [GEO] Geo10 aabb_pos=(-378.37, 13.22, -377.695) aabb_size=(756.74, 33.2, 755.39)
 [BAD] Geo10 worst_dev=378.369995117188
-[GEO] Geo11 aabb_pos=(-376, 0, -370.9987) aabb_size=(752, 14.9, 746.9987)
+[GEO] Geo11 aabb_pos=(-376, 0, -370.9987) aabb_size=(458, 14.9, 746.9987)
 [BAD] Geo11 worst_dev=376
-[GEO] Geo12 aabb_pos=(-371.0326, 0, -369.5024) aabb_size=(737.8288, 2.2, 740.0455)
-[GEO] Geo13 aabb_pos=(-372.5546, 1.4, -370.7654) aabb_size=(738.5098, 3.8, 729.0112)
-[GEO] Geo14 aabb_pos=(-372.0046, 1.4, -367.3296) aabb_size=(740.2808, 3.8, 739.1356)
-[GEO] Geo15 aabb_pos=(-366.3808, 1.4, -370.2892) aabb_size=(734.107, 3.8, 739.8198)
-[GEO] Geo16 aabb_pos=(-368.5761, -0.005, -365.2752) aabb_size=(727.8337, 0.45, 727.0925)
-[GEO] Geo17 aabb_pos=(-368.0675, 0, -357.9877) aabb_size=(725.2393, 1.1, 729.0501)
-[GEO] Geo18 aabb_pos=(-376, 0, -266) aabb_size=(642, 26.1, 642)
-[GEO] Geo19 aabb_pos=(-365.55, 26.6, -371.85) aabb_size=(738.1, 25.6, 738.1)
-[GEO] Geo20 aabb_pos=(-376.22, 7.55, -376.22) aabb_size=(752.44, 18.4, 752.44)
+[GEO] Geo12 aabb_pos=(-371.0326, 0, -368.9172) aabb_size=(741.9734, 2.2, 738.5114)
+[GEO] Geo13 aabb_pos=(-372.5546, 1.4, -365.4313) aabb_size=(744.9364, 3.8, 736.2885)
+[GEO] Geo14 aabb_pos=(-372.0046, 1.4, -370.1802) aabb_size=(744.4254, 3.8, 740.5611)
+[GEO] Geo15 aabb_pos=(-369.1639, 1.4, -366.9469) aabb_size=(741.2074, 3.8, 735.7417)
+[GEO] Geo16 aabb_pos=(-368.5761, -0.005, -364.7977) aabb_size=(733.2154, 0.45, 720.9296)
+[GEO] Geo17 aabb_pos=(-368.0675, 0, -361.7262) aabb_size=(728.1067, 1.1, 733.8667)
+[GEO] Geo18 aabb_pos=(-376, 0, -266) aabb_size=(417, 26.1, 197)
+[GEO] Geo19 aabb_pos=(-365.55, 26.6, -371.85) aabb_size=(737.1, 25.6, 738.1)
+[GEO] Geo20 aabb_pos=(-376.22, 7.55, -376.22) aabb_size=(745.72, 18.4, 752.44)
 [GEO] Geo21 aabb_pos=(-364.531, 0, -238.9388) aabb_size=(166.6861, 26.1, 318.9388)
-[GEO] Geo22 aabb_pos=(-370, 0, -156) aabb_size=(558, 14.9, 306)
+[GEO] Geo22 aabb_pos=(-370, 0, -370) aabb_size=(746, 14.9, 520)
 [GEO] Geo23 aabb_pos=(-345, 0, 23) aabb_size=(30, 26.1, 18)
 [GEO] Geo24 aabb_pos=(-345.25, 6.9, -261.25) aabb_size=(464.5, 32.55, 524.55)
 [GEO] Geo25 aabb_pos=(-374.2988, 0, 174) aabb_size=(90.2988, 14.9, 128)
-[GEO] Geo26 aabb_pos=(-376, 0, -376) aabb_size=(642, 14.9, 637)
-[GEO] Geo27 aabb_pos=(-335.2078, 0, -237.9297) aabb_size=(699.9564, 3, 562.8691)
-[GEO] Geo28 aabb_pos=(-334.5078, 0, -233.3496) aabb_size=(698.5564, 2.4, 558.3492)
-[GEO] Geo29 aabb_pos=(-374.5846, 0, -156) aabb_size=(750.5846, 26.1, 532)
+[GEO] Geo26 aabb_pos=(-376, 0, -46) aabb_size=(642, 14.9, 416)
+[GEO] Geo27 aabb_pos=(-335.2078, 0, -237.9297) aabb_size=(689.3129, 3, 585.6982)
+[GEO] Geo28 aabb_pos=(-334.5078, 0, -233.3496) aabb_size=(687.9128, 2.4, 581.1782)
+[GEO] Geo29 aabb_pos=(-374.5846, 0, -156) aabb_size=(420.5846, 26.1, 532)
 [GEO] Geo30 aabb_pos=(-318.0789, 0, 362) aabb_size=(20, 14.9, 14)
 [GEO] Geo31 aabb_pos=(-262.9778, 0, -376) aabb_size=(36.00002, 34.5, 14)
 [GEO] Geo32 aabb_pos=(-222.3506, 0, -376) aabb_size=(20, 34.5, 14)
@@ -311,82 +67,84 @@ SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
 [GEO] Geo34 aabb_pos=(-218.1926, 0, -298) aabb_size=(24, 14.9, 14)
 [GEO] Geo35 aabb_pos=(-188, 0, -373.3408) aabb_size=(14, 26.1, 36)
 [GEO] Geo36 aabb_pos=(-190, 0, -327.6764) aabb_size=(16, 14.9, 20)
-[GEO] Geo37 aabb_pos=(-263, 0, -255) aabb_size=(86, 10.5, 26)
-[GEO] Geo38 aabb_pos=(-264.56, 0, -264.56) aabb_size=(89.12, 1.1, 89.12)
-[GEO] Geo39 aabb_pos=(-259, 0, -376) aabb_size=(305, 26.1, 236)
-[GEO] Geo40 aabb_pos=(-266, 0, -369) aabb_size=(202, 26.1, 525)
-[GEO] Geo41 aabb_pos=(-219.7127, 0, -345.3725) aabb_size=(140.8675, 3, 688.0886)
-[GEO] Geo42 aabb_pos=(-219.0127, 0, -340.7925) aabb_size=(139.4675, 2.4, 683.5686)
-[GEO] Geo43 aabb_pos=(-260, 0, -370) aabb_size=(636, 14.9, 342)
-[GEO] Geo44 aabb_pos=(-257.911, 0, -110.4824) aabb_size=(382.9177, 34.5, 331.8221)
-[GEO] Geo45 aabb_pos=(-265.0482, 0, 64) aabb_size=(39.99998, 14.9, 18)
-[GEO] Geo46 aabb_pos=(-190, 0, 66.86725) aabb_size=(346, 14.9, 43.65304)
-[GEO] Geo47 aabb_pos=(-190, 0, -190) aabb_size=(346, 14.9, 327.2404)
-[GEO] Geo48 aabb_pos=(-266, -0.2, 174) aabb_size=(92, 0.2, 92)
-[GEO] Geo49 aabb_pos=(-261, 0, 208.7) aabb_size=(46, 3, 22.60001)
-[GEO] Geo50 aabb_pos=(-260.3, 0, 213.28) aabb_size=(44.59999, 2.4, 18.07999)
-[GEO] Geo51 aabb_pos=(-251, 0, 208.7) aabb_size=(46, 3, 22.60001)
-[GEO] Geo52 aabb_pos=(-250.3, 0, 213.28) aabb_size=(44.60001, 2.4, 18.07999)
-[GEO] Geo53 aabb_pos=(-241, 0, 208.7) aabb_size=(46, 3, 22.60001)
-[GEO] Geo54 aabb_pos=(-240.3, 0, 213.28) aabb_size=(44.60001, 2.4, 18.07999)
-[GEO] Geo55 aabb_pos=(-231, 0, 208.7) aabb_size=(46, 3, 22.60001)
-[GEO] Geo56 aabb_pos=(-230.3, 0, 213.28) aabb_size=(44.60001, 2.4, 18.07999)
-[GEO] Geo57 aabb_pos=(-238.7477, 0, -192) aabb_size=(601.616, 26.1, 508.6533)
-[GEO] Geo58 aabb_pos=(-148.9868, 0, -192) aabb_size=(43.99999, 26.1, 18)
-[GEO] Geo59 aabb_pos=(-78, 0, -264.8629) aabb_size=(14, 26.1, 40)
-[GEO] Geo60 aabb_pos=(-78, 0, -219.5837) aabb_size=(14, 14.9, 24)
-[GEO] Geo61 aabb_pos=(-150, 0, -150) aabb_size=(86, 26.1, 86)
-[GEO] Geo62 aabb_pos=(-136.5919, 0, 13.8452) aabb_size=(24, 40.1, 20.5105)
-[GEO] Geo63 aabb_pos=(-107.4386, 0, -25.09924) aabb_size=(316.6752, 45.7, 49.61285)
-[GEO] Geo64 aabb_pos=(-125, 0, 245) aabb_size=(30, 5.2, 18)
-[GEO] Geo65 aabb_pos=(-151.0932, 0, 284) aabb_size=(79.99999, 34.5, 16)
-[GEO] Geo66 aabb_pos=(-154.3365, 0, 362) aabb_size=(40, 26.1, 14)
-[GEO] Geo67 aabb_pos=(-110.1326, 0, 358) aabb_size=(24, 14.9, 18)
-[GEO] Geo68 aabb_pos=(-80, 0, 28) aabb_size=(450, 34.5, 340.8226)
-[GEO] Geo69 aabb_pos=(28, 0, -298) aabb_size=(348, 26.1, 668)
-[GEO] Geo70 aabb_pos=(-46, -0.2, -46) aabb_size=(92, 0.2, 92)
-[GEO] Geo71 aabb_pos=(-2.5, 0, -2.5) aabb_size=(5, 2.4, 5)
-[GEO] Geo72 aabb_pos=(-0.7, 2.5, -0.7) aabb_size=(1.4, 12, 1.4)
-[GEO] Geo73 aabb_pos=(-0.45, 14.55, -0.125) aabb_size=(0.9, 0.9, 0.25)
-[GEO] Geo74 aabb_pos=(-16.90429, 0.025, -16.69799) aabb_size=(32.93008, 0.35, 33.63866)
-[GEO] Geo75 aabb_pos=(-15.29767, 0.025, -16.31706) aabb_size=(31.51962, 0.35, 33.03892)
-[GEO] Geo76 aabb_pos=(-16.19678, 0.025, -16.73245) aabb_size=(32.60665, 0.35, 32.69884)
-[GEO] Geo77 aabb_pos=(-13, 0, 177.5) aabb_size=(26, 5.2, 13)
-[GEO] Geo78 aabb_pos=(-13.3, 7.85, 177.2) aabb_size=(26.6, 0.3, 13.60001)
-[GEO] Geo79 aabb_pos=(5.43795, 0, 342.8629) aabb_size=(20, 34.5, 16)
-[GEO] Geo80 aabb_pos=(96.68264, 0, -322.1711) aabb_size=(266.7989, 34.5, 639.2732)
-[GEO] Geo81 aabb_pos=(74.03923, 0, -353.8188) aabb_size=(20, 34.5, 17.59991)
-[GEO] Geo82 aabb_pos=(101, 0, -261) aabb_size=(158.5, 4.6, 115.5)
-[GEO] Geo83 aabb_pos=(88.53385, 0, -206.5232) aabb_size=(264.4858, 3, 308.9104)
-[GEO] Geo84 aabb_pos=(89.23385, 0, -201.9432) aabb_size=(263.0858, 2.4, 304.3904)
-[GEO] Geo85 aabb_pos=(112.5329, 0, -114.739) aabb_size=(225.6057, 45.7, 469.1346)
-[GEO] Geo86 aabb_pos=(64, 0, -156) aabb_size=(274.9492, 34.5, 304.0265)
-[GEO] Geo87 aabb_pos=(70, 0, 360) aabb_size=(80, 34.5, 16)
-[GEO] Geo88 aabb_pos=(111.991, 0, -220.6992) aabb_size=(109.2136, 26.1, 574.0129)
-[GEO] Geo89 aabb_pos=(211.8, 0, -106.2) aabb_size=(16.39999, 5, 8.399994)
-[GEO] Geo90 aabb_pos=(210, 5, -108) aabb_size=(20, 0.4, 12)
-[GEO] Geo91 aabb_pos=(214.6, 0, -102.25) aabb_size=(10.79999, 1.4, 0.5)
-[GEO] Geo92 aabb_pos=(214.75, 0.825, -101.75) aabb_size=(10.5, 0.35, 0.059998)
-[GEO] Geo93 aabb_pos=(228.8595, 0, -31.70383) aabb_size=(20, 45.7, 15.43892)
-[GEO] Geo94 aabb_pos=(206.4891, 0, 102.8341) aabb_size=(20, 40.1, 16)
-[GEO] Geo95 aabb_pos=(200, 0, 224.5) aabb_size=(16, 0.08, 11)
-[GEO] Geo96 aabb_pos=(198.8734, -0.075, 223.6962) aabb_size=(18.25761, 0.25, 12.43037)
-[GEO] Geo97 aabb_pos=(291.9961, 0, -190) aabb_size=(44, 26.1, 16)
-[GEO] Geo98 aabb_pos=(284, 0, -260.4025) aabb_size=(16, 34.5, 44)
-[GEO] Geo99 aabb_pos=(284, 0, -212.17) aabb_size=(14, 34.5, 20)
-[GEO] Geo100 aabb_pos=(362, 0, -99.05795) aabb_size=(14, 14.9, 20)
-[GEO] Geo101 aabb_pos=(295.1339, 0, -25.00541) aabb_size=(20, 40.1, 16)
-[GEO] Geo102 aabb_pos=(341.6346, 0, 64) aabb_size=(20, 14.9, 16)
-[GEO] Geo103 aabb_pos=(-393.55, 0, -393.55) aabb_size=(785.3201, 6.4, 785.3201)
-[GEO] Geo104 aabb_pos=(-393.75, 5.96, -393.75) aabb_size=(784.1, 0.18, 784.1)
-[GEO] Geo105 aabb_pos=(-158.06, 0, -172.06) aabb_size=(330.12, 4, 330.12)
-[GEO] Geo106 aabb_pos=(-158.4, 3.45, -172.15) aabb_size=(330.55, 0.9, 330.55)
-[GEO] Geo107 aabb_pos=(-158.45, 4.05, -172.1) aabb_size=(330.06, 0.2, 330.2)
-[GEO] Geo108 aabb_pos=(-158.45, 3.8, -172.1) aabb_size=(330.06, 0.2, 330.2)
-[GEO] Geo109 aabb_pos=(-158.45, 3.55, -172.1) aabb_size=(330.06, 0.2, 330.2)
-[GEO] Geo110 aabb_pos=(-158.1, 4.05, -171.61) aabb_size=(330.2, 0.2, 330.06)
-[GEO] Geo111 aabb_pos=(-158.1, 3.8, -171.61) aabb_size=(330.2, 0.2, 330.06)
-[GEO] Geo112 aabb_pos=(-158.1, 3.55, -171.61) aabb_size=(330.2, 0.2, 330.06)
-[GEO] Geo113 aabb_pos=(-237.06, 0, -157.56) aabb_size=(374.12, 2.8, 440.12)
-[GEO] Geo114 aabb_pos=(-237.5, 2.825, -158.5) aabb_size=(375, 0.15, 442)
+[GEO] Geo37 aabb_pos=(-247.5459, 0, -364.6995) aabb_size=(37, 3, 4.599976)
+[GEO] Geo38 aabb_pos=(-246.8459, 0, -360.1195) aabb_size=(35.60001, 2.4, 0.080017)
+[GEO] Geo39 aabb_pos=(-263, 0, -255) aabb_size=(86, 10.5, 26)
+[GEO] Geo40 aabb_pos=(-264.56, 0, -264.56) aabb_size=(89.12, 1.1, 89.12)
+[GEO] Geo41 aabb_pos=(-259, 0, -156) aabb_size=(595.4221, 26.1, 202)
+[GEO] Geo42 aabb_pos=(-219.7127, 0, -345.3725) aabb_size=(572.5342, 3, 688.0886)
+[GEO] Geo43 aabb_pos=(-219.0127, 0, -340.7925) aabb_size=(571.1342, 2.4, 683.5686)
+[GEO] Geo44 aabb_pos=(-260, 0, -300) aabb_size=(630, 14.9, 382)
+[GEO] Geo45 aabb_pos=(-257.911, 0, -347.0767) aabb_size=(605.3342, 34.5, 468.4577)
+[GEO] Geo46 aabb_pos=(-265.0482, 0, -45.53136) aabb_size=(453.0482, 14.9, 127.5314)
+[GEO] Geo47 aabb_pos=(-190, 0, 70.52029) aabb_size=(16, 14.9, 40)
+[GEO] Geo48 aabb_pos=(-190, 0, -190) aabb_size=(111.0653, 14.9, 327.2404)
+[GEO] Geo49 aabb_pos=(-266, -0.2, 174) aabb_size=(92, 0.2, 92)
+[GEO] Geo50 aabb_pos=(-261, 0, 208.7) aabb_size=(46, 3, 22.60001)
+[GEO] Geo51 aabb_pos=(-260.3, 0, 213.28) aabb_size=(44.59999, 2.4, 18.07999)
+[GEO] Geo52 aabb_pos=(-251, 0, 208.7) aabb_size=(46, 3, 22.60001)
+[GEO] Geo53 aabb_pos=(-250.3, 0, 213.28) aabb_size=(44.60001, 2.4, 18.07999)
+[GEO] Geo54 aabb_pos=(-241, 0, 208.7) aabb_size=(46, 3, 22.60001)
+[GEO] Geo55 aabb_pos=(-240.3, 0, 213.28) aabb_size=(44.60001, 2.4, 18.07999)
+[GEO] Geo56 aabb_pos=(-231, 0, 208.7) aabb_size=(46, 3, 22.60001)
+[GEO] Geo57 aabb_pos=(-230.3, 0, 213.28) aabb_size=(44.60001, 2.4, 18.07999)
+[GEO] Geo58 aabb_pos=(-238.7477, 0, 300.6533) aabb_size=(20, 26.1, 16)
+[GEO] Geo59 aabb_pos=(-149, 0, -376) aabb_size=(415, 26.1, 274.6912)
+[GEO] Geo60 aabb_pos=(-156, 0, -370) aabb_size=(234, 26.1, 526)
+[GEO] Geo61 aabb_pos=(-148.9868, 0, -192) aabb_size=(43.99999, 26.1, 18)
+[GEO] Geo62 aabb_pos=(-78, 0, -264.8629) aabb_size=(14, 26.1, 40)
+[GEO] Geo63 aabb_pos=(-78, 0, -219.5837) aabb_size=(14, 14.9, 24)
+[GEO] Geo64 aabb_pos=(-136.5919, 0, 13.8452) aabb_size=(230.6582, 40.1, 209.7668)
+[GEO] Geo65 aabb_pos=(-107.4386, 0, -25.09924) aabb_size=(24, 45.7, 16.40293)
+[GEO] Geo66 aabb_pos=(-125, 0, 245) aabb_size=(30, 5.2, 18)
+[GEO] Geo67 aabb_pos=(-151.0932, 0, 284) aabb_size=(79.99999, 34.5, 16)
+[GEO] Geo68 aabb_pos=(-154.3365, 0, 362) aabb_size=(40, 26.1, 14)
+[GEO] Geo69 aabb_pos=(-110.1326, 0, 358) aabb_size=(24, 14.9, 18)
+[GEO] Geo70 aabb_pos=(-80, 0, 288.8226) aabb_size=(16, 34.5, 80)
+[GEO] Geo71 aabb_pos=(28, 0, -259) aabb_size=(348, 26.1, 189)
+[GEO] Geo72 aabb_pos=(-46, -0.2, -46) aabb_size=(92, 0.2, 92)
+[GEO] Geo73 aabb_pos=(-2.5, 0, -2.5) aabb_size=(5, 2.4, 5)
+[GEO] Geo74 aabb_pos=(-0.7, 2.5, -0.7) aabb_size=(1.4, 12, 1.4)
+[GEO] Geo75 aabb_pos=(-0.45, 14.55, -0.125) aabb_size=(0.9, 0.9, 0.25)
+[GEO] Geo76 aabb_pos=(-16.90429, 0.025, -16.30485) aabb_size=(33.41369, 0.35, 32.7394)
+[GEO] Geo77 aabb_pos=(-15.21593, 0.025, -15.21595) aabb_size=(31.96194, 0.35, 31.9378)
+[GEO] Geo78 aabb_pos=(-16.24513, 0.025, -15.61332) aabb_size=(32.59612, 0.35, 31.4288)
+[GEO] Geo79 aabb_pos=(-13, 0, 177.5) aabb_size=(26, 5.2, 13)
+[GEO] Geo80 aabb_pos=(-13.3, 7.85, 177.2) aabb_size=(26.6, 0.3, 13.60001)
+[GEO] Geo81 aabb_pos=(-24.73625, 0, 326.1127) aabb_size=(20, 45.7, 14.95978)
+[GEO] Geo82 aabb_pos=(-2.727352, 0, 299.7256) aabb_size=(20, 40.1, 16.35699)
+[GEO] Geo83 aabb_pos=(68.03011, 0, -376) aabb_size=(301.9699, 34.5, 566)
+[GEO] Geo84 aabb_pos=(101, 0, -261) aabb_size=(158.5, 4.6, 115.5)
+[GEO] Geo85 aabb_pos=(66.61109, 0, -156) aabb_size=(44, 14.9, 16)
+[GEO] Geo86 aabb_pos=(114.9341, 0, -156) aabb_size=(124.7747, 34.5, 269.5222)
+[GEO] Geo87 aabb_pos=(93.79749, 0, 130.0047) aabb_size=(269.5104, 45.7, 200.0195)
+[GEO] Geo88 aabb_pos=(117.1838, 0, 233.0447) aabb_size=(24, 40.1, 21.37848)
+[GEO] Geo89 aabb_pos=(78.869, 0, 323.2832) aabb_size=(20, 34.5, 14.73993)
+[GEO] Geo90 aabb_pos=(87.44869, 0, 293.7512) aabb_size=(24, 34.5, 18.2207)
+[GEO] Geo91 aabb_pos=(180, 0, -376) aabb_size=(80, 34.5, 16)
+[GEO] Geo92 aabb_pos=(211.8, 0, -106.2) aabb_size=(16.39999, 5, 8.399994)
+[GEO] Geo93 aabb_pos=(210, 5, -108) aabb_size=(20, 0.4, 12)
+[GEO] Geo94 aabb_pos=(214.6, 0, -102.25) aabb_size=(10.79999, 1.4, 0.5)
+[GEO] Geo95 aabb_pos=(214.75, 0.825, -101.75) aabb_size=(10.5, 0.35, 0.059998)
+[GEO] Geo96 aabb_pos=(174, 0, -1.11635) aabb_size=(16, 26.1, 24)
+[GEO] Geo97 aabb_pos=(200, 0, 224.5) aabb_size=(16, 0.08, 11)
+[GEO] Geo98 aabb_pos=(199.0806, -0.075, 223.8433) aabb_size=(17.87314, 0.25, 12.28954)
+[GEO] Geo99 aabb_pos=(199.6077, 0, 318.2156) aabb_size=(20, 26.1, 16)
+[GEO] Geo100 aabb_pos=(284, 0, -39.10556) aabb_size=(18, 14.9, 36)
+[GEO] Geo101 aabb_pos=(284, 0, 5.713685) aabb_size=(16, 14.9, 20)
+[GEO] Geo102 aabb_pos=(342.0826, 0, 98.59052) aabb_size=(20, 40.1, 16.19276)
+[GEO] Geo103 aabb_pos=(284, 0, 180) aabb_size=(14, 34.5, 80)
+[GEO] Geo104 aabb_pos=(319.6127, 0, 296.1554) aabb_size=(20, 40.1, 15.73444)
+[GEO] Geo105 aabb_pos=(-393.55, 0, -393.55) aabb_size=(785.3201, 6.4, 785.3201)
+[GEO] Geo106 aabb_pos=(-393.75, 5.96, -393.75) aabb_size=(784.1, 0.18, 784.1)
+[GEO] Geo107 aabb_pos=(-158.06, 0, -172.06) aabb_size=(330.12, 4, 330.12)
+[GEO] Geo108 aabb_pos=(-158.4, 3.45, -172.15) aabb_size=(330.55, 0.9, 330.55)
+[GEO] Geo109 aabb_pos=(-158.45, 4.05, -172.1) aabb_size=(330.06, 0.2, 330.2)
+[GEO] Geo110 aabb_pos=(-158.45, 3.8, -172.1) aabb_size=(330.06, 0.2, 330.2)
+[GEO] Geo111 aabb_pos=(-158.45, 3.55, -172.1) aabb_size=(330.06, 0.2, 330.2)
+[GEO] Geo112 aabb_pos=(-158.1, 4.05, -171.61) aabb_size=(330.2, 0.2, 330.06)
+[GEO] Geo113 aabb_pos=(-158.1, 3.8, -171.61) aabb_size=(330.2, 0.2, 330.06)
+[GEO] Geo114 aabb_pos=(-158.1, 3.55, -171.61) aabb_size=(330.2, 0.2, 330.06)
+[GEO] Geo115 aabb_pos=(-237.06, 0, -157.56) aabb_size=(374.12, 2.8, 440.12)
+[GEO] Geo116 aabb_pos=(-237.5, 2.825, -158.5) aabb_size=(375, 0.15, 442)
 [AUTOTEST] скриншоты готовы
