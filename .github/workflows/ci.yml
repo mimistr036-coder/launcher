@@ -72,6 +72,10 @@ jobs:
             [ -f /tmp/$f.log ] && cp /tmp/$f.log ci-logs/$f.log
             [ -f /tmp/$f.code ] && cp /tmp/$f.code ci-logs/$f.code
           done
+          # вердикт Gate для разбора в репозитории (нужен, т.к. логи джоб из песочницы не скачать)
+          for t in offline client launcher; do
+            echo "$t = '$(cat /tmp/$t.code 2>/dev/null || echo missing)'" >> ci-logs/gate.log
+          done
           git config user.name "arena-bot"
           git config user.email "actions@arena.local"
           git add ci-logs
