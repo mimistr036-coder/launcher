@@ -232,7 +232,7 @@ func _update_camera(delta: float) -> void:
 func _send_state() -> void:
 	var car_id := 0
 	var ct := 0
-	var pp := player.global_position
+	var pp: Vector3 = player.global_position
 	var ry: float = player.model.rotation.y
 	var anim: int = player.anim_state()
 	var cx := 0.0
@@ -341,7 +341,7 @@ func try_enter_car(p: Node) -> void:
 	if p.current_car != null:
 		_exit_car(p)
 		return
-	var car := find_car_near(p.global_position, 3.2)
+	var car = find_car_near(p.global_position, 3.2)
 	if car == null:
 		hud.notice("Рядом нет свободной машины")
 		return
