@@ -80,7 +80,7 @@ func _ready() -> void:
 		net.chat_msg.connect(_on_chat)
 		net.sysmsg.connect(_on_sys)
 		net.connect_to(server_ip, server_port, nick)
-	_apply_quality(int(UTIL.get_set("game", "quality", -1)))
+	apply_quality(int(UTIL.get_set("game", "quality", -1)))
 	hud.notice("Добро пожаловать в г. Провинцинск!")
 	if online:
 		hud.sys("Подключение к %s:%d ..." % [server_ip, server_port])
@@ -233,7 +233,7 @@ func _send_state() -> void:
 	var car_id := 0
 	var ct := 0
 	var pp := player.global_position
-	var ry := player.model.rotation.y
+	var ry: float = player.model.rotation.y
 	var anim: int = player.anim_state()
 	var cx := 0.0
 	var cy := 0.0

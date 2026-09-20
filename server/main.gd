@@ -2,7 +2,7 @@ extends Node
 ## Выделенный сервер «Провинция RP»: агрегирует состояния игроков (15 Гц),
 ## раздаёт снапшоты, чат и системные сообщения. Симуляцию мира клиенты делают сами.
 
-const NETS := preload("res://server/net_server.gd")
+const NETS := preload("res://net_server.gd")
 
 const MOTD := "Добро пожаловать на сервер ПРОВИНЦИЯ RP! Приятной игры."
 const SNAPSHOT_HZ := 15.0

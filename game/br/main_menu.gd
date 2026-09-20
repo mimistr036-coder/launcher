@@ -49,7 +49,7 @@ func _ready() -> void:
 	v.add_child(UTIL.label("IP СЕРВЕРА", 14, Color(0.6, 0.65, 0.75)))
 	_ip = UTIL.line_edit("например 192.168.1.50", UTIL.get_set("net", "ip", "127.0.0.1"), 40)
 	v.add_child(_ip)
-	var ports := UTIL.get_set("net", "port", 7777)
+	var ports: int = UTIL.get_set("net", "port", 7777)
 	_port = UTIL.line_edit("7777", str(ports), 6)
 	v.add_child(_port)
 	v.add_child(_spacer(6))
