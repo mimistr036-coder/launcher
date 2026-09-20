@@ -19,83 +19,95 @@ WARNING: All audio drivers failed, falling back to the dummy driver.
 [AUTOTEST] start mode=shot
 WARNING: Glow is not supported when using the GL Compatibility backend yet. Support will be added in a future release.
      at: environment_set_glow (servers/rendering/storage/environment_storage.cpp:387)
-[GEO] Geo0 aabb_pos=(-451.1, -451.2, -902) aabb_size=(902.1, 451.25, 1353) verts=1272
-[GEO] Geo1 aabb_pos=(-391.1, -49.2, -440) aabb_size=(782.1, 49.225, 831) verts=2040
-[GEO] Geo2 aabb_pos=(-385.16, -1.75, -386.9) aabb_size=(770.31, 1.77, 772.05) verts=12912
-[GEO] Geo3 aabb_pos=(-379.1, -49.2, -428) aabb_size=(758.1, 49.2, 807) verts=4704
-[GEO] Geo4 aabb_pos=(-384.7425, -28, -404) aabb_size=(721.6707, 54.1, 750.3661) verts=240
-[GEO] Geo5 aabb_pos=(-376.4, -15.35, -404.5) aabb_size=(752.65, 52.35, 780.75) verts=6264
-[GEO] Geo6 aabb_pos=(-369.06, 26.4, -367.06) aabb_size=(737.12, 15.4, 735.12) verts=640
-[GEO] Geo7 aabb_pos=(-377.72, -20.95, -402.72) aabb_size=(753.94, 41.3, 778.94) verts=960
-[GEO] Geo8 aabb_pos=(-376.8737, -22, -324) aabb_size=(711.2993, 36.9, 659.8757) verts=96
-[GEO] Geo9 aabb_pos=(-333.1609, -18, -316) aabb_size=(49.04999, 44.1, 32) verts=24
-[GEO] Geo10 aabb_pos=(-383.45, -30, -381.9837) aabb_size=(721.3389, 44.9, 757.9838) verts=384
-[GEO] Geo11 aabb_pos=(-370.3252, -0.518893, -370.9459) aabb_size=(741.2325, 2.718893, 741.2245) verts=12204
-[GEO] Geo12 aabb_pos=(-371.6299, 1.4, -364.328) aabb_size=(741.6975, 3.8, 735.8696) verts=5568
-[GEO] Geo13 aabb_pos=(-371.2972, 1.4, -364.8043) aabb_size=(742.3822, 3.8, 735.8696) verts=6216
-[GEO] Geo14 aabb_pos=(-371.8472, 1.4, -372.2089) aabb_size=(744.2346, 3.8, 742.9099) verts=5640
-[GEO] Geo15 aabb_pos=(-365.8872, -0.233527, -368.4173) aabb_size=(730.7153, 0.907009, 737.4887) verts=4944
-[GEO] Geo16 aabb_pos=(-361.4357, 0, -365.098) aabb_size=(725.5125, 1.1, 732.1008) verts=1416
-[GEO] Geo17 aabb_pos=(-344.9898, -3, -362.6725) aabb_size=(710.5894, 6, 683.5754) verts=1152
-[GEO] Geo18 aabb_pos=(-343.9898, -2.3, -357.3925) aabb_size=(708.8894, 4.7, 678.3555) verts=1152
-[GEO] Geo19 aabb_pos=(-389.05, -30, -400) aabb_size=(689.05, 56.1, 746.8547) verts=312
-[GEO] Geo20 aabb_pos=(-388.8798, -28, -273.894) aabb_size=(726.8038, 62.5, 281.4995) verts=120
-[GEO] Geo21 aabb_pos=(-383.45, -30, -400) aabb_size=(759.45, 44.9, 776) verts=768
-[GEO] Geo22 aabb_pos=(-383.45, -30, -400) aabb_size=(759.45, 44.9, 666) verts=360
-[GEO] Geo23 aabb_pos=(-358.05, -15, 8) aabb_size=(43.04999, 41.1, 33) verts=24
-[GEO] Geo24 aabb_pos=(-345.4, -7.5, -270.5) aabb_size=(464.65, 46.95, 533.8) verts=72
-[GEO] Geo25 aabb_pos=(-393.25, -22, -288) aabb_size=(728.3315, 56.5, 403.7342) verts=48
-[GEO] Geo26 aabb_pos=(-311.05, -30, -377.0824) aabb_size=(501.05, 56.1, 753.0824) verts=336
-[GEO] Geo27 aabb_pos=(-392.4321, -30, -269.0631) aabb_size=(768.4321, 64.5, 645.0631) verts=216
-[GEO] Geo28 aabb_pos=(-393.25, -28, -404) aabb_size=(769.25, 62.5, 748.5176) verts=120
-[GEO] Geo29 aabb_pos=(-268.25, -18, -273) aabb_size=(91.25, 28.5, 44) verts=72
-[GEO] Geo30 aabb_pos=(-265.11, -44, -276.56) aabb_size=(89.66998, 45.1, 101.12) verts=96
-[GEO] Geo31 aabb_pos=(-273.45, -22, -267.5275) aabb_size=(608.6558, 36.9, 643.5275) verts=96
-[GEO] Geo32 aabb_pos=(-275.9803, -22, 118) aabb_size=(541.9802, 56.5, 217.3469) verts=48
-[GEO] Geo33 aabb_pos=(-218.9482, -3, -239.3813) aabb_size=(224.8729, 6, 367.0622) verts=288
-[GEO] Geo34 aabb_pos=(-217.9482, -2.3, -234.1013) aabb_size=(223.1729, 4.7, 361.8422) verts=288
-[GEO] Geo35 aabb_pos=(-266.1, -46.2, 128) aabb_size=(92.10002, 46.2, 138) verts=24
-[GEO] Geo36 aabb_pos=(-262.5, -3, 205.7) aabb_size=(47.5, 6, 25.60001) verts=96
-[GEO] Geo37 aabb_pos=(-261.5, -2.3, 210.98) aabb_size=(45.8, 4.7, 20.37999) verts=96
-[GEO] Geo38 aabb_pos=(-252.5, -3, 205.7) aabb_size=(47.5, 6, 25.60001) verts=96
-[GEO] Geo39 aabb_pos=(-251.5, -2.3, 210.98) aabb_size=(45.8, 4.7, 20.37999) verts=96
-[GEO] Geo40 aabb_pos=(-242.5, -3, 205.7) aabb_size=(47.5, 6, 25.60001) verts=96
-[GEO] Geo41 aabb_pos=(-241.5, -2.3, 210.98) aabb_size=(45.8, 4.7, 20.37999) verts=96
-[GEO] Geo42 aabb_pos=(-232.5, -3, 205.7) aabb_size=(47.5, 6, 25.60001) verts=96
-[GEO] Geo43 aabb_pos=(-231.5, -2.3, 210.98) aabb_size=(45.8, 4.7, 20.37999) verts=96
-[GEO] Geo44 aabb_pos=(-169.05, -22, -288) aabb_size=(325.05, 48.1, 293.3846) verts=96
-[GEO] Geo45 aabb_pos=(-85.45, -22, -265.4082) aabb_size=(419.541, 36.9, 489.9135) verts=96
-[GEO] Geo46 aabb_pos=(-127.6, -15, 230) aabb_size=(32.60001, 20.2, 33) verts=24
-[GEO] Geo47 aabb_pos=(-46.1, -46.2, -92) aabb_size=(92.10001, 46.2, 138) verts=24
-[GEO] Geo48 aabb_pos=(-3.1, -2.5, -5) aabb_size=(5.60001, 4.9, 7.5) verts=48
-[GEO] Geo49 aabb_pos=(-6.7, 1.8, -1.4) aabb_size=(7.40001, 12.7, 2.1) verts=24
-[GEO] Geo50 aabb_pos=(-0.9, 14.1, -0.575) aabb_size=(1.35001, 1.349999, 0.7) verts=24
-[GEO] Geo51 aabb_pos=(-15.89261, -0.1, -16.06814) aabb_size=(32.60982, 0.475, 32.04582) verts=192
-[GEO] Geo52 aabb_pos=(-15.20855, -0.1, -16.67162) aabb_size=(31.86228, 0.475, 33.55593) verts=192
-[GEO] Geo53 aabb_pos=(-15.36616, -0.1, -15.18168) aabb_size=(31.7723, 0.475, 31.38138) verts=96
-[GEO] Geo54 aabb_pos=(-13.25774, -3, 99.28327) aabb_size=(40.71543, 6, 206.4252) verts=288
-[GEO] Geo55 aabb_pos=(-12.25774, -2.3, 104.5633) aabb_size=(39.01543, 4.7, 201.2053) verts=288
-[GEO] Geo56 aabb_pos=(-15.6, -13, 164.5) aabb_size=(28.60001, 18.2, 26) verts=24
-[GEO] Geo57 aabb_pos=(-13.45, -5.45, 163.9) aabb_size=(26.75001, 13.6, 26.90001) verts=24
-[GEO] Geo58 aabb_pos=(98.7, -9, -270) aabb_size=(160.8, 13.6, 124.5) verts=48
-[GEO] Geo59 aabb_pos=(209.3, -0.2, -106.4) aabb_size=(18.89999, 5.2, 8.599991) verts=96
-[GEO] Geo60 aabb_pos=(209.8, -5, -118) aabb_size=(20.20001, 10.4, 22) verts=24
-[GEO] Geo61 aabb_pos=(213.9, -0.4, -102.65) aabb_size=(11.49998, 1.8, 0.900002) verts=48
-[GEO] Geo62 aabb_pos=(214.575, 0.575, -102) aabb_size=(10.675, 0.6, 0.309998) verts=48
-[GEO] Geo63 aabb_pos=(168.0818, -22, 6) aabb_size=(57.05002, 48.1, 40) verts=24
-[GEO] Geo64 aabb_pos=(199.96, -8, 216.5) aabb_size=(16.04001, 8.08, 19) verts=24
-[GEO] Geo65 aabb_pos=(198.9298, -0.618658, 223.2654) aabb_size=(17.98071, 0.793658, 13.06645) verts=192
-[GEO] Geo66 aabb_pos=(331.8853, -18, -316) aabb_size=(43.56042, 32.9, 692) verts=48
-[GEO] Geo67 aabb_pos=(-394.97, -0.07, -393.61) aabb_size=(786.7401, 6.47, 785.38) verts=4032
-[GEO] Geo68 aabb_pos=(-393.84, 5.61, -393.9) aabb_size=(784.1901, 0.53, 784.25) verts=2016
-[GEO] Geo69 aabb_pos=(-160.06, -0.06, -172.12) aabb_size=(332.12, 4.06, 330.18) verts=384
-[GEO] Geo70 aabb_pos=(-158.85, 3.3, -172.3) aabb_size=(331, 1.05, 330.7) verts=768
-[GEO] Geo71 aabb_pos=(-158.55, 4.02, -172.13) aabb_size=(330.16, 0.23, 330.23) verts=384
-[GEO] Geo72 aabb_pos=(-158.55, 3.77, -172.13) aabb_size=(330.16, 0.23, 330.23) verts=384
-[GEO] Geo73 aabb_pos=(-158.55, 3.52, -172.13) aabb_size=(330.16, 0.23, 330.23) verts=384
-[GEO] Geo74 aabb_pos=(-158.2, 3.95, -171.71) aabb_size=(330.3, 0.3, 330.16) verts=384
-[GEO] Geo75 aabb_pos=(-158.2, 3.7, -171.71) aabb_size=(330.3, 0.3, 330.16) verts=384
-[GEO] Geo76 aabb_pos=(-158.2, 3.45, -171.71) aabb_size=(330.3, 0.3, 330.16) verts=384
-[GEO] Geo77 aabb_pos=(-238.46, -0.06, -157.62) aabb_size=(375.52, 2.86, 440.18) verts=144
-[GEO] Geo78 aabb_pos=(-237.575, 0.325, -161) aabb_size=(375.075, 2.65, 444.5) verts=72
+[GEO] Geo0 aabb_pos=(-451.1, -451.2, -902) aabb_size=(902.1, 451.25, 1353)
+[BAD] Geo0 worst_dev=902 [12]=(0, -451.2, -451) [13]=(0, -451, -451) [14]=(0, -451, -391) [15]=(0, -451.2, -391)
+[GEO] Geo1 aabb_pos=(-391.1, -49.2, -440) aabb_size=(782.1, 49.225, 831)
+[BAD] Geo1 worst_dev=440
+[GEO] Geo2 aabb_pos=(-385.16, -1.75, -386.9) aabb_size=(770.31, 1.77, 772.05)
+[BAD] Geo2 worst_dev=386.899993896484
+[GEO] Geo3 aabb_pos=(-379.1, -49.2, -428) aabb_size=(758.1, 49.2, 807)
+[BAD] Geo3 worst_dev=428
+[GEO] Geo4 aabb_pos=(-384.7425, -28, -404) aabb_size=(721.6707, 54.1, 750.3661)
+[BAD] Geo4 worst_dev=404
+[GEO] Geo5 aabb_pos=(-376.4, -15.35, -404.5) aabb_size=(752.65, 52.35, 780.75)
+[BAD] Geo5 worst_dev=404.5
+[GEO] Geo6 aabb_pos=(-369.06, 26.4, -367.06) aabb_size=(737.12, 15.4, 735.12)
+[BAD] Geo6 worst_dev=369.059997558594
+[GEO] Geo7 aabb_pos=(-377.72, -20.95, -402.72) aabb_size=(753.94, 41.3, 778.94)
+[BAD] Geo7 worst_dev=402.720001220703
+[GEO] Geo8 aabb_pos=(-376.8737, -22, -324) aabb_size=(711.2993, 36.9, 659.8757)
+[BAD] Geo8 worst_dev=376.873687744141
+[GEO] Geo9 aabb_pos=(-333.1609, -18, -316) aabb_size=(49.04999, 44.1, 32)
+[BAD] Geo9 worst_dev=333.160919189453
+[GEO] Geo10 aabb_pos=(-383.45, -30, -381.9837) aabb_size=(721.3389, 44.9, 757.9838)
+[BAD] Geo10 worst_dev=383.450012207031
+[GEO] Geo11 aabb_pos=(-370.3252, -0.518893, -370.9459) aabb_size=(741.2325, 2.718893, 741.2245)
+[BAD] Geo11 worst_dev=370.945922851562
+[GEO] Geo12 aabb_pos=(-371.6299, 1.4, -364.328) aabb_size=(741.6975, 3.8, 735.8696)
+[GEO] Geo13 aabb_pos=(-371.2972, 1.4, -364.8043) aabb_size=(742.3822, 3.8, 735.8696)
+[GEO] Geo14 aabb_pos=(-371.8472, 1.4, -372.2089) aabb_size=(744.2346, 3.8, 742.9099)
+[GEO] Geo15 aabb_pos=(-365.8872, -0.233527, -368.4173) aabb_size=(730.7153, 0.907009, 737.4887)
+[GEO] Geo16 aabb_pos=(-361.4357, 0, -365.098) aabb_size=(725.5125, 1.1, 732.1008)
+[GEO] Geo17 aabb_pos=(-344.9898, -3, -362.6725) aabb_size=(710.5894, 6, 683.5754)
+[GEO] Geo18 aabb_pos=(-343.9898, -2.3, -357.3925) aabb_size=(708.8894, 4.7, 678.3555)
+[GEO] Geo19 aabb_pos=(-389.05, -30, -400) aabb_size=(689.05, 56.1, 746.8547)
+[GEO] Geo20 aabb_pos=(-388.8798, -28, -273.894) aabb_size=(726.8038, 62.5, 281.4995)
+[GEO] Geo21 aabb_pos=(-383.45, -30, -400) aabb_size=(759.45, 44.9, 776)
+[GEO] Geo22 aabb_pos=(-383.45, -30, -400) aabb_size=(759.45, 44.9, 666)
+[GEO] Geo23 aabb_pos=(-358.05, -15, 8) aabb_size=(43.04999, 41.1, 33)
+[GEO] Geo24 aabb_pos=(-345.4, -7.5, -270.5) aabb_size=(464.65, 46.95, 533.8)
+[GEO] Geo25 aabb_pos=(-393.25, -22, -288) aabb_size=(728.3315, 56.5, 403.7342)
+[GEO] Geo26 aabb_pos=(-311.05, -30, -377.0824) aabb_size=(501.05, 56.1, 753.0824)
+[GEO] Geo27 aabb_pos=(-392.4321, -30, -269.0631) aabb_size=(768.4321, 64.5, 645.0631)
+[GEO] Geo28 aabb_pos=(-393.25, -28, -404) aabb_size=(769.25, 62.5, 748.5176)
+[GEO] Geo29 aabb_pos=(-268.25, -18, -273) aabb_size=(91.25, 28.5, 44)
+[GEO] Geo30 aabb_pos=(-265.11, -44, -276.56) aabb_size=(89.66998, 45.1, 101.12)
+[GEO] Geo31 aabb_pos=(-273.45, -22, -267.5275) aabb_size=(608.6558, 36.9, 643.5275)
+[GEO] Geo32 aabb_pos=(-275.9803, -22, 118) aabb_size=(541.9802, 56.5, 217.3469)
+[GEO] Geo33 aabb_pos=(-218.9482, -3, -239.3813) aabb_size=(224.8729, 6, 367.0622)
+[GEO] Geo34 aabb_pos=(-217.9482, -2.3, -234.1013) aabb_size=(223.1729, 4.7, 361.8422)
+[GEO] Geo35 aabb_pos=(-266.1, -46.2, 128) aabb_size=(92.10002, 46.2, 138)
+[GEO] Geo36 aabb_pos=(-262.5, -3, 205.7) aabb_size=(47.5, 6, 25.60001)
+[GEO] Geo37 aabb_pos=(-261.5, -2.3, 210.98) aabb_size=(45.8, 4.7, 20.37999)
+[GEO] Geo38 aabb_pos=(-252.5, -3, 205.7) aabb_size=(47.5, 6, 25.60001)
+[GEO] Geo39 aabb_pos=(-251.5, -2.3, 210.98) aabb_size=(45.8, 4.7, 20.37999)
+[GEO] Geo40 aabb_pos=(-242.5, -3, 205.7) aabb_size=(47.5, 6, 25.60001)
+[GEO] Geo41 aabb_pos=(-241.5, -2.3, 210.98) aabb_size=(45.8, 4.7, 20.37999)
+[GEO] Geo42 aabb_pos=(-232.5, -3, 205.7) aabb_size=(47.5, 6, 25.60001)
+[GEO] Geo43 aabb_pos=(-231.5, -2.3, 210.98) aabb_size=(45.8, 4.7, 20.37999)
+[GEO] Geo44 aabb_pos=(-169.05, -22, -288) aabb_size=(325.05, 48.1, 293.3846)
+[GEO] Geo45 aabb_pos=(-85.45, -22, -265.4082) aabb_size=(419.541, 36.9, 489.9135)
+[GEO] Geo46 aabb_pos=(-127.6, -15, 230) aabb_size=(32.60001, 20.2, 33)
+[GEO] Geo47 aabb_pos=(-46.1, -46.2, -92) aabb_size=(92.10001, 46.2, 138)
+[GEO] Geo48 aabb_pos=(-3.1, -2.5, -5) aabb_size=(5.60001, 4.9, 7.5)
+[GEO] Geo49 aabb_pos=(-6.7, 1.8, -1.4) aabb_size=(7.40001, 12.7, 2.1)
+[GEO] Geo50 aabb_pos=(-0.9, 14.1, -0.575) aabb_size=(1.35001, 1.349999, 0.7)
+[GEO] Geo51 aabb_pos=(-15.89261, -0.1, -16.06814) aabb_size=(32.60982, 0.475, 32.04582)
+[GEO] Geo52 aabb_pos=(-15.20855, -0.1, -16.67162) aabb_size=(31.86228, 0.475, 33.55593)
+[GEO] Geo53 aabb_pos=(-15.36616, -0.1, -15.18168) aabb_size=(31.7723, 0.475, 31.38138)
+[GEO] Geo54 aabb_pos=(-13.25774, -3, 99.28327) aabb_size=(40.71543, 6, 206.4252)
+[GEO] Geo55 aabb_pos=(-12.25774, -2.3, 104.5633) aabb_size=(39.01543, 4.7, 201.2053)
+[GEO] Geo56 aabb_pos=(-15.6, -13, 164.5) aabb_size=(28.60001, 18.2, 26)
+[GEO] Geo57 aabb_pos=(-13.45, -5.45, 163.9) aabb_size=(26.75001, 13.6, 26.90001)
+[GEO] Geo58 aabb_pos=(98.7, -9, -270) aabb_size=(160.8, 13.6, 124.5)
+[GEO] Geo59 aabb_pos=(209.3, -0.2, -106.4) aabb_size=(18.89999, 5.2, 8.599991)
+[GEO] Geo60 aabb_pos=(209.8, -5, -118) aabb_size=(20.20001, 10.4, 22)
+[GEO] Geo61 aabb_pos=(213.9, -0.4, -102.65) aabb_size=(11.49998, 1.8, 0.900002)
+[GEO] Geo62 aabb_pos=(214.575, 0.575, -102) aabb_size=(10.675, 0.6, 0.309998)
+[GEO] Geo63 aabb_pos=(168.0818, -22, 6) aabb_size=(57.05002, 48.1, 40)
+[GEO] Geo64 aabb_pos=(199.96, -8, 216.5) aabb_size=(16.04001, 8.08, 19)
+[GEO] Geo65 aabb_pos=(198.9298, -0.618658, 223.2654) aabb_size=(17.98071, 0.793658, 13.06645)
+[GEO] Geo66 aabb_pos=(331.8853, -18, -316) aabb_size=(43.56042, 32.9, 692)
+[GEO] Geo67 aabb_pos=(-394.97, -0.07, -393.61) aabb_size=(786.7401, 6.47, 785.38)
+[GEO] Geo68 aabb_pos=(-393.84, 5.61, -393.9) aabb_size=(784.1901, 0.53, 784.25)
+[GEO] Geo69 aabb_pos=(-160.06, -0.06, -172.12) aabb_size=(332.12, 4.06, 330.18)
+[GEO] Geo70 aabb_pos=(-158.85, 3.3, -172.3) aabb_size=(331, 1.05, 330.7)
+[GEO] Geo71 aabb_pos=(-158.55, 4.02, -172.13) aabb_size=(330.16, 0.23, 330.23)
+[GEO] Geo72 aabb_pos=(-158.55, 3.77, -172.13) aabb_size=(330.16, 0.23, 330.23)
+[GEO] Geo73 aabb_pos=(-158.55, 3.52, -172.13) aabb_size=(330.16, 0.23, 330.23)
+[GEO] Geo74 aabb_pos=(-158.2, 3.95, -171.71) aabb_size=(330.3, 0.3, 330.16)
+[GEO] Geo75 aabb_pos=(-158.2, 3.7, -171.71) aabb_size=(330.3, 0.3, 330.16)
+[GEO] Geo76 aabb_pos=(-158.2, 3.45, -171.71) aabb_size=(330.3, 0.3, 330.16)
+[GEO] Geo77 aabb_pos=(-238.46, -0.06, -157.62) aabb_size=(375.52, 2.86, 440.18)
+[GEO] Geo78 aabb_pos=(-237.575, 0.325, -161) aabb_size=(375.075, 2.65, 444.5)
 [AUTOTEST] скриншоты готовы
