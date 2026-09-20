@@ -1,7 +1,11 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
 [launcher] Проверка обновлений...
-[launcher] Скачивание кэша v37 (125 КБ)...
-[launcher] Скачивание кэша... 64 КБ / 125 КБ
-[launcher] Готово! Кэш v37 установлен.
-[LAUNCHER_AUTOTEST] OK version=37 size=128261 scene=found
+[launcher] Скачивание кэша v38 (126 КБ)...
+[launcher] Скачивание кэша... 64 КБ / 126 КБ
+[launcher] Готово! Кэш v38 установлен.
+SCRIPT ERROR: Parse Error: Closing ")" doesn't have an opening counterpart.
+          at: GDScript::reload (res://br/boot.gd:79)
+ERROR: Failed to load script "res://br/boot.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript.cpp:2936)
+[LAUNCHER_AUTOTEST] FAIL scene=<PackedScene#-9223372009004595787> boot=<GDScript#-9223372009189145164> bad_scripts=boot.gd 
