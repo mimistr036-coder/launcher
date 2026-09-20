@@ -58,8 +58,8 @@ func _apply(force: bool) -> void:
 		_sky_mat.ground_bottom_color = NIGHT_HOR.lerp(Color(0.2, 0.22, 0.2), day)
 		_sky_mat.ground_horizon_color = _sky_mat.sky_horizon_color
 	if env != null:
-		env.ambient_light_energy = 0.28 + day * 0.55
-		env.ambient_light_color = Color(0.6, 0.7, 0.85).lerp(Color(0.25, 0.3, 0.45), night)
+		env.ambient_light_energy = 0.45 + day * 0.6
+		env.ambient_light_color = Color(0.72, 0.78, 0.9).lerp(Color(0.3, 0.35, 0.5), night)
 		env.fog_density = 0.0015 + night * 0.012
 		env.fog_light_color = _sky_mat.sky_horizon_color if _sky_mat != null else Color(0.5, 0.5, 0.5)
 	TL.set_night(night)

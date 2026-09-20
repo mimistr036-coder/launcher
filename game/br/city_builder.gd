@@ -265,6 +265,15 @@ func _ground_and_roads() -> void:
 			var x0 := line_coord(i) + ROAD_W * 0.5
 			var x1 := line_coord(i + 1) - ROAD_W * 0.5
 			_box(asph, Vector3((x0 + x1) * 0.5, -0.1, z), Vector3(x1 - x0, 0.2, ROAD_W))
+	# бордюрные камни вдоль дорог (визуал)
+	var curb = TL.flat(Color(0.66, 0.65, 0.62))
+	for i in range(GRID + 1):
+		var cx := line_coord(i)
+		_box(curb, Vector3(cx - ROAD_W * 0.5 - 0.2, 0.03, 0), Vector3(0.4, 0.16, L), false, 4.0, curb)
+		_box(curb, Vector3(cx + ROAD_W * 0.5 + 0.2, 0.03, 0), Vector3(0.4, 0.16, L), false, 4.0, curb)
+		var cz := line_coord(i)
+		_box(curb, Vector3(0, 0.03, cz - ROAD_W * 0.5 - 0.2), Vector3(L, 0.16, 0.4), false, 4.0, curb)
+		_box(curb, Vector3(0, 0.03, cz + ROAD_W * 0.5 + 0.2), Vector3(L, 0.16, 0.4), false, 4.0, curb)
 	# разметка (визуал, без коллизии)
 	var white = TL.flat(Color(0.85, 0.85, 0.82))
 	for i in [0, 3, 7]:

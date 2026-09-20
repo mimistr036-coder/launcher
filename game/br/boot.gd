@@ -90,7 +90,11 @@ func _autotest(mode: String) -> void:
 				if not (geo is MeshInstance3D) or geo.mesh == null:
 					continue
 				var aab: AABB = geo.mesh.get_aabb()
-				print("[GEO] ", geo.name, " aabb_pos=", aab.position, " aabb_size=", aab.size)
+				var mat0: Material = geo.mesh.surface_get_material(0)
+				var has_tex: bool = mat0 != null and (mat0 as StandardMaterial3D).albedo_texture != null
+				var col: Color = (mat0 as StandardMaterial3D).albedo_color if mat0 != null else Color(-1, -1, -1)
+				print("[GEO] ", geo.name, " aabb_pos=", aab.position, " aabb_size=", aab.size,
+					" mat_tex=", has_tex, " mat_col=", col)
 				# вершины-экстремумы: где мусор?
 				for sidx in range(geo.mesh.get_surface_count()):
 					var arrs: Array = geo.mesh.surface_get_arrays(sidx)

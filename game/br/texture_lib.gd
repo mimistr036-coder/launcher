@@ -19,8 +19,14 @@ static func _night_mats():
 	return s.get_meta("night")
 
 const WALL_PALETTE := [
-	Color("c9c1b2"), Color("b9b3a7"), Color("cfc8ba"),
-	Color("a9a59d"), Color("b3a898"), Color("c2b8a6"),
+	Color("ddd3b4"),  # кремовый
+	Color("d9c49a"),  # бежевый
+	Color("cfa96e"),  # охристый
+	Color("b9c8b1"),  # мятно-зелёный
+	Color("adb9c4"),  # серо-голубой
+	Color("c98f6e"),  # кирпичный
+	Color("d8d0c0"),  # светлый камень
+	Color("cbb9d0"),  # сиреневатый
 ]
 
 # ---------------- Базовое ----------------
@@ -56,11 +62,11 @@ static func _ground_mat(kind: String) -> StandardMaterial3D:
 	var cfg := {}
 	match kind:
 		"asphalt":
-			cfg = {"c": Color(0.23, 0.235, 0.25), "f": 0.09, "s": 11, "v": 0.5}
+			cfg = {"c": Color(0.31, 0.32, 0.345), "f": 0.09, "s": 11, "v": 0.30}
 		"walk":
-			cfg = {"c": Color(0.55, 0.545, 0.52), "f": 0.2, "s": 12, "v": 0.22}
+			cfg = {"c": Color(0.63, 0.62, 0.59), "f": 0.2, "s": 12, "v": 0.18}
 		"grass":
-			cfg = {"c": Color(0.25, 0.38, 0.17), "f": 0.06, "s": 13, "v": 0.4}
+			cfg = {"c": Color(0.31, 0.45, 0.22), "f": 0.06, "s": 13, "v": 0.32}
 		"plaza":
 			cfg = {"c": Color(0.56, 0.5, 0.42), "f": 0.15, "s": 14, "v": 0.25}
 		"dirt":
@@ -102,6 +108,11 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 	var seam := wall.darkened(0.18)
 	var rng := RandomNumberGenerator.new()
 	rng.seed = cols * 1000 + floors * 31 + variant
+	# цоколь первого этажа — тёмная каменная полоса
+	var plinth := Color(0.32, 0.31, 0.30)
+	for yy in range(ch - 8, ch):
+		for x in range(w):
+			img.set_pixel(x, yy, plinth.darkened(rng.randf() * 0.08))
 	for row in range(floors):
 		var y0 := row * ch
 		# панельные швы
@@ -118,7 +129,133 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 			var wy := y0 + 6
 			var ww := cw - 14
 			var wh := ch - 11
-			var glass := Color(0.10, 0.13, 0.17).lightened(rng.randf() * 0.10)
+			var glass := Color(0.17, 0.22, 0.29).lightened(rng.randf() * 0.16)
+			glass = glass.lerp(Color(0.45, 0.56, 0.66), rng.randf() * 0.35)
+			if row == 0 and variant == 2:
+				glass = Color(0.85, 0.87, 0.9).darkened(rng.randf() * 0.3)
+			# ночью светится часть окон этого окна
+			var lit := rng.randf() < 0.28
+			if row == 0 and variant == 2:
+				lit = true
+			var wc := Color(1.0, 0.72, 0.35).lightened(rng.randf() * 0.3)
+			if row == 0 and variant == 2:
+				wc = Color(0.95, 0.97, 1.0)
+			for yy in range(wh):
+				for xx in range(ww):
+					var px := clampi(wx + xx, 0, w - 1)
+					var py := clampi(wy + yy, 0, h - 1)
+					var c := glass
+					if yy < 2:
+						c = glass.lightened(0.35)
+					img.set_pixel(px, py, c)
+					if lit:
+						emis.set_pixel(px, py, wc)
+				# верх окна подсвечен небом
+				for xx in range(ww):
+					emis.set_pixel(clampi(wx + xx, 0, w - 1), clampi(wy, 0, h - 1), Color(0.18, 0.2, 0.25))
+			# белая рамка окна
+			for xx in range(ww + 2):
+				img.set_pixel(clampi(wx - 1 + xx, 0, w - 1), clampi(wy - 1, 0, h - 1), Color(0.92, 0.92, 0.9))
+				img.set_pixel(clampi(wx - 1 + xx, 0, w - 1), clampi(wy + wh, 0, h - 1), Color(0.92, 0.92, 0.9))
+			for yy2 in range(wh):
+				img.set_pixel(clampi(wx - 1, 0, w - 1), clampi(wy + yy2, 0, h - 1), Color(0.92, 0.92, 0.9))
+				img.set_pixel(clampi(wx + ww, 0, w - 1), clampi(wy + yy2, 0, h - 1), Color(0.92, 0.92, 0.9))
+	var m := StandardMaterial3D.new()
+	m.albedo_color = color
+	m.metallic = metallic
+	m.roughness = rough
+	if unshaded:
+		m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	_cache()[key] = m
+	return m
+
+
+static func noise_img(w: int, h: int, freq: float, seedv: int, base: Color, vary: float) -> Image:
+	var img := Image.create(w, h, false, Image.FORMAT_RGB8)
+	var n := FastNoiseLite.new()
+	n.seed = seedv
+	n.frequency = freq
+	for y in range(h):
+		for x in range(w):
+			var v := n.get_noise_2d(float(x), float(y))
+			var f := clampf(0.5 + v * vary, 0.0, 1.0)
+			img.set_pixel(x, y, Color(base.r * f, base.g * f, base.b * f))
+	return img
+
+
+static func _ground_mat(kind: String) -> StandardMaterial3D:
+	var cfg := {}
+	match kind:
+		"asphalt":
+			cfg = {"c": Color(0.31, 0.32, 0.345), "f": 0.09, "s": 11, "v": 0.30}
+		"walk":
+			cfg = {"c": Color(0.63, 0.62, 0.59), "f": 0.2, "s": 12, "v": 0.18}
+		"grass":
+			cfg = {"c": Color(0.31, 0.45, 0.22), "f": 0.06, "s": 13, "v": 0.32}
+		"plaza":
+			cfg = {"c": Color(0.56, 0.5, 0.42), "f": 0.15, "s": 14, "v": 0.25}
+		"dirt":
+			cfg = {"c": Color(0.42, 0.36, 0.26), "f": 0.1, "s": 15, "v": 0.35}
+		_:
+			cfg = {"c": Color(0.5, 0.5, 0.5), "f": 0.1, "s": 1, "v": 0.3}
+	var m := StandardMaterial3D.new()
+	m.albedo_texture = ImageTexture.create_from_image(
+		noise_img(128, 128, cfg["f"], cfg["s"], cfg["c"], cfg["v"]))
+	m.roughness = 1.0
+	return m
+
+
+static func ground(kind: String) -> StandardMaterial3D:
+	var key := "ground_" + kind
+	if _cache().has(key):
+		return _cache()[key]
+	var m := _ground_mat(kind)
+	_cache()[key] = m
+	return m
+
+# ---------------- Фасады панелек ----------------
+## Текстура фасада: сетка окон на всю стену (UV каждой грани 0..1).
+## Ширины зданий квантованы, поэтому текстур немного и они шарятся.
+
+static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
+	var key := "facade_%d_%d_%d" % [cols, floors, variant]
+	if _cache().has(key):
+		return _cache()[key]
+	var cw := 32
+	var ch := 28
+	var w := cols * cw
+	var h := floors * ch
+	var wall: Color = WALL_PALETTE[abs(variant) % WALL_PALETTE.size()]
+	var img := Image.create(w, h, false, Image.FORMAT_RGB8)
+	var emis := Image.create(w, h, false, Image.FORMAT_RGB8)
+	img.fill(wall)
+	emis.fill(Color(0, 0, 0))
+	var seam := wall.darkened(0.18)
+	var rng := RandomNumberGenerator.new()
+	rng.seed = cols * 1000 + floors * 31 + variant
+	# цоколь первого этажа — тёмная каменная полоса
+	var plinth := Color(0.32, 0.31, 0.30)
+	for yy in range(ch - 8, ch):
+		for x in range(w):
+			img.set_pixel(x, yy, plinth.darkened(rng.randf() * 0.08))
+	for row in range(floors):
+		var y0 := row * ch
+		# панельные швы
+		for x in range(w):
+			img.set_pixel(x, clampi(y0 + ch - 2, 0, h - 1), seam)
+			if row > 0:
+				img.set_pixel(x, y0, seam)
+		for col in range(cols):
+			var x0 := col * cw
+			for yy in range(ch):
+				img.set_pixel(clampi(x0 + cw - 1, 0, w - 1), y0 + yy, seam)
+			# окно
+			var wx := x0 + 7
+			var wy := y0 + 6
+			var ww := cw - 14
+			var wh := ch - 11
+			var glass := Color(0.17, 0.22, 0.29).lightened(rng.randf() * 0.16)
+			glass = glass.lerp(Color(0.45, 0.56, 0.66), rng.randf() * 0.35)
 			if row == 0 and variant == 2:
 				glass = Color(0.85, 0.87, 0.9).darkened(rng.randf() * 0.3)
 			for yy in range(wh):
@@ -129,6 +266,13 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 					if yy < 2:
 						c = glass.lightened(0.35)
 					img.set_pixel(px, py, c)
+				# белая рамка окна
+				for xx in range(ww + 2):
+					img.set_pixel(clampi(wx - 1 + xx, 0, w - 1), clampi(wy - 1, 0, h - 1), Color(0.92, 0.92, 0.9))
+					img.set_pixel(clampi(wx - 1 + xx, 0, w - 1), clampi(wy + wh, 0, h - 1), Color(0.92, 0.92, 0.9))
+				for yy2 in range(wh):
+					img.set_pixel(clampi(wx - 1, 0, w - 1), clampi(wy + yy2, 0, h - 1), Color(0.92, 0.92, 0.9))
+					img.set_pixel(clampi(wx + ww, 0, w - 1), clampi(wy + yy2, 0, h - 1), Color(0.92, 0.92, 0.9))
 					# ночью часть окон светится
 					var lit := rng.randf() < 0.28
 					if row == 0 and variant == 2:

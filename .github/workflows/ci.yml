@@ -103,7 +103,7 @@ jobs:
             [ -f /tmp/$f.log ] && cp /tmp/$f.log ci-logs/$f.log
             [ -f /tmp/$f.code ] && cp /tmp/$f.code ci-logs/$f.code
           done
-          for p in city-4.3 city-4.0; do
+          for p in city-4.3 city-4.0 city-top; do
             [ -f /tmp/$p.png ] && cp /tmp/$p.png ci-logs/$p.png
           done
           # вердикт Gate для разбора в репозитории (нужен, т.к. логи джоб из песочницы не скачать)
