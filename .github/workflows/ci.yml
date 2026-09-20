@@ -84,10 +84,7 @@ jobs:
         if: always()
         run: |
           fail=0
-          for t in t1 t2 t3; do
-            if [ "${{ steps[t].outcome }}" != "success" ]; then
-              echo "STEP $t FAILED"
-              fail=1
-            fi
-          done
+          if [ "${{ steps.t1.outcome }}" != "success" ]; then echo "STEP t1 (offline) FAILED"; fail=1; fi
+          if [ "${{ steps.t2.outcome }}" != "success" ]; then echo "STEP t2 (multiplayer) FAILED"; fail=1; fi
+          if [ "${{ steps.t3.outcome }}" != "success" ]; then echo "STEP t3 (launcher) FAILED"; fail=1; fi
           exit $fail
