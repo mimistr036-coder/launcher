@@ -1,0 +1,4 @@
+offline = '1'
+client = '1'
+launcher = '0'
+compat40 = '0'
