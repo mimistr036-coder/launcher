@@ -155,7 +155,8 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "ci: логи совместимости с Godot 4.0 [skip ci]"
             for i in 1 2 3 4 5; do
-              git pull --rebase origin ${{ github.ref_name }} > /dev/null 2>&1
+              git fetch origin "${{ github.ref_name }}" > /dev/null 2>&1
+              git rebase FETCH_HEAD > /dev/null 2>&1
               if git push origin HEAD:${{ github.ref_name }}; then break; fi
               sleep 5
             done
