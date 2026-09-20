@@ -184,7 +184,7 @@ func _build_camera() -> void:
 
 func _process(delta: float) -> void:
 	if hud != null:
-		var d := hud.take_cam_delta()
+		var d: Vector2 = hud.take_cam_delta()
 		cam_yaw -= d.x * 0.005
 		cam_pitch = clampf(cam_pitch - d.y * 0.004, -1.15, 0.45)
 		if hud.consume_event("job"):
