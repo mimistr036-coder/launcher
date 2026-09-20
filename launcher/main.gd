@@ -376,9 +376,11 @@ func _maybe_autotest_ready() -> void:
 		return
 	_autotest_done = true
 	var ok := ProjectSettings.load_resource_pack(PCK_PATH, true)
-	var scene: PackedScene = null
-	if ok:
-		scene = load("res://br/boot.tscn")
+	print("[CACHE] load_pack=", ok)
+	print("[CACHE] exists boot.tscn=", ResourceLoader.exists("res://br/boot.tscn"), " boot.gd=", ResourceLoader.exists("res://br/boot.gd"), " util.gd=", ResourceLoader.exists("res://br/util.gd"))
+	await get_tree().process_frame
+	var scene: PackedScene = load("res://br/boot.tscn")
+	print("[CACHE] scene=", scene)
 	if ok and scene != null:
 		print("[LAUNCHER_AUTOTEST] OK version=%d size=%d scene=found" % [local_version, int(remote.get("size", 0))])
 		get_tree().quit(0)
