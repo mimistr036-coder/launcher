@@ -117,7 +117,7 @@ func _box(mat: Material, center: Vector3, size: Vector3, face_uv: bool = false, 
 	var st := _st_for(mat)
 	var half := size * 0.5
 	var normals := [Vector3.RIGHT, Vector3.LEFT, Vector3.UP, Vector3.DOWN, Vector3.BACK, Vector3.FORWARD]
-	for n: Vector3 in normals:
+	for n in normals:
 		var a := n.max_axis_index()
 		var ui := (a + 1) % 3
 		var vi := (a + 2) % 3
@@ -266,7 +266,7 @@ func _ground_and_roads() -> void:
 		for j3 in range(2, 6):
 			var xi := line_coord(i3)
 			var zj := line_coord(j3)
-			for side: float in [-1.0, 1.0]:
+			for side in [-1.0, 1.0]:
 				var zc := zj + side * (ROAD_W * 0.5 + 2.2)
 				for k in range(-2, 3):
 					_box(white, Vector3(xi + k * 1.4, 0.01, zc), Vector3(0.7, 0.02, 3.0))
