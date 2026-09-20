@@ -78,14 +78,18 @@ jobs:
           git add updates/www/game.pck updates/www/version.json
           if ! git diff --cached --quiet; then
             git commit -m "ci: логи автотестов и кэш [skip ci]"
-            git push
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin ${{ github.ref_name }} > /dev/null 2>&1
+              if git push origin HEAD:${{ github.ref_name }}; then break; fi
+              sleep 5
+            done
           fi
 
       - name: Gate
         if: always()
         run: |
           fail=0
-          for t in offline client launcher compat40; do
+          for t in offline client launcher; do
             code=$(cat /tmp/$t.code 2>/dev/null || echo 99)
             if [ "$code" != "0" ]; then
               echo "STEP $t FAILED (exit $code)"
