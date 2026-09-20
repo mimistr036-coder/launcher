@@ -1,6 +1,7 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
-SCRIPT ERROR: Parse Error: Identifier "ok" not declared in the current scope.
-          at: GDScript::reload (res://main.gd:394)
-ERROR: Failed to load script "res://main.gd" with error "Parse error".
-   at: load (modules/gdscript/gdscript.cpp:2936)
+[launcher] Проверка обновлений...
+[launcher] Скачивание кэша v13 (108 КБ)...
+[launcher] Скачивание кэша... 64 КБ / 108 КБ
+[launcher] Готово! Кэш v13 установлен.
+[LAUNCHER_AUTOTEST] OK version=13 size=110837 scene=found
