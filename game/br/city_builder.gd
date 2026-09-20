@@ -228,6 +228,8 @@ func _ground_and_roads() -> void:
 	var asph = TL.ground("asphalt")
 	var L := 2.0 * HALF + ROAD_W
 	var gsize := L + 120.0
+	# сплошной пол-коллизия под всем городом (верх ровно на y=0, как верх дорог)
+	_col_box(Vector3(0, -0.5, 0), Vector3(gsize, 1.0, gsize))
 	# трава вокруг города
 	_box(grass, Vector3(0, -0.1, -HALF - ROAD_W * 0.5 - 30.0), Vector3(gsize, 0.2, 60.0))
 	_box(grass, Vector3(0, -0.1, HALF + ROAD_W * 0.5 + 30.0), Vector3(gsize, 0.2, 60.0))

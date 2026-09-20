@@ -108,6 +108,9 @@ func _autotest(mode: String) -> void:
 				elif world.city.job_points.size() < 5:
 					ok = false
 					why = "job_points=" + str(world.city.job_points.size())
+				elif world.player.global_position.y < -3.0:
+					ok = false
+					why = "player fell under map (y=" + str(world.player.global_position.y) + ")"
 			_autotest_done = true
 			if ok:
 				print("[AUTOTEST] OK cars=", world.cars.size(), " npcs=", world.npcs.size(),
