@@ -10,8 +10,6 @@ signal chat_msg(nick: String, msg: String)
 signal sysmsg(text: String)
 
 var connected := false
-var _dbg_snap := false
-var _dbg_state := false
 var my_nick := "Игрок"
 var world: Node = null
 
@@ -39,7 +37,6 @@ func disconnect_now() -> void:
 
 func _on_connected() -> void:
 	connected = true
-	print("[NET] подключено, отправляю регистр: ", my_nick)
 	rpc_register.rpc(my_nick)
 
 
@@ -56,9 +53,6 @@ func _on_disc() -> void:
 
 func send_state(px: float, py: float, pz: float, ry: float, anim: int,
 		car_id: int, cx: float, cy: float, cz: float, cry: float, ct: int) -> void:
-	if connected and not _dbg_state:
-		_dbg_state = true
-		print("[NET] первое состояние отправлено")
 	if connected:
 		rpc_state.rpc(px, py, pz, ry, anim, car_id, cx, cy, cz, cry, ct)
 
@@ -97,10 +91,6 @@ func rpc_sysmsg(text: String) -> void:
 
 @rpc("authority", "unreliable")
 func rpc_snapshot(data: Dictionary) -> void:
-	if not _dbg_snap:
-		_dbg_snap = true
-		print("[NET] первый снапшот: ", data.size(), " игроков, world=", world,
-				" has_apply=", world != null and world.has_method("apply_snapshot"))
 	if not connected:
 		connected = true
 		net_ready.emit()

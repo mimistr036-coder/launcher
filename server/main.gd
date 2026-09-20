@@ -14,7 +14,6 @@ var peers := {}   # id -> {"nick": String, "state": Dictionary}
 
 var _snap_t := 0.0
 var _log_t := 0.0
-var _snap_dbg := 0
 
 
 func _ready() -> void:
@@ -128,9 +127,6 @@ func _process(delta: float) -> void:
 				if not st.is_empty():
 					snap[id] = st
 			if not snap.is_empty():
-				if _snap_dbg < 3:
-					_snap_dbg += 1
-					print("[SRV] снапшот: ", snap.size(), " игроков")
 				net.rpc_snapshot.rpc(snap)
 	_log_t += delta
 	if _log_t >= 60.0:

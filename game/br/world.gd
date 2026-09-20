@@ -252,8 +252,6 @@ func _send_state() -> void:
 
 func apply_snapshot(data: Dictionary) -> void:
 	var my_id := multiplayer.get_unique_id()
-	if not net_ok:
-		print("[SNAP] my_id=", my_id, " keys=", data.keys())
 	for key in data.keys():
 		var id := int(key)
 		if id == my_id:
