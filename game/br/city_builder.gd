@@ -130,7 +130,9 @@ func _box(mat: Material, center: Vector3, size: Vector3, face_uv: bool = false, 
 	var half := size * 0.5
 	var normals := [Vector3.RIGHT, Vector3.LEFT, Vector3.UP, Vector3.DOWN, Vector3.BACK, Vector3.FORWARD]
 	for n in normals:
-		var a: int = n.max_axis_index()
+		# ВАЖНО: abs()! у DOWN=(0,-1,0) max_axis_index без abs даёт ось X (значение 0 > -1),
+		# и грань рисуется гигантским растянутым треугольником
+		var a: int = n.abs().max_axis_index()
 		var ui := (a + 1) % 3
 		var vi := (a + 2) % 3
 		var u: Vector3 = AXES[ui]
