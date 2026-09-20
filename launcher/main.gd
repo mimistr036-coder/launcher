@@ -391,5 +391,5 @@ func _maybe_autotest_ready() -> void:
 		print("[LAUNCHER_AUTOTEST] OK version=%d size=%d scene=found" % [local_version, int(remote.get("size", 0))])
 		get_tree().quit(0)
 	else:
-		print("[LAUNCHER_AUTOTEST] FAIL load=%s scene=%s" % [str(ok), str(scene)])
+		print("[LAUNCHER_AUTOTEST] FAIL scene=", scene)
 		get_tree().quit(1)
