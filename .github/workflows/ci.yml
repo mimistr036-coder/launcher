@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Godot 4.3
+        run: |
+          curl -sL -o /tmp/godot.zip https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
+          unzip -o /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.3-stable_linux.x86_64
+          /tmp/Godot_v4.3-stable_linux.x86_64 --version
+
+      - name: Build cache (PCK)
+        run: |
+          python3 tools/build_cache.py
+          python3 -m json.tool updates/www/version.json
+
+      - name: Game autotest (offline city build)
+        run: |
+          set +e
+          GAME_AUTOTEST=offline timeout 120 /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path game > /tmp/offline.log 2>&1
+          code=$?
+          cat /tmp/offline.log
+          echo "EXIT CODE: $code"
+          exit $code
+
+      - name: Multiplayer autotest (server + client)
+        run: |
+          set +e
+          /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path server -- --port=17777 > /tmp/server.log 2>&1 &
+          SRV=$!
+          sleep 4
+          GAME_AUTOTEST=mp:127.0.0.1:17777 timeout 120 /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path game > /tmp/client.log 2>&1
+          code=$?
+          kill $SRV 2>/dev/null
+          echo "== SERVER LOG =="; cat /tmp/server.log
+          echo "== CLIENT LOG =="; cat /tmp/client.log
+          echo "EXIT CODE: $code"
+          exit $code
+
+      - name: Launcher E2E autotest (download + load cache)
+        run: |
+          set +e
+          python3 tools/serve_updates.py 8090 > /tmp/http.log 2>&1 &
+          HTTPD=$!
+          sleep 2
+          LAUNCHER_AUTOTEST=1 LAUNCHER_URL=http://127.0.0.1:8090 timeout 150 /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path launcher > /tmp/launcher.log 2>&1
+          code=$?
+          kill $HTTPD 2>/dev/null
+          echo "== HTTP LOG =="; cat /tmp/http.log
+          echo "== LAUNCHER LOG =="; cat /tmp/launcher.log
+          echo "EXIT CODE: $code"
+          exit $code
+
+      - name: Commit built cache
+        run: |
+          git config user.name "arena-bot"
+          git config user.email "actions@arena.local"
+          git add updates/www/game.pck updates/www/version.json
+          if git diff --cached --quiet; then
+            echo "Кэш не изменился — коммит не нужен"
+          else
+            git commit -m "build: обновлён игровой кэш"
+            git push
+          fi

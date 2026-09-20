@@ -1,0 +1,15 @@
+[Unit]
+Description=Provintsiya RP game server (Godot headless)
+After=network.target
+
+[Service]
+Type=simple
+User=rrp
+WorkingDirectory=/opt/rrp
+Environment=GODOT_BIN=/opt/rrp/Godot_v4.3-stable_linux.x86_64
+ExecStart=/opt/rrp/run_server.sh --port=7777
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
