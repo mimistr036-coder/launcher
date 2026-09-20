@@ -64,12 +64,37 @@ func _autotest(mode: String) -> void:
 	print("[AUTOTEST] start mode=", mode)
 	if mode == "shot":
 		_start_world(false, "", 0, "ТестБот")
-		var ts := get_tree().create_timer(4.0)
+		var ts := get_tree().create_timer(3.5)
 		ts.timeout.connect(func() -> void:
-			var img := get_viewport().get_texture().get_image()
-			img.save_png("/tmp/city.png")
-			print("[AUTOTEST] скриншот: /tmp/city.png ", img.get_width(), "x", img.get_height())
-			get_tree().quit(0))
+			# вид сверху
+			var cam2 := Camera3D.new()
+			world.add_child(cam2)
+			cam2.global_position = world.city.spawn_point + Vector3(0, 90, 0)
+			cam2.rotation.x = -PI / 2
+			cam2.current = true
+			var t2 := get_tree().create_timer(0.6)
+			t2.timeout.connect(func() -> void:
+				get_viewport().get_texture().get_image().save_png("/tmp/city-top.png")
+				cam2.current = false
+				cam2.queue_free()
+				var t3 := get_tree().create_timer(0.4)
+				t3.timeout.connect(func() -> void:
+					get_viewport().get_texture().get_image().save_png("/tmp/city.png")
+					print("[AUTOTEST] скриншоты готовы")
+					get_tree().quit(0)))
+			return)
+		var tgeo := get_tree().create_timer(2.8)
+		tgeo.timeout.connect(func() -> void:
+			for geo in world.city.get_children():
+				if not (geo is MeshInstance3D) or geo.mesh == null:
+					continue
+				var aab: AABB = geo.mesh.get_aabb()
+				var vcount := 0
+				for sidx in range(geo.mesh.get_surface_count()):
+					var vv: Variant = geo.mesh.surface_get_arrays(sidx)[Mesh.ARRAY_VERTEX]
+					if vv != null:
+						vcount += (vv as PackedVector3Array).size()
+				print("[GEO] ", geo.name, " aabb_pos=", aab.position, " aabb_size=", aab.size, " verts=", vcount))
 		return
 	var online := mode.begins_with("mp:")
 	var ip := "127.0.0.1"
