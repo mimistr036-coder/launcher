@@ -1,5 +1,5 @@
 Сервер обновлений: http://0.0.0.0:8090/  (папка /home/runner/work/launcher/launcher/updates/www)
-  в локальной сети: http://10.1.0.193:8090/  <- впиши этот адрес в лаунчер
+  в локальной сети: http://10.1.0.201:8090/  <- впиши этот адрес в лаунчер
 HTTP "GET /version.json HTTP/1.1" 200 -
-HTTP "GET /game.pck?v=38 HTTP/1.1" 200 -
 HTTP "GET /news.json HTTP/1.1" 200 -
+HTTP "GET /game.pck?v=39 HTTP/1.1" 200 -
