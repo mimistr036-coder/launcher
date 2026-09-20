@@ -1,12 +1,17 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
 [launcher] Проверка обновлений...
-[launcher] Скачивание кэша v31 (131 КБ)...
-[launcher] Скачивание кэша... 64 КБ / 131 КБ
-[launcher] Скачивание кэша... 128 КБ / 131 КБ
-[launcher] Готово! Кэш v31 установлен.
-SCRIPT ERROR: Parse Error: Function "noise_img" has the same name as a previously declared function.
-          at: GDScript::reload (res://br/texture_lib.gd:173)
+[launcher] Скачивание кэша v32 (127 КБ)...
+[launcher] Скачивание кэша... 64 КБ / 127 КБ
+[launcher] Готово! Кэш v32 установлен.
+SCRIPT ERROR: Parse Error: Identifier "color" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:164)
+SCRIPT ERROR: Parse Error: Identifier "metallic" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:165)
+SCRIPT ERROR: Parse Error: Identifier "rough" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:166)
+SCRIPT ERROR: Parse Error: Identifier "unshaded" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:167)
 ERROR: Failed to load script "res://br/texture_lib.gd" with error "Parse error".
    at: load (modules/gdscript/gdscript.cpp:2936)
 [LAUNCHER_AUTOTEST] FAIL scene=<PackedScene#-9223372009004595787> boot=<GDScript#-9223372009189145164> bad_scripts=texture_lib.gd 

@@ -1,5 +1,13 @@
 Godot Engine v4.0.stable.official.92bee43ad - https://godotengine.org
  
 [launcher] Проверка обновлений...
-[launcher] Кэш актуален (v31). Готов к запуску!
+[launcher] Кэш актуален (v32). Готов к запуску!
+SCRIPT ERROR: Parse Error: Identifier "color" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:164)
+SCRIPT ERROR: Parse Error: Identifier "metallic" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:165)
+SCRIPT ERROR: Parse Error: Identifier "rough" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:166)
+SCRIPT ERROR: Parse Error: Identifier "unshaded" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:167)
 [LAUNCHER_AUTOTEST] FAIL scene=<PackedScene#-9223372008568388328> boot=<GDScript#-9223372008719383273> bad_scripts=texture_lib.gd 

@@ -1,8 +1,14 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
 [AUTOTEST] start mode=offline
-SCRIPT ERROR: Parse Error: Function "noise_img" has the same name as a previously declared function.
-          at: GDScript::reload (res://br/texture_lib.gd:173)
+SCRIPT ERROR: Parse Error: Identifier "color" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:164)
+SCRIPT ERROR: Parse Error: Identifier "metallic" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:165)
+SCRIPT ERROR: Parse Error: Identifier "rough" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:166)
+SCRIPT ERROR: Parse Error: Identifier "unshaded" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:167)
 ERROR: Failed to load script "res://br/texture_lib.gd" with error "Parse error".
    at: load (modules/gdscript/gdscript.cpp:2936)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
@@ -545,8 +551,6 @@ SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
           at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _physics_process (res://br/player.gd:91)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
@@ -803,6 +807,20 @@ SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of t
           at: _draw_minimap (res://br/hud.gd:495)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
           at: _physics_process (res://br/player.gd:91)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _physics_process (res://br/player.gd:91)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
@@ -874,114 +892,18 @@ SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
           at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
 SCRIPT ERROR: Invalid call. Nonexistent function 'car_paint' in base 'GDScript'.
           at: _ready (res://br/vehicle.gd:36)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
           at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
           at: _draw_minimap (res://br/hud.gd:495)
 SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
           at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
@@ -1214,6 +1136,102 @@ SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of t
           at: _draw_minimap (res://br/hud.gd:495)
 SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
           at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
@@ -1233,242 +1251,6 @@ SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
           at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
 SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
           at: _physics_process (res://br/vehicle.gd:241)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
@@ -1707,6 +1489,238 @@ SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
           at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
@@ -1736,98 +1750,6 @@ SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
           at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
-          at: _physics_process (res://br/vehicle.gd:241)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
-SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
-          at: _apply (res://br/day_night.gd:65)
-SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
-          at: _draw_minimap (res://br/hud.gd:495)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
@@ -2046,6 +1968,98 @@ SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
           at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid assignment of property or key 'emission_energy_multiplier' with value of type 'float' on a base object of type 'Nil'.
+          at: _physics_process (res://br/vehicle.gd:241)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.

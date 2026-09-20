@@ -17,6 +17,14 @@ WARNING: All audio drivers failed, falling back to the dummy driver.
      at: initialize (servers/audio_server.cpp:218)
  
 [AUTOTEST] start mode=shot
+SCRIPT ERROR: Parse Error: Identifier "color" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:164)
+SCRIPT ERROR: Parse Error: Identifier "metallic" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:165)
+SCRIPT ERROR: Parse Error: Identifier "rough" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:166)
+SCRIPT ERROR: Parse Error: Identifier "unshaded" not declared in the current scope.
+          at: GDScript::reload (res://br/texture_lib.gd:167)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
           at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid call. Nonexistent function 'ground' in base 'GDScript'.
@@ -47,6 +55,30 @@ SCRIPT ERROR: Invalid call. Nonexistent function 'car_paint' in base 'GDScript'.
           at: _ready (res://br/npc_car.gd:36)
 WARNING: Glow is not supported when using the GL Compatibility backend yet. Support will be added in a future release.
      at: environment_set_glow (servers/rendering/storage/environment_storage.cpp:387)
+SCRIPT ERROR: Invalid get index 'rotation' (on base: 'Nil').
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid get index 'rotation' (on base: 'Nil').
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid get index 'rotation' (on base: 'Nil').
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid get index 'rotation' (on base: 'Nil').
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid get index 'rotation' (on base: 'Nil').
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
+SCRIPT ERROR: Invalid get index 'rotation' (on base: 'Nil').
+          at: _draw_minimap (res://br/hud.gd:495)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:65)
 SCRIPT ERROR: Invalid get index 'rotation' (on base: 'Nil').
           at: _draw_minimap (res://br/hud.gd:495)
 SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
