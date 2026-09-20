@@ -89,10 +89,8 @@ jobs:
         if: always()
         run: |
           fail=0
-          : > /tmp/gate.log
           for t in offline client launcher; do
             code=$(cat /tmp/$t.code 2>/dev/null || echo 99)
-            echo "$t = '$code'" >> /tmp/gate.log
             if [ "$code" != "0" ]; then
               echo "STEP $t FAILED (exit $code)"
               fail=1
@@ -100,17 +98,7 @@ jobs:
               echo "STEP $t OK"
             fi
           done
-          echo "gate fail=$fail" >> /tmp/gate.log
-          mkdir -p ci-logs && cp /tmp/gate.log ci-logs/gate.log
-          git config user.name "arena-bot"
-          git config user.email "actions@arena.local"
-          git add ci-logs/gate.log
-          for i in 1 2 3; do
-            git pull --rebase origin ${{ github.ref_name }} > /dev/null 2>&1
-            if git push origin HEAD:${{ github.ref_name }}; then break; fi
-            sleep 4
-          done
-          exit $fail
+          exit "$fail"
 
   compat40:
     # Проверка совместимости кэша с Godot 4.0 (как у пользователя на ПК).
