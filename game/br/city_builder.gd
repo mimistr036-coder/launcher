@@ -376,7 +376,6 @@ func _block_default(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 				if wq < 20.0 or cursor + wq > along1 - 6.0:
 					break
 				_house(cursor, wq, side, cx0, cx1, cz0, cz1, pal)
-				rects.append({})
 				cursor += wq + 4.0 + rng.randf() * 6.0
 	elif arch == 1:
 		# башни во дворе

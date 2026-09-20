@@ -102,6 +102,8 @@ func _ready() -> void:
 	_mkbox(Vector3(body.x + 0.08, 0.17, 0.22), bmat, Vector3(0, by + 0.06, body.z * 0.5 - 0.08))
 	# номерной знак
 	_mkbox(Vector3(0.5, 0.13, 0.03), TL.flat(Color(0.92, 0.92, 0.88)), Vector3(0, by + 0.3, body.z * 0.5 + 0.1))
+	var body_c := by + body.y * 0.5
+	var tire = TL.flat(Color(0.07, 0.07, 0.08), 0.0, 0.95)
 	# колёса
 	var wb: float = T.wheelbase
 	for wp in [Vector3(T.track * 0.5, wr, -wb * 0.5), Vector3(-T.track * 0.5, wr, -wb * 0.5),
