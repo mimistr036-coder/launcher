@@ -1,7 +1,7 @@
 extends CharacterBody3D
 ## Локальный игрок: ходьба/бег/прыжок, вход в машину, тач + клавиатура.
 
-const HUM := preload("res://br/humanoid.gd")
+var HUM = load("res://br/humanoid.gd")
 
 var nick := "Игрок"
 var variant := 0

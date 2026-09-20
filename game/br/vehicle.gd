@@ -1,8 +1,8 @@
 extends CharacterBody3D
 ## Машина: аркадная физика, вход/выход игрока, фары. Сетевые прокси — та же сцена без физики.
 
-const TL := preload("res://br/texture_lib.gd")
-const CT := preload("res://br/car_types.gd")
+var TL = load("res://br/texture_lib.gd")
+var CT = load("res://br/car_types.gd")
 
 var type_idx := 0
 var paint_idx := 0

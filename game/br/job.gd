@@ -1,8 +1,8 @@
 extends Node
 ## Работа «Курьер»: доехать по 3 точкам — получить деньги.
 
-const TL := preload("res://br/texture_lib.gd")
-const UTIL := preload("res://br/util.gd")
+var TL = load("res://br/texture_lib.gd")
+var UTIL = load("res://br/util.gd")
 
 var world = null
 var active := false

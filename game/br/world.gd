@@ -1,15 +1,15 @@
 extends Node3D
 ## Мир: город, игрок, машины, камера, сеть, HUD.
 
-const CB := preload("res://br/city_builder.gd")
-const VEH := preload("res://br/vehicle.gd")
-const NPC := preload("res://br/npc_car.gd")
-const PLAYER := preload("res://br/player.gd")
-const HUDS := preload("res://br/hud.gd")
-const DN := preload("res://br/day_night.gd")
-const JOBS := preload("res://br/job.gd")
-const TRAF := preload("res://br/traffic_lights.gd")
-const UTIL := preload("res://br/util.gd")
+var CB = load("res://br/city_builder.gd")
+var VEH = load("res://br/vehicle.gd")
+var NPC = load("res://br/npc_car.gd")
+var PLAYER = load("res://br/player.gd")
+var HUDS = load("res://br/hud.gd")
+var DN = load("res://br/day_night.gd")
+var JOBS = load("res://br/job.gd")
+var TRAF = load("res://br/traffic_lights.gd")
+var UTIL = load("res://br/util.gd")
 
 var online := false
 var server_ip := ""

@@ -2,10 +2,10 @@ extends Node
 ## Точка входа игры (загружается лаунчером из кэша или напрямую из редактора).
 ## Имя корневого узла — «RP» (важно для сетевых RPC-путей, см. net.gd).
 
-const UTIL := preload("res://br/util.gd")
-const MENUS := preload("res://br/main_menu.gd")
-const WORLDS := preload("res://br/world.gd")
-const NETS := preload("res://br/net.gd")
+var UTIL = load("res://br/util.gd")
+var MENUS = load("res://br/main_menu.gd")
+var WORLDS = load("res://br/world.gd")
+var NETS = load("res://br/net.gd")
 
 var menu = null
 var world = null

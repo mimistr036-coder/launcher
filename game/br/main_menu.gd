@@ -3,7 +3,7 @@ extends Control
 
 signal start(online: bool, ip: String, port: int, nick: String)
 
-const UTIL := preload("res://br/util.gd")
+var UTIL = load("res://br/util.gd")
 
 var _nick: LineEdit
 var _ip: LineEdit

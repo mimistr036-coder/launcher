@@ -387,9 +387,12 @@ func _maybe_autotest_ready() -> void:
 		return
 	_autotest_done = true
 	var scene: PackedScene = null
+	var scr: Script = null
 	if _mount_cache():
 		scene = load("res://br/boot.tscn")
-	if scene != null:
+		scr = load("res://br/boot.gd")
+	# can_instantiate() = скрипт игры реально скомпилировался (ловит битые preload'ы)
+	if scene != null and scr != null and scr.can_instantiate():
 		print("[LAUNCHER_AUTOTEST] OK version=%d size=%d scene=found" % [local_version, int(remote.get("size", 0))])
 		get_tree().quit(0)
 	else:

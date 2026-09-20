@@ -1,7 +1,7 @@
 extends Node
 ## Цикл дня и ночи: солнце, луна, небо, туман, ночная подсветка города.
 
-const TL := preload("res://br/texture_lib.gd")
+var TL = load("res://br/texture_lib.gd")
 
 const DAY_LEN := 600.0  # полные сутки за 10 минут
 

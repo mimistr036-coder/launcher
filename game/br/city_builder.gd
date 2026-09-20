@@ -9,7 +9,7 @@ const WALK_W := 3.0     # ширина тротуара
 const GRID := 7         # блоков по каждой стороне (7x7)
 const HALF := GRID * P * 0.5
 
-const TL := preload("res://br/texture_lib.gd")
+var TL = load("res://br/texture_lib.gd")
 
 const SEED := 26092026
 

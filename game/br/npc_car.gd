@@ -1,7 +1,7 @@
 extends "res://br/vehicle.gd"
 ## NPC-машина: ездит по правой полосе сетки дорог, тормозит перед препятствиями.
 
-const CB := preload("res://br/city_builder.gd")
+var CB = load("res://br/city_builder.gd")
 
 var axis := "x"
 var line := 3

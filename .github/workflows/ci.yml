@@ -85,7 +85,7 @@ jobs:
         if: always()
         run: |
           fail=0
-          for t in offline client launcher; do
+          for t in offline client launcher compat40; do
             code=$(cat /tmp/$t.code 2>/dev/null || echo 99)
             if [ "$code" != "0" ]; then
               echo "STEP $t FAILED (exit $code)"

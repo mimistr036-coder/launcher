@@ -2,8 +2,8 @@ extends Control
 ## HUD: виртуальный джойстик, кнопки, миникарта, чат, деньги, часы, пауза.
 ## Всё управление мультитач: джойстик + камера + кнопки одновременно.
 
-const UTIL := preload("res://br/util.gd")
-const CB := preload("res://br/city_builder.gd")
+var UTIL = load("res://br/util.gd")
+var CB = load("res://br/city_builder.gd")
 
 var world = null
 var mode := "walk"            # walk | car

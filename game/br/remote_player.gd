@@ -1,7 +1,7 @@
 extends CharacterBody3D
 ## Другой игрок по сети: интерполяция состояния.
 
-const HUM := preload("res://br/humanoid.gd")
+var HUM = load("res://br/humanoid.gd")
 
 var nick := "Игрок"
 var peer_id := 0
