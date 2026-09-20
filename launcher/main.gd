@@ -388,13 +388,23 @@ func _maybe_autotest_ready() -> void:
 	_autotest_done = true
 	var scene: PackedScene = null
 	var scr: Script = null
+	var bad := ""
 	if _mount_cache():
 		scene = load("res://br/boot.tscn")
 		scr = load("res://br/boot.gd")
-	# can_instantiate() = скрипт игры реально скомпилировался (ловит битые preload'ы)
-	if scene != null and scr != null and scr.can_instantiate():
+		# компилируем ВСЕ скрипты игры: ловит синтаксис неподдерживаемой версии движка
+		var dir := DirAccess.open("res://br")
+		if dir != null:
+			for f in dir.get_files():
+				if not f.ends_with(".gd"):
+					continue
+				var sc: Script = load("res://br/" + f)
+				if sc == null or not sc.can_instantiate():
+					bad += f + " "
+	# can_instantiate() = скрипт игры реально скомпилировался
+	if scene != null and scr != null and scr.can_instantiate() and bad.is_empty():
 		print("[LAUNCHER_AUTOTEST] OK version=%d size=%d scene=found" % [local_version, int(remote.get("size", 0))])
 		get_tree().quit(0)
 	else:
-		print("[LAUNCHER_AUTOTEST] FAIL scene=", scene)
+		print("[LAUNCHER_AUTOTEST] FAIL scene=", scene, " boot=", scr, " bad_scripts=", bad)
 		get_tree().quit(1)

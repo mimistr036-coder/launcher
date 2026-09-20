@@ -2,8 +2,21 @@ extends RefCounted
 ## Процедурные материалы и текстуры. Вся графика города генерируется кодом,
 ## поэтому в проекте нет ни одного бинарного ассета (кэш получается крошечным).
 
-static var _cache: Dictionary = {}
-static var _night_mats: Array = []  # [ [StandardMaterial3D, base_energy], ... ]
+# В Godot 4.0 нет static var — кэш храним в метаданных скрипта
+# (скрипт кэшируется движком по пути, метаданные живут всю сессию).
+
+static func _cache():
+	var s: Script = load("res://br/texture_lib.gd")
+	if not s.has_meta("mats"):
+		s.set_meta("mats", {})
+	return s.get_meta("mats")
+
+
+static func _night_mats():
+	var s: Script = load("res://br/texture_lib.gd")
+	if not s.has_meta("night"):
+		s.set_meta("night", [])
+	return s.get_meta("night")
 
 const WALL_PALETTE := [
 	Color("c9c1b2"), Color("b9b3a7"), Color("cfc8ba"),
@@ -14,15 +27,15 @@ const WALL_PALETTE := [
 
 static func flat(color: Color, metallic: float = 0.0, rough: float = 0.9, unshaded: bool = false) -> StandardMaterial3D:
 	var key := "flat_%s_%s_%s_%s" % [color.to_html(), metallic, rough, unshaded]
-	if _cache.has(key):
-		return _cache[key]
+	if _cache().has(key):
+		return _cache()[key]
 	var m := StandardMaterial3D.new()
 	m.albedo_color = color
 	m.metallic = metallic
 	m.roughness = rough
 	if unshaded:
 		m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
-	_cache[key] = m
+	_cache()[key] = m
 	return m
 
 
@@ -63,10 +76,10 @@ static func _ground_mat(kind: String) -> StandardMaterial3D:
 
 static func ground(kind: String) -> StandardMaterial3D:
 	var key := "ground_" + kind
-	if _cache.has(key):
-		return _cache[key]
+	if _cache().has(key):
+		return _cache()[key]
 	var m := _ground_mat(kind)
-	_cache[key] = m
+	_cache()[key] = m
 	return m
 
 # ---------------- Фасады панелек ----------------
@@ -75,8 +88,8 @@ static func ground(kind: String) -> StandardMaterial3D:
 
 static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 	var key := "facade_%d_%d_%d" % [cols, floors, variant]
-	if _cache.has(key):
-		return _cache[key]
+	if _cache().has(key):
+		return _cache()[key]
 	var cw := 32
 	var ch := 28
 	var w := cols * cw
@@ -132,8 +145,8 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 	m.emission = Color(1, 1, 1)
 	m.emission_energy_multiplier = 0.0
 	m.roughness = 0.95
-	_cache[key] = m
-	_night_mats.append([m, 1.9])
+	_cache()[key] = m
+	_night_mats().append([m, 1.9])
 	return m
 
 
@@ -149,22 +162,22 @@ static func night_mat(base_color: Color, base_energy: float, register: bool = tr
 	m.emission = base_color
 	m.emission_energy_multiplier = 0.0
 	if register:
-		_night_mats.append([m, base_energy])
+		_night_mats().append([m, base_energy])
 	return m
 
 
 static func set_night(f: float) -> void:
-	for e in _night_mats:
+	for e in _night_mats():
 		e[0].emission_energy_multiplier = e[1] * f
 
 # ---------------- Машины ----------------
 
 static func car_paint(color: Color) -> StandardMaterial3D:
 	var key := "paint_" + color.to_html()
-	if _cache.has(key):
-		return _cache[key]
+	if _cache().has(key):
+		return _cache()[key]
 	var m := flat(color, 0.55, 0.35)
-	_cache[key] = m
+	_cache()[key] = m
 	return m
 
 
@@ -179,13 +192,13 @@ static func water() -> StandardMaterial3D:
 
 static func wood() -> StandardMaterial3D:
 	var key := "wood"
-	if _cache.has(key):
-		return _cache[key]
+	if _cache().has(key):
+		return _cache()[key]
 	var m := StandardMaterial3D.new()
 	m.albedo_texture = ImageTexture.create_from_image(
 		noise_img(64, 64, 0.25, 21, Color(0.45, 0.32, 0.18), 0.35))
 	m.roughness = 1.0
-	_cache[key] = m
+	_cache()[key] = m
 	return m
 
 

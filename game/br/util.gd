@@ -3,8 +3,6 @@ extends RefCounted
 
 const SETTINGS_PATH := "user://settings.cfg"
 
-static var _cfg: ConfigFile = null
-
 # ---------------- Ввод ----------------
 
 static func setup_actions() -> void:
@@ -32,14 +30,16 @@ static func _reg(action: String, keys: Array) -> void:
 
 # ---------------- Настройки ----------------
 
-static func _load_cfg() -> ConfigFile:
-	if _cfg == null:
-		_cfg = ConfigFile.new()
-		_cfg.load(SETTINGS_PATH)
-		if not _cfg.has_section_key("player", "nick"):
+static func _load_cfg():  # ConfigFile; в 4.0 нет static var — храним в meta скрипта
+	var s: Script = load("res://br/util.gd")
+	if not s.has_meta("cfg"):
+		var c := ConfigFile.new()
+		c.load(SETTINGS_PATH)
+		if not c.has_section_key("player", "nick"):
 			var n := "Водитель%d" % (randi() % 90 + 10)
-			_cfg.set_value("player", "nick", n)
-	return _cfg
+			c.set_value("player", "nick", n)
+		s.set_meta("cfg", c)
+	return s.get_meta("cfg")
 
 
 static func get_set(section: String, key: String, def: Variant) -> Variant:
