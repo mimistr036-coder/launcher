@@ -85,16 +85,36 @@ func _autotest(mode: String) -> void:
 			return)
 		var tgeo := get_tree().create_timer(2.8)
 		tgeo.timeout.connect(func() -> void:
+			var shown := 0
 			for geo in world.city.get_children():
 				if not (geo is MeshInstance3D) or geo.mesh == null:
 					continue
 				var aab: AABB = geo.mesh.get_aabb()
-				var vcount := 0
+				print("[GEO] ", geo.name, " aabb_pos=", aab.position, " aabb_size=", aab.size)
+				# вершины-экстремумы: где мусор?
 				for sidx in range(geo.mesh.get_surface_count()):
-					var vv: Variant = geo.mesh.surface_get_arrays(sidx)[Mesh.ARRAY_VERTEX]
-					if vv != null:
-						vcount += (vv as PackedVector3Array).size()
-				print("[GEO] ", geo.name, " aabb_pos=", aab.position, " aabb_size=", aab.size, " verts=", vcount))
+					var arrs: Array = geo.mesh.surface_get_arrays(sidx)
+					var vv: Variant = arrs[Mesh.ARRAY_VERTEX]
+					if vv == null:
+						continue
+					var verts: PackedVector3Array = vv
+					var worst := 0.0
+					for v in verts:
+						var dev: float = maxf(absf(v.y), maxf(absf(v.x), absf(v.z)))
+						if dev > worst:
+							worst = dev
+					if worst > 60.0 and shown < 12:
+						shown += 1
+						var samples := ""
+						var got := 0
+						for i in range(verts.size()):
+							var v2: Vector3 = verts[i]
+							if absf(v2.y) > 60.0 or absf(v2.x) > 500.0 or absf(v2.z) > 500.0:
+								samples += " [%d]=%s" % [i, v2]
+								got += 1
+								if got >= 4:
+									break
+						print("[BAD] ", geo.name, " worst_dev=", worst, samples))
 		return
 	var online := mode.begins_with("mp:")
 	var ip := "127.0.0.1"
