@@ -1,3 +1,11 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
+[launcher] Проверка обновлений...
+[launcher] Скачивание кэша v7 (109 КБ)...
+ERROR: Condition "get_http_client_status() != HTTPClient::STATUS_DISCONNECTED" is true.
+   at: set_download_file (scene/main/http_request.cpp:536)
+ERROR: HTTPRequest is processing a request. Wait for completion or cancel it before attempting a new one.
+   at: request_raw (scene/main/http_request.cpp:118)
+[launcher] Ошибка запуска скачивания
+[launcher] Файл кэша не сохранился
 [LAUNCHER_AUTOTEST] TIMEOUT

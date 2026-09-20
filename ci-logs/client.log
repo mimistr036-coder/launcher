@@ -1,6 +1,18 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
+SCRIPT ERROR: Parse Error: Identifier "_dbg_state" not declared in the current scope.
+          at: GDScript::reload (res://br/net.gd:57)
+SCRIPT ERROR: Parse Error: Identifier "_dbg_state" not declared in the current scope.
+          at: GDScript::reload (res://br/net.gd:58)
+SCRIPT ERROR: Parse Error: Identifier "_dbg_snap" not declared in the current scope.
+          at: GDScript::reload (res://br/net.gd:98)
+SCRIPT ERROR: Parse Error: Identifier "_dbg_snap" not declared in the current scope.
+          at: GDScript::reload (res://br/net.gd:99)
+SCRIPT ERROR: Compile Error: 
+          at: GDScript::reload (res://br/boot.gd:-1)
+ERROR: Failed to load script "res://br/boot.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript.cpp:2936)
 [AUTOTEST] start mode=mp:127.0.0.1:17777
+SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
+          at: _start_world (res://br/boot.gd:41)
 [AUTOTEST] TIMEOUT
-ERROR: Parameter "m" is null.
-   at: mesh_get_surface_count (servers/rendering/dummy/storage/mesh_storage.h:120)
