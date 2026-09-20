@@ -146,9 +146,14 @@ func _autotest(mode: String) -> void:
 			print("[AUTOTEST] движение W: velocity*fwd=", dot)
 			if dot < 1.0:
 				_autotest_fail = "управление инвертировано (dot=%.2f)" % dot)
+	# подаём машину через гараж (припаркованных больше нет)
+	var tspawn := get_tree().create_timer(1.5)
+	tspawn.timeout.connect(func() -> void:
+		if world != null:
+			world.spawn_car(0))
 	# тест руления: машину ставим на чистый асфальт у спавна, игрок подходит и садится,
 	# жмём вправо — нос должен пойти вправо (rotation.y уменьшаться)
-	var tcar := get_tree().create_timer(1.7)
+	var tcar := get_tree().create_timer(1.9)
 	tcar.timeout.connect(func() -> void:
 		if world != null and world.player != null and world.cars.size() > 0:
 			var car = world.cars[0]
@@ -163,7 +168,7 @@ func _autotest(mode: String) -> void:
 				return
 			Input.action_press("move_forward")
 			Input.action_press("move_right"))
-	var tcar2 := get_tree().create_timer(2.5)
+	var tcar2 := get_tree().create_timer(2.7)
 	tcar2.timeout.connect(func() -> void:
 		Input.action_release("move_forward")
 		Input.action_release("move_right")
@@ -233,7 +238,7 @@ func _autotest(mode: String) -> void:
 				if world.player == null:
 					ok = false
 					why = "no player"
-				elif world.cars.size() < 5:
+				elif world.cars.size() < 1:
 					ok = false
 					why = "cars=" + str(world.cars.size())
 				elif world.city.map_img == null:

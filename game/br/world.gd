@@ -55,7 +55,7 @@ func _ready() -> void:
 	add_child(city)
 	city.build()
 	_spawn_player()
-	_spawn_cars()
+	# припаркованных машин нет — построй свою через ГАРАЖ
 	_spawn_npcs()
 	_build_camera()
 	hud = HUDS.new()
@@ -130,17 +130,21 @@ func _spawn_player() -> void:
 	cam_yaw = PI * 0.25
 
 
-func _spawn_cars() -> void:
-	var idx := 0
-	for s in city.car_spawns:
-		var car = VEH.new()
-		car.name = "Car%d" % idx
-		idx += 1
-		car.setup(int(s.type), int(s.color))
-		add_child(car)
-		car.global_position = s.pos + Vector3(0, 0.3, 0)
-		car.rotation_degrees.y = float(s.rot)
-		cars.append(car)
+
+## Подать машину игроку (гараж в HUD)
+func spawn_car(t: int) -> void:
+	var CT = load("res://br/car_types.gd")
+	var car = VEH.new()
+	car.name = "Car%d" % cars.size()
+	car.setup(t % CT.TYPES.size(), randi() % CT.PAINTS.size())
+	add_child(car)
+	var fwd := Vector3(-sin(cam_yaw), 0, -cos(cam_yaw))
+	var pos: Vector3 = player.global_position + fwd * 8.0
+	pos.y = 0.4
+	car.global_position = pos
+	car.rotation.y = cam_yaw + PI
+	cars.append(car)
+	hud.notice("«%s» подана — садись (E)" % car.display_name)
 
 
 func _spawn_npcs() -> void:
@@ -194,6 +198,9 @@ func _process(delta: float) -> void:
 			cam_pitch = clampf(cam_pitch - d.y * 0.004, -1.15, 0.45)
 		if hud.consume_event("job"):
 			job.toggle()
+		if hud.consume_event("garage_pick") and hud.garage_pick >= 0:
+			spawn_car(hud.garage_pick)
+			hud.garage_pick = -1
 		if hud.consume_event("horn") and player.current_car != null:
 			player.current_car.honk()
 	_update_camera(delta)

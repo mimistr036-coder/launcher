@@ -94,7 +94,7 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 	var ch := 28
 	var w := cols * cw
 	var h := floors * ch
-	var wall: Color = WALL_PALETTE[abs(variant * 2 + floors) % WALL_PALETTE.size()]
+	var wall: Color = WALL_PALETTE[abs(variant) % WALL_PALETTE.size()]
 	var img := Image.create(w, h, false, Image.FORMAT_RGB8)
 	var emis := Image.create(w, h, false, Image.FORMAT_RGB8)
 	img.fill(wall)

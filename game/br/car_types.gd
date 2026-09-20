@@ -36,5 +36,6 @@ const TYPES := [
 
 const PAINTS := [
 	Color("e8e8e8"), Color("a33b3b"), Color("33507a"), Color("3f5a3f"),
-	Color("c9bc95"), Color("4a3352"), Color("22242a"),
+	Color("c9bc95"), Color("4a3352"), Color("22242a"), Color("d98e2b"),
+	Color("7a2f4f"), Color("2e6e6a"), Color("88919c"), Color("5d3a1f"),
 ]

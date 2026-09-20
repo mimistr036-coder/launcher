@@ -36,12 +36,12 @@ func _ready() -> void:
 	var paint = TL.car_paint(CT.PAINTS[paint_idx])
 	var glass = TL.car_glass()
 	var dark = TL.flat(Color(0.09, 0.09, 0.11), 0.4, 0.5)
-	var tire = TL.flat(Color(0.07, 0.07, 0.08), 0.0, 0.95)
+	var chrome = TL.flat(Color(0.78, 0.79, 0.82), 0.9, 0.22)
+	var style: String = T.get("style", "sedan")
 	var body: Vector3 = T.body
 	var cabin: Vector3 = T.cabin
 	var wr: float = T.wheel_r
-	var body_bottom := wr * 0.55
-	var body_c := body_bottom + body.y * 0.5
+	var by := wr * 0.55
 	_head_mat = StandardMaterial3D.new()
 	_head_mat.albedo_color = Color(0.9, 0.9, 0.8)
 	_head_mat.emission_enabled = true
@@ -52,14 +52,56 @@ func _ready() -> void:
 	_tail_mat.emission_enabled = true
 	_tail_mat.emission = Color(1.0, 0.12, 0.08)
 	_tail_mat.emission_energy_multiplier = 0.0
-	_mkbox(body, paint, Vector3(0, body_c, 0))
-	_mkbox(cabin, glass, Vector3(0, body_bottom + body.y + cabin.y * 0.5, T.cabin_z))
-	_mkbox(Vector3(cabin.x * 0.98, 0.07, cabin.z * 0.98), paint,
-		Vector3(0, body_bottom + body.y + cabin.y + 0.03, T.cabin_z))
-	_mkbox(Vector3(0.28, 0.14, 0.08), _head_mat, Vector3(body.x * 0.32, body_c + body.y * 0.18, -body.z * 0.5 - 0.02))
-	_mkbox(Vector3(0.28, 0.14, 0.08), _head_mat, Vector3(-body.x * 0.32, body_c + body.y * 0.18, -body.z * 0.5 - 0.02))
-	_mkbox(Vector3(0.3, 0.13, 0.07), _tail_mat, Vector3(body.x * 0.32, body_c + body.y * 0.18, body.z * 0.5 + 0.02))
-	_mkbox(Vector3(0.3, 0.13, 0.07), _tail_mat, Vector3(-body.x * 0.32, body_c + body.y * 0.18, body.z * 0.5 + 0.02))
+	if style == "van":
+		# высокий кузов-фургон
+		var vh := body.y + 0.75
+		_mkbox(Vector3(body.x, vh, body.z), paint, Vector3(0, by + vh * 0.5, 0))
+		# лобовое стекло с наклоном
+		var ws := MeshInstance3D.new()
+		var wm := BoxMesh.new()
+		wm.size = Vector3(body.x * 0.92, 0.62, 0.06)
+		wm.material = glass
+		ws.mesh = wm
+		ws.position = Vector3(0, by + vh * 0.62, -body.z * 0.5 + 0.75)
+		ws.rotation_degrees.x = -14
+		add_child(ws)
+		# боковые окна лентой
+		_mkbox(Vector3(body.x + 0.03, 0.55, body.z * 0.62), glass, Vector3(0, by + vh * 0.68, 0.2))
+		_mkbox(Vector3(body.x + 0.03, 0.5, 0.06), glass, Vector3(0, by + vh * 0.62, -body.z * 0.5 + 1.35))
+	else:
+		# кузов, кабина, крыша
+		_mkbox(body, paint, Vector3(0, by + body.y * 0.5, 0))
+		_mkbox(cabin, glass, Vector3(0, by + body.y + cabin.y * 0.5, T.cabin_z))
+		_mkbox(Vector3(cabin.x * 1.04, 0.07, cabin.z * 1.06), paint,
+			Vector3(0, by + body.y + cabin.y + 0.035, T.cabin_z))
+		if style == "pickup":
+			# открытый кузов: пол + три стенки
+			var bed_z: float = T.cabin_z + cabin.z * 0.5
+			var bed_l: float = body.z * 0.5 - bed_z - 0.1
+			if bed_l > 0.6:
+				var bed_c := bed_z + bed_l * 0.5
+				_mkbox(Vector3(body.x * 0.94, 0.06, bed_l), dark, Vector3(0, by + body.y + 0.03, bed_c))
+				_mkbox(Vector3(0.07, 0.42, bed_l), paint, Vector3(body.x * 0.47 - 0.03, by + body.y + 0.26, bed_c))
+				_mkbox(Vector3(0.07, 0.42, bed_l), paint, Vector3(-body.x * 0.47 + 0.03, by + body.y + 0.26, bed_c))
+				_mkbox(Vector3(body.x * 0.94, 0.42, 0.07), paint, Vector3(0, by + body.y + 0.26, bed_z + bed_l - 0.03))
+		# решётка радиатора
+		_mkbox(Vector3(body.x * 0.5, 0.16, 0.05), dark if style != "old" else chrome,
+			Vector3(0, by + body.y * 0.62, -body.z * 0.5 - 0.03))
+		# фары и поворотники по углам
+		_mkbox(Vector3(0.3, 0.15, 0.08), _head_mat, Vector3(body.x * 0.34, by + body.y * 0.62, -body.z * 0.5 - 0.04))
+		_mkbox(Vector3(0.3, 0.15, 0.08), _head_mat, Vector3(-body.x * 0.34, by + body.y * 0.62, -body.z * 0.5 - 0.04))
+		_mkbox(Vector3(0.32, 0.14, 0.07), _tail_mat, Vector3(body.x * 0.34, by + body.y * 0.62, body.z * 0.5 + 0.04))
+		_mkbox(Vector3(0.32, 0.14, 0.07), _tail_mat, Vector3(-body.x * 0.34, by + body.y * 0.62, body.z * 0.5 + 0.04))
+		# зеркала
+		var mz: float = T.cabin_z - cabin.z * 0.5
+		_mkbox(Vector3(0.14, 0.1, 0.06), dark, Vector3(body.x * 0.5 + 0.12, by + body.y + 0.22, mz))
+		_mkbox(Vector3(0.14, 0.1, 0.06), dark, Vector3(-body.x * 0.5 - 0.12, by + body.y + 0.22, mz))
+	# бампера
+	var bmat = dark if style != "old" else chrome
+	_mkbox(Vector3(body.x + 0.08, 0.17, 0.22), bmat, Vector3(0, by + 0.06, -body.z * 0.5 + 0.08))
+	_mkbox(Vector3(body.x + 0.08, 0.17, 0.22), bmat, Vector3(0, by + 0.06, body.z * 0.5 - 0.08))
+	# номерной знак
+	_mkbox(Vector3(0.5, 0.13, 0.03), TL.flat(Color(0.92, 0.92, 0.88)), Vector3(0, by + 0.3, body.z * 0.5 + 0.1))
 	# колёса
 	var wb: float = T.wheelbase
 	for wp in [Vector3(T.track * 0.5, wr, -wb * 0.5), Vector3(-T.track * 0.5, wr, -wb * 0.5),

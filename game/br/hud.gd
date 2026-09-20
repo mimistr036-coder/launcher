@@ -32,6 +32,8 @@ var _chat_open := false
 var _chat_lines: Array = []
 var _notices: VBoxContainer
 var _notice_list: Array = []
+var _garage_panel: Control
+var garage_pick := -1
 var _money_label: Label
 var _clock_label: Label
 var _fps_label: Label
@@ -146,6 +148,7 @@ func _layout() -> void:
 		_buttons.append({"n": "enter", "pos": r - Vector2(80, 95), "r": 42, "l": "СЕСТЬ", "hold": false})
 		_buttons.append({"n": "chat", "pos": r - Vector2(260, 75), "r": 30, "l": "ЧАТ", "hold": false})
 		_buttons.append({"n": "job", "pos": r - Vector2(180, 250), "r": 32, "l": "РАБОТА", "hold": false})
+		_buttons.append({"n": "garage", "pos": r - Vector2(280, 190), "r": 32, "l": "ГАРАЖ", "hold": false})
 	else:
 		_buttons.append({"n": "gas", "pos": r - Vector2(80, 175), "r": 50, "l": "ГАЗ", "hold": true})
 		_buttons.append({"n": "brake", "pos": r - Vector2(195, 115), "r": 42, "l": "ТОРМОЗ", "hold": true})
@@ -170,6 +173,8 @@ func _input(ev: InputEvent) -> void:
 			KEY_ESCAPE:
 				if _chat_open:
 					_close_chat()
+				elif _garage_panel != null:
+					show_garage()
 				else:
 					_toggle_pause()
 				return
@@ -226,6 +231,9 @@ func _press_role(role: Dictionary, pos: Vector2) -> void:
 				return
 			if n == "chat":
 				_open_chat()
+				return
+			if n == "garage":
+				show_garage()
 				return
 			if b.hold:
 				_held[n] = true
@@ -349,6 +357,38 @@ func _on_chat_send(text: String) -> void:
 		add_chat(UTIL.get_nick(), msg)
 
 # ================= пауза =================
+
+func show_garage() -> void:
+	if _garage_panel != null:
+		_garage_panel.queue_free()
+		_garage_panel = null
+		return
+	_garage_panel = Control.new()
+	_garage_panel.set_anchors_preset(Control.PRESET_FULL_RECT)
+	_garage_panel.process_mode = Node.PROCESS_MODE_ALWAYS
+	add_child(_garage_panel)
+	var pc = UTIL.panel_box()
+	pc.set_anchors_preset(Control.PRESET_CENTER)
+	pc.custom_minimum_size = Vector2(380, 0)
+	_garage_panel.add_child(pc)
+	var v := VBoxContainer.new()
+	v.add_theme_constant_override("separation", 8)
+	pc.add_child(v)
+	v.add_child(UTIL.label("ГАРАЖ", 26, Color(1, 1, 1)))
+	v.add_child(UTIL.label("Машина подаётся рядом с тобой", 14, Color(0.7, 0.75, 0.85)))
+	var CT = load("res://br/car_types.gd")
+	for i in range(CT.TYPES.size()):
+		var tname: String = CT.TYPES[i].name
+		var b = UTIL.button(tname, 19)
+		b.pressed.connect(func() -> void:
+			garage_pick = i
+			_push("garage_pick")
+			show_garage())
+		v.add_child(b)
+	var close = UTIL.button("ЗАКРЫТЬ", 16)
+	close.pressed.connect(show_garage)
+	v.add_child(close)
+
 
 func _toggle_pause() -> void:
 	_paused = not _paused

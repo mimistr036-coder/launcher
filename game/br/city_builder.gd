@@ -80,7 +80,6 @@ func build() -> void:
 	_ground_and_roads()
 	_blocks()
 	_lamps_and_lights()
-	_roadside_cars()
 	_npc_defs()
 	_finalize_meshes()
 	_minimap()
@@ -125,14 +124,14 @@ func _quad(st: SurfaceTool, pts: Array, normal: Vector3, uvs: Array) -> void:
 	st.add_index(b + 3)
 
 
-func _box(mat: Material, center: Vector3, size: Vector3, face_uv: bool = false, uv_scale: float = 4.0) -> void:
-	var st := _st_for(mat)
+func _box(mat: Material, center: Vector3, size: Vector3, face_uv: bool = false, uv_scale: float = 4.0, top_mat: Material = null) -> void:
 	var half := size * 0.5
-	var normals := [Vector3.RIGHT, Vector3.LEFT, Vector3.UP, Vector3.DOWN, Vector3.BACK, Vector3.FORWARD]
+	var normals := [Vector3.RIGHT, Vector3.LEFT, Vector3.UP, Vector3.BACK, Vector3.FORWARD]  # без дна
 	for n in normals:
-		# ВАЖНО: abs()! у DOWN=(0,-1,0) max_axis_index без abs даёт ось X (значение 0 > -1),
-		# и грань рисуется гигантским растянутым треугольником
+		# ВАЖНО: abs()! у отрицательных нормалей max_axis_index без abs даёт неверную ось
 		var a: int = n.abs().max_axis_index()
+		# крыша отдельным материалом (у фасадных домов)
+		var st := _st_for(top_mat if (n.y > 0 and top_mat != null) else mat)
 		var ui := (a + 1) % 3
 		var vi := (a + 2) % 3
 		var u: Vector3 = AXES[ui]
@@ -357,46 +356,99 @@ func _block_default(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 	_box(TL.ground("grass"), Vector3((cx0 + cx1) * 0.5, -0.1, (cz0 + cz1) * 0.5),
 		Vector3(cx1 - cx0, 0.2, cz1 - cz0))
 	var rects: Array = []
-	for side in range(4):
-		var r := rng.randf()
-		var along0: float = cx0 if side < 2 else cz0
-		var along1: float = cx1 if side < 2 else cz1
-		var cursor := along0 + rng.randf() * 8.0
-		var builds: Array = []
-		if r < 0.5:
-			var w1 := _qw(along1 - cursor - 40.0)
-			builds = [[cursor, w1], [cursor + w1 + 4.0 + rng.randf() * 6.0, _qw(along1 - cursor - 50.0)]]
-		elif r < 0.85:
-			builds = [[cursor, _qw(along1 - cursor - 30.0)]]
-		for b in builds:
-			var w: float = b[1]
-			if w < 20.0 or b[0] + w > along1:
+	var pal: int = rng.randi() % 6  # палитра квартала — дома в одном тоне
+	var arch := rng.randi() % 5
+	if arch == 0:
+		# классический микрорайон: 1-2 дома на каждой стороне периметра
+		for side in range(4):
+			if rng.randf() < 0.1:
+				continue  # пустая сторона — там двор с деревьями
+			var along0: float = cx0 if side < 2 else cz0
+			var along1: float = cx1 if side < 2 else cz1
+			var cursor := along0 + rng.randf() * 8.0
+			var n := 1 if rng.randf() < 0.55 else 2
+			for k in range(n):
+				var room := along1 - 6.0 - cursor
+				if room < 26.0:
+					break
+				var frac := 1.0 if n == 1 else rng.randf_range(0.45, 0.62)
+				var wq := _qw(room * frac)
+				if wq < 20.0 or cursor + wq > along1 - 6.0:
+					break
+				_house(cursor, wq, side, cx0, cx1, cz0, cz1, pal)
+				rects.append({})
+				cursor += wq + 4.0 + rng.randf() * 6.0
+	elif arch == 1:
+		# башни во дворе
+		for k in range(2):
+			var wq := _qw(rng.randf_range(17.0, 25.0))
+			if wq < 14.0 or wq > cx1 - cx0 - 12.0:
 				continue
-			var wq := _qw(w)
-			var floors: int = [5, 5, 5, 9, 9, 12][rng.randi() % 6]
-			var depth: float = [14.0, 16.0, 18.0][rng.randi() % 3]
+			var floors: int = [12, 14, 16][rng.randi() % 3]
+			var px: float = rng.randf_range(cx0 + wq * 0.5 + 6.0, cx1 - wq * 0.5 - 6.0)
+			var pz: float = rng.randf_range(cz0 + wq * 0.5 + 6.0, cz1 - wq * 0.5 - 6.0)
 			var h := floors * 2.8 + 0.9
 			var cols: int = clampi(roundi(wq / 4.0), 4, 12)
-			var mat = TL.facade(cols, floors, rng.randi() % 3)
-			var pos: Vector3
-			var sz: Vector3
-			if side == 0:
-				pos = Vector3(b[0] + wq * 0.5, h * 0.5, cz0 + depth * 0.5)
-				sz = Vector3(wq, h, depth)
-			elif side == 1:
-				pos = Vector3(b[0] + wq * 0.5, h * 0.5, cz1 - depth * 0.5)
-				sz = Vector3(wq, h, depth)
-			elif side == 2:
-				pos = Vector3(cx0 + depth * 0.5, h * 0.5, b[0] + wq * 0.5)
-				sz = Vector3(depth, h, wq)
-			else:
-				pos = Vector3(cx1 - depth * 0.5, h * 0.5, b[0] + wq * 0.5)
-				sz = Vector3(depth, h, wq)
-			_building(pos, sz, mat, floors, side)
-	# двор
+			var mat = TL.facade(cols, floors, (pal + k) % 6)
+			_building(Vector3(px, h * 0.5, pz), Vector3(wq, h, wq * rng.randf_range(0.65, 0.9)), mat, floors, rng.randi() % 4)
+	elif arch == 2:
+		# «колодец»: одинаковые дома по всем четырём сторонам
+		var floors: int = [5, 9][rng.randi() % 2]
+		for side in range(4):
+			var along0: float = cx0 if side < 2 else cz0
+			var along1: float = cx1 if side < 2 else cz1
+			var wq := _qw((along1 - along0) - 14.0)
+			_house(along0 + 7.0, wq, side, cx0, cx1, cz0, cz1, pal, floors)
+	elif arch == 3:
+		# длинный дом через весь квартал + башня
+		var side := rng.randi() % 4
+		var along0: float = cx0 if side < 2 else cz0
+		var along1: float = cx1 if side < 2 else cz1
+		_house(along0 + 6.0, _qw(along1 - along0 - 12.0), side, cx0, cx1, cz0, cz1, pal)
+		var wq2 := _qw(rng.randf_range(15.0, 20.0))
+		var px: float = rng.randf_range(cx0 + wq2 * 0.5 + 8.0, cx1 - wq2 * 0.5 - 8.0)
+		var pz: float = rng.randf_range(cz0 + wq2 * 0.5 + 8.0, cz1 - wq2 * 0.5 - 8.0)
+		var fl2: int = [9, 12, 14][rng.randi() % 3]
+		var h2 := fl2 * 2.8 + 0.9
+		var mat2 = TL.facade(clampi(roundi(wq2 / 4.0), 4, 12), fl2, (pal + 3) % 6)
+		_building(Vector3(px, h2 * 0.5, pz), Vector3(wq2, h2, wq2 * 0.8), mat2, fl2, rng.randi() % 4)
+	else:
+		# пары домов «лицом к лицу» через двор
+		var side_a := rng.randi() % 4
+		var side_b := (side_a + 2) % 4
+		for side in [side_a, side_b]:
+			var along0: float = cx0 if side < 2 else cz0
+			var along1: float = cx1 if side < 2 else cz1
+			_house(along0 + 6.0, _qw(along1 - along0 - 12.0), side, cx0, cx1, cz0, cz1, pal)
 	_courtyard(cx0, cx1, cz0, cz1, rects)
 	if job_points.size() < 26:
 		job_points.append(Vector3(rng.randf_range(cx0 + 15, cx1 - 15), 0.1, rng.randf_range(cz0 + 15, cz1 - 15)))
+
+
+## Дом вдоль стороны квартала (cursor — начало вдоль стороны)
+func _house(cursor: float, wq: float, side: int, cx0: float, cx1: float, cz0: float, cz1: float, pal: int, force_floors: int = 0) -> void:
+	if wq < 18.0:
+		return
+	var floors: int = force_floors if force_floors > 0 else [5, 5, 5, 9, 9, 12][rng.randi() % 6]
+	var depth: float = [14.0, 16.0, 18.0][rng.randi() % 3]
+	var h := floors * 2.8 + 0.9
+	var cols: int = clampi(roundi(wq / 4.0), 4, 12)
+	var mat = TL.facade(cols, floors, (pal + rng.randi() % 2) % 6)
+	var pos: Vector3
+	var sz: Vector3
+	if side == 0:
+		pos = Vector3(cursor + wq * 0.5, h * 0.5, cz0 + depth * 0.5)
+		sz = Vector3(wq, h, depth)
+	elif side == 1:
+		pos = Vector3(cursor + wq * 0.5, h * 0.5, cz1 - depth * 0.5)
+		sz = Vector3(wq, h, depth)
+	elif side == 2:
+		pos = Vector3(cx0 + depth * 0.5, h * 0.5, cursor + wq * 0.5)
+		sz = Vector3(depth, h, wq)
+	else:
+		pos = Vector3(cx1 - depth * 0.5, h * 0.5, cursor + wq * 0.5)
+		sz = Vector3(depth, h, wq)
+	_building(pos, sz, mat, floors, side)
 
 
 func _qw(v: float) -> float:
@@ -404,16 +456,47 @@ func _qw(v: float) -> float:
 
 
 func _building(pos: Vector3, sz: Vector3, mat: Material, floors: int, side: int) -> void:
-	_box(mat, pos, sz, true)
+	var roof = TL.flat(Color(0.24, 0.25, 0.28))
+	# стены с фасадной текстурой, крыша — тёмным материалом (не «окна на небо»)
+	_box(mat, pos, sz, true, 4.0, roof)
 	_rects.append({"x": pos.x - sz.x * 0.5, "z": pos.z - sz.z * 0.5, "w": sz.x, "d": sz.z})
-	var roof = TL.flat(Color(0.22, 0.23, 0.26))
-	_box(roof, Vector3(pos.x, sz.y + 0.15, pos.z), Vector3(sz.x + 0.5, 0.3, sz.z + 0.5))
-	if rng.randf() < 0.8:
-		var sh := Vector3(minf(6.0, sz.x * 0.25), 2.2, minf(6.0, sz.z * 0.25))
-		_box(roof, Vector3(pos.x + rng.randf_range(-sz.x * 0.2, sz.x * 0.2), sz.y + 0.3 + sh.y * 0.5,
-			pos.z + rng.randf_range(-sz.z * 0.2, sz.z * 0.2)), sh)
-	if floors >= 9 and rng.randf() < 0.6:
-		_cyl(TL.flat(Color(0.3, 0.3, 0.33)), Vector3(pos.x, sz.y + 0.3, pos.z), 0.06, 0.04, 7.0, 4)
+	# парапет по краю крыши
+	_box(TL.flat(Color(0.4, 0.41, 0.44)), Vector3(pos.x, sz.y + 0.35, pos.z),
+		Vector3(sz.x + 0.35, 0.5, sz.z + 0.35), false, 4.0, roof)
+	# лифтовая будка и вентшахты
+	if floors >= 5:
+		_box(TL.flat(Color(0.52, 0.53, 0.55)), Vector3(pos.x + rng.randf_range(-sz.x * 0.2, sz.x * 0.2),
+			sz.y + 1.15, pos.z + rng.randf_range(-sz.z * 0.2, sz.z * 0.2)), Vector3(3.2, 1.6, 2.6), false, 4.0, roof)
+		_box(TL.flat(Color(0.45, 0.46, 0.48)), Vector3(pos.x - sz.x * 0.28, sz.y + 0.55, pos.z + sz.z * 0.22),
+			Vector3(1.3, 0.9, 1.3))
+	if floors >= 9 and rng.randf() < 0.7:
+		_cyl(TL.flat(Color(0.3, 0.3, 0.33)), Vector3(pos.x + sz.x * 0.25, sz.y + 0.5, pos.z - sz.z * 0.2), 0.05, 0.03, 6.0, 4)
+	# балконы на уличном фасаде
+	if floors >= 5 and rng.randf() < 0.85:
+		var out := Vector3(0, 0, -1)
+		if side == 1: out = Vector3(0, 0, 1)
+		elif side == 2: out = Vector3(-1, 0, 0)
+		elif side == 3: out = Vector3(1, 0, 0)
+		var along_w: float = sz.x if side < 2 else sz.z
+		var out_d: float = sz.z if side < 2 else sz.x
+		var n := clampi(int(along_w / 9.0), 2, 5)
+		var balc = TL.flat(Color(0.75, 0.74, 0.71))
+		var rail = TL.flat(Color(0.5, 0.52, 0.56))
+		for k in range(n):
+			var f: int = 2 + int(float(k) * float(maxi(floors - 3, 1)) / float(n))
+			var t := (float(k) + 0.5) / float(n) - 0.5
+			var bp := pos + out * (out_d * 0.5 + 0.62) + Vector3(0, f * 2.8 + 0.12, 0)
+			var bs := Vector3(1.15, 0.16, 2.5)
+			if side < 2:
+				bp.x += along_w * t
+				bs = Vector3(2.5, 0.16, 1.15)
+			else:
+				bp.z += along_w * t
+			_box(balc, bp, bs)
+			var rs := Vector3(2.5, 1.0, 0.09)
+			if side < 2:
+				rs = Vector3(0.09, 1.0, 1.15)
+			_box(rail, bp + out * 0.5 + Vector3(0, 0.55, 0), rs)
 	_col_box(pos, sz)
 	# вывеска/магазин на первом этаже (только к улице)
 	if floors >= 5 and rng.randf() < 0.3:
@@ -800,27 +883,6 @@ func _bus_stop(p: Vector3) -> void:
 	_sign("АВТОБУС", p + Vector3(0, 3.6, 0), 0.6, Color(0.8, 0.9, 1.0))
 	job_points.append(p + Vector3(2, 0.1, 0))
 
-
-func _roadside_cars() -> void:
-	var placed := 0
-	var guard := 0
-	while placed < 14 and guard < 100:
-		guard += 1
-		var i := rng.randi() % (GRID + 1)
-		var vertical := rng.randf() < 0.5
-		var t := rng.randf_range(-HALF + 30, HALF - 30)
-		var sgn := 1.0 if rng.randf() < 0.5 else -1.0
-		if vertical:
-			if not _away_from_lines_wide(t):
-				continue
-			car_spawns.append({"pos": Vector3(line_coord(i) + (ROAD_W * 0.5 - 1.3) * sgn, 0, t),
-				"rot": 90.0 + rng.randf_range(-5, 5), "type": rng.randi() % 4, "color": rng.randi() % 6})
-		else:
-			if not _away_from_lines_wide(t):
-				continue
-			car_spawns.append({"pos": Vector3(t, 0, line_coord(i) + (ROAD_W * 0.5 - 1.3) * sgn),
-				"rot": rng.randf_range(-5, 5), "type": rng.randi() % 4, "color": rng.randi() % 6})
-		placed += 1
 
 
 func _away_from_lines_wide(t: float) -> bool:
