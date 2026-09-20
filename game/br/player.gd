@@ -43,6 +43,12 @@ func _physics_process(delta: float) -> void:
 		if not is_instance_valid(current_car):
 			current_car = null
 		else:
+			# в режиме машины читаем только выход (E / кнопка «ВЫЙТИ»)
+			if hud != null and is_instance_valid(hud) and hud.consume_event("enter"):
+				if world != null:
+					world.try_enter_car(self)
+			elif Input.is_action_just_pressed("enter_car") and world != null:
+				world.try_enter_car(self)
 			return  # физикой управляет машина
 	var axis := Vector2.ZERO
 	var want_run := false

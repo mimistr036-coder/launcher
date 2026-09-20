@@ -89,11 +89,20 @@ func build() -> void:
 # =================== ПРИМИТИВЫ ===================
 
 func _st_for(mat: Material) -> SurfaceTool:
-	if not _st.has(mat):
-		var t := SurfaceTool.new()
-		t.begin(Mesh.PRIMITIVE_TRIANGLES)
-		_st[mat] = t
-	return _st[mat]
+	var st: SurfaceTool = _st.get(mat)
+	if st != null and st.get_vertex_count() >= MAX_SURF_VERTS:
+		# поверхность распухла — отдаём готовый меш и начинаем новую
+		var n := 0
+		for ch in get_children():
+			if ch.name.begins_with("Geo"):
+				n = maxi(n, int(ch.name.trim_prefix("Geo")))
+		_flush_surface(mat, st, n + 1)
+		st = null
+	if st == null:
+		st = SurfaceTool.new()
+		st.begin(Mesh.PRIMITIVE_TRIANGLES)
+		_st[mat] = st
+	return st
 
 
 func _quad(st: SurfaceTool, pts: Array, normal: Vector3, uvs: Array) -> void:
@@ -191,18 +200,24 @@ func _col_cyl(base: Vector3, r: float, h: float) -> void:
 	_colbody.add_child(cs)
 
 
+const MAX_SURF_VERTS := 60000  # 16-битные индексы: не превышать 65536 вершин на поверхность
+
 func _finalize_meshes() -> void:
 	var idx := 0
 	for mat in _st:
-		var st: SurfaceTool = _st[mat]
-		var mesh := st.commit()
-		if mesh == null:
-			continue
+		idx = _flush_surface(mat, _st[mat], idx)
+
+
+func _flush_surface(mat: Material, st: SurfaceTool, idx: int) -> int:
+	var mesh := st.commit()
+	if mesh != null:
+		mesh.surface_set_material(0, mat)  # БЕЗ ЭТОГО ВЕСЬ ГОРОД БЕЛЫЙ
 		var mi := MeshInstance3D.new()
 		mi.name = "Geo%d" % idx
 		idx += 1
 		mi.mesh = mesh
 		add_child(mi)
+	return idx
 
 
 func _sign(text: String, pos: Vector3, height_m: float = 0.9, color: Color = Color(1, 0.9, 0.5)) -> void:

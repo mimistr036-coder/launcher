@@ -62,6 +62,15 @@ func back_to_menu() -> void:
 
 func _autotest(mode: String) -> void:
 	print("[AUTOTEST] start mode=", mode)
+	if mode == "shot":
+		_start_world(false, "", 0, "ТестБот")
+		var ts := get_tree().create_timer(4.0)
+		ts.timeout.connect(func() -> void:
+			var img := get_viewport().get_texture().get_image()
+			img.save_png("/tmp/city.png")
+			print("[AUTOTEST] скриншот: /tmp/city.png ", img.get_width(), "x", img.get_height())
+			get_tree().quit(0))
+		return
 	var online := mode.begins_with("mp:")
 	var ip := "127.0.0.1"
 	var port := 7777
@@ -143,6 +152,9 @@ func _autotest(mode: String) -> void:
 				var idxa: PackedInt32Array = arrays[Mesh.ARRAY_INDEX]
 				surf += 1
 				tris += idxa.size() / 3
+				if verts.size() > 65000:
+					bad += 1
+					print("[AUTOTEST] поверхность ", surf, " слишком большая: ", verts.size(), " вершин")
 				for ii in idxa:
 					if ii >= verts.size():
 						bad += 1

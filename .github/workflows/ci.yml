@@ -34,6 +34,16 @@ jobs:
           echo $? > /tmp/offline.code
           echo "offline exit: $(cat /tmp/offline.code)"
 
+      - name: City screenshot (4.3, virtual display)
+        if: always()
+        continue-on-error: true
+        run: |
+          set +e
+          sudo apt-get install -y -qq xvfb > /dev/null 2>&1
+          GAME_AUTOTEST=shot LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.3-stable_linux.x86_64 --path game > /tmp/shot43.log 2>&1
+          echo "shot43 exit: $?"
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-4.3.png && echo "скриншот 4.3 готов"
+
       - name: Multiplayer autotest (server + client)
         id: t2
         if: always()
@@ -79,6 +89,9 @@ jobs:
           echo $? > /tmp/compat40.code
           kill $HTTPD 2>/dev/null
           echo "compat40 exit: $(cat /tmp/compat40.code)"
+          GAME_AUTOTEST=shot LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.0-stable_linux.x86_64 --path game > /tmp/shot40.log 2>&1
+          echo "shot40 exit: $?"
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-4.0.png && echo "скриншот 4.0 готов"
 
       - name: Save logs into repo
         if: always()
@@ -86,7 +99,7 @@ jobs:
           set +e
           rm -rf ci-logs
           mkdir -p ci-logs
-          for f in offline server client launcher http compat40 compat40-http gate; do
+          for f in offline server client launcher http compat40 compat40-http gate shot43 shot40 city-4.3 city-4.0; do
             [ -f /tmp/$f.log ] && cp /tmp/$f.log ci-logs/$f.log
             [ -f /tmp/$f.code ] && cp /tmp/$f.code ci-logs/$f.code
           done
