@@ -41801,8 +41801,8 @@ SCRIPT ERROR: Invalid call. Nonexistent function 'get_vertex_count' in base 'Sur
           at: _quad (res://br/city_builder.gd:106)
 [AUTOTEST] движение W: velocity*fwd=3.90000009536743
 SCRIPT ERROR: Trying to assign value of type 'Nil' to a variable of type 'PackedInt32Array'.
-          at: <anonymous lambda> (res://br/boot.gd:135)
-[AUTOTEST] руление вправо: rotation.y=0 speed=38.399974822998
-[AUTOTEST] FAIL: player fell under map (y=-53.6578140258789)
+          at: <anonymous lambda> (res://br/boot.gd:143)
+[AUTOTEST] руление вправо: rotation.y=-0.5046826004982 speed=5.74213171005249 y=0.05249996483326
+[AUTOTEST] OK cars=82 npcs=8 job_points=34
 ERROR: Parameter "m" is null.
    at: mesh_get_surface_count (servers/rendering/dummy/storage/mesh_storage.h:120)
