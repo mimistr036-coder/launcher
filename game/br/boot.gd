@@ -76,7 +76,7 @@ func _autotest(mode: String) -> void:
 						var pp := sp.split(",")
 						world.player.global_position = Vector3(float(pp[0]), float(pp[1]), float(pp[2]))
 					if syaw != "":
-						world.cam_yaw = float(syaw)))
+						world.cam_yaw = float(syaw))
 		var ts := get_tree().create_timer(3.5)
 		ts.timeout.connect(func() -> void:
 			# вид сверху
