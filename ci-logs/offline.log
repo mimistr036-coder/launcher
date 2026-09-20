@@ -446,7 +446,7 @@ ERROR: Index p_x = -1 is out of bounds (width = 128).
 ERROR: Index p_x = -1 is out of bounds (width = 128).
    at: set_pixel (core/io/image.cpp:3280)
 [AUTOTEST] движение W: velocity*fwd=3.90000009536743
-[AUTOTEST] геометрия: поверхностей=117 треугольников=45784 битых индексов=0
+[AUTOTEST] геометрия: поверхностей=117 треугольников=52290 битых индексов=0
 [AUTOTEST] руление вправо: rotation.y=-0.54349637031555 speed=6.22065782546997 y=0.07194396108389
 [AUTOTEST] OK cars=1 npcs=8 job_points=34
 ERROR: Parameter "m" is null.
