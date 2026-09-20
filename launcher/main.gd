@@ -14,6 +14,7 @@ var base_url := ""
 var remote := {}           # содержимое version.json
 var local_version := 0
 var http: HTTPRequest
+var news_http: HTTPRequest
 var _kind := ""            # version | news | pck
 var _state := "boot"       # boot | check | download | ready | error
 var _busy := false
@@ -131,6 +132,10 @@ func _build_ui() -> void:
 	http.timeout = 12.0
 	add_child(http)
 	http.request_completed.connect(_on_http_done)
+	news_http = HTTPRequest.new()
+	news_http.timeout = 12.0
+	add_child(news_http)
+	news_http.request_completed.connect(_on_news_done)
 
 
 func _mk_label(t: String, sz: int, col: Color) -> Label:
@@ -256,14 +261,6 @@ func _on_http_done(result: int, code: int, _headers: PackedStringArray, body: Pa
 			_maybe_autotest_ready()
 		else:
 			_start_download()
-	elif _kind == "news":
-		if result == HTTPRequest.RESULT_SUCCESS and code == 200:
-			var n = JSON.parse_string(body.get_string_from_utf8())
-			if n != null and n.has("news"):
-				var lines: Array = []
-				for item in n["news"]:
-					lines.append("%s — %s\n%s" % [str(item.get("date", "")), str(item.get("title", "")), str(item.get("text", ""))])
-				_news.text = "\n\n".join(lines)
 	elif _kind == "pck":
 		_finish_download(result, code)
 
@@ -360,10 +357,18 @@ func _on_play() -> void:
 
 
 func _load_news() -> void:
-	_kind = "news"
-	http.set_download_file("")
-	http.timeout = 12.0
-	http.request(base_url + "/news.json")
+	news_http.request(base_url + "/news.json")
+
+
+func _on_news_done(result: int, code: int, _headers: PackedStringArray, body: PackedByteArray) -> void:
+	if result != HTTPRequest.RESULT_SUCCESS or code != 200:
+		return
+	var n = JSON.parse_string(body.get_string_from_utf8())
+	if n != null and n.has("news"):
+		var lines: Array = []
+		for item in n["news"]:
+			lines.append("%s — %s\n%s" % [str(item.get("date", "")), str(item.get("title", "")), str(item.get("text", ""))])
+		_news.text = "\n\n".join(lines)
 
 
 func _maybe_autotest_ready() -> void:

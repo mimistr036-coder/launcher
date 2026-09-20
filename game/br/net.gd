@@ -10,6 +10,8 @@ signal chat_msg(nick: String, msg: String)
 signal sysmsg(text: String)
 
 var connected := false
+var _dbg_snap := false
+var _dbg_state := false
 var my_nick := "Игрок"
 var world: Node = null
 
