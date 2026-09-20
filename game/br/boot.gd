@@ -62,8 +62,10 @@ func back_to_menu() -> void:
 
 func _autotest(mode: String) -> void:
 	print("[AUTOTEST] start mode=", mode)
-	if mode == "shot":
+	if mode == "shot" or mode == "shot15":
 		_start_world(false, "", 0, "ТестБот")
+		if world != null and world.day_night != null and mode == "shot15":
+			world.day_night.time_h = 15.57
 		var ts := get_tree().create_timer(3.5)
 		ts.timeout.connect(func() -> void:
 			# вид сверху
@@ -84,41 +86,7 @@ func _autotest(mode: String) -> void:
 					get_tree().quit(0)))
 			return)
 		var tgeo := get_tree().create_timer(2.8)
-		tgeo.timeout.connect(func() -> void:
-			var shown := 0
-			for geo in world.city.get_children():
-				if not (geo is MeshInstance3D) or geo.mesh == null:
-					continue
-				var aab: AABB = geo.mesh.get_aabb()
-				var mat0: Material = geo.mesh.surface_get_material(0)
-				var has_tex: bool = mat0 != null and (mat0 as StandardMaterial3D).albedo_texture != null
-				var col: Color = (mat0 as StandardMaterial3D).albedo_color if mat0 != null else Color(-1, -1, -1)
-				print("[GEO] ", geo.name, " aabb_pos=", aab.position, " aabb_size=", aab.size,
-					" mat_tex=", has_tex, " mat_col=", col)
-				# вершины-экстремумы: где мусор?
-				for sidx in range(geo.mesh.get_surface_count()):
-					var arrs: Array = geo.mesh.surface_get_arrays(sidx)
-					var vv: Variant = arrs[Mesh.ARRAY_VERTEX]
-					if vv == null:
-						continue
-					var verts: PackedVector3Array = vv
-					var worst := 0.0
-					for v in verts:
-						var dev: float = maxf(absf(v.y), maxf(absf(v.x), absf(v.z)))
-						if dev > worst:
-							worst = dev
-					if worst > 60.0 and shown < 12:
-						shown += 1
-						var samples := ""
-						var got := 0
-						for i in range(verts.size()):
-							var v2: Vector3 = verts[i]
-							if absf(v2.y) > 60.0 or absf(v2.x) > 500.0 or absf(v2.z) > 500.0:
-								samples += " [%d]=%s" % [i, v2]
-								got += 1
-								if got >= 4:
-									break
-						print("[BAD] ", geo.name, " worst_dev=", worst, samples))
+		tgeo.timeout.connect(_dump_geo)
 		return
 	var online := mode.begins_with("mp:")
 	var ip := "127.0.0.1"
@@ -265,3 +233,37 @@ func _autotest(mode: String) -> void:
 			else:
 				print("[AUTOTEST] FAIL: ", why)
 				get_tree().quit(1))
+
+
+func _dump_geo() -> void:
+	if world == null or world.city == null:
+		return
+	var shown := 0
+	for geo in world.city.get_children():
+		if not (geo is MeshInstance3D) or geo.mesh == null:
+			continue
+		var aab: AABB = geo.mesh.get_aabb()
+		print("[GEO] ", geo.name, " aabb_pos=", aab.position, " aabb_size=", aab.size)
+		for sidx in range(geo.mesh.get_surface_count()):
+			var arrs: Array = geo.mesh.surface_get_arrays(sidx)
+			var vv: Variant = arrs[Mesh.ARRAY_VERTEX]
+			if vv == null:
+				continue
+			var verts: PackedVector3Array = vv
+			var worst := 0.0
+			for v in verts:
+				var dev: float = maxf(absf(v.y), maxf(absf(v.x), absf(v.z)))
+				if dev > worst:
+					worst = dev
+			if worst > 60.0 and shown < 12:
+				shown += 1
+				var samples := ""
+				var got := 0
+				for i in range(verts.size()):
+					var v2: Vector3 = verts[i]
+					if absf(v2.y) > 60.0 or absf(v2.x) > 500.0 or absf(v2.z) > 500.0:
+						samples += " [%d]=%s" % [i, v2]
+						got += 1
+						if got >= 4:
+							break
+				print("[BAD] ", geo.name, " worst_dev=", worst, samples)
