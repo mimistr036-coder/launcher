@@ -1,10 +1,6 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
 [AUTOTEST] start mode=mp:127.0.0.1:17777
-[NET] подключено, отправляю регистр: ТестБот
-[NET] первое состояние отправлено
-[NET] первый снапшот: 1 игроков, world=World:<Node3D#30719083880> has_apply=true
-[SNAP] my_id=1477255600 keys=[1477255600]
 [AUTOTEST] OK snapshot received, remotes=0
 ERROR: Parameter "m" is null.
    at: mesh_get_surface_count (servers/rendering/dummy/storage/mesh_storage.h:120)
