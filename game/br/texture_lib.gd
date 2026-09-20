@@ -13,11 +13,17 @@ static func _is40() -> bool:
 	return s.get_meta("is40")
 
 
-## В Godot 4.0 (GL Compatibility) рантайм-текстуры выглядят темнее — компенсируем гамму
-static func _fix(c: Color) -> Color:
+## В Godot 4.0 (GL Compatibility) рантайм-текстуры темнеют (тёмные цвета уходят в черноту).
+## Компенсация: гамма по всем пикселям готовой картинки.
+static func _fix_img(img: Image) -> void:
 	if not _is40():
-		return c
-	return Color(pow(c.r, 0.55), pow(c.g, 0.55), pow(c.b, 0.55), c.a)
+		return
+	for y in range(img.get_height()):
+		for x in range(img.get_width()):
+			var c := img.get_pixel(x, y)
+			if c.a < 0.01:
+				continue
+			img.set_pixel(x, y, Color(pow(c.r, 0.45), pow(c.g, 0.45), pow(c.b, 0.45), c.a))
 
 
 static func _cache():
@@ -61,7 +67,6 @@ static func flat(color: Color, metallic: float = 0.0, rough: float = 0.9, unshad
 
 
 static func noise_img(w: int, h: int, freq: float, seedv: int, base: Color, vary: float) -> Image:
-	base = _fix(base)
 	var img := Image.create(w, h, false, Image.FORMAT_RGB8)
 	var n := FastNoiseLite.new()
 	n.seed = seedv
@@ -71,6 +76,7 @@ static func noise_img(w: int, h: int, freq: float, seedv: int, base: Color, vary
 			var v := n.get_noise_2d(float(x), float(y))
 			var f := clampf(0.5 + v * vary, 0.0, 1.0)
 			img.set_pixel(x, y, Color(base.r * f, base.g * f, base.b * f))
+	_fix_img(img)
 	return img
 
 
@@ -116,7 +122,7 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 	var ch := 28
 	var w := cols * cw
 	var h := floors * ch
-	var wall: Color = _fix(WALL_PALETTE[abs(variant) % WALL_PALETTE.size()])
+	var wall: Color = WALL_PALETTE[abs(variant) % WALL_PALETTE.size()]
 	var img := Image.create(w, h, false, Image.FORMAT_RGB8)
 	var emis := Image.create(w, h, false, Image.FORMAT_RGB8)
 	img.fill(wall)
@@ -125,7 +131,7 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 	var rng := RandomNumberGenerator.new()
 	rng.seed = cols * 1000 + floors * 31 + variant
 	# цоколь первого этажа — тёмная каменная полоса
-	var plinth := _fix(Color(0.32, 0.31, 0.30))
+	var plinth := Color(0.32, 0.31, 0.30)
 	for yy in range(ch - 8, ch):
 		for x in range(w):
 			img.set_pixel(x, yy, plinth.darkened(rng.randf() * 0.08))
@@ -147,7 +153,6 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 			var wh := ch - 11
 			var glass := Color(0.17, 0.22, 0.29).lightened(rng.randf() * 0.16)
 			glass = glass.lerp(Color(0.45, 0.56, 0.66), rng.randf() * 0.35)
-			glass = _fix(glass)
 			if row == 0 and variant == 2:
 				glass = Color(0.85, 0.87, 0.9).darkened(rng.randf() * 0.3)
 			# ночью светится часть окон этого окна
@@ -184,6 +189,10 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 	m.emission = Color(1, 1, 1)
 	m.emission_energy_multiplier = 0.0
 	m.roughness = 0.95
+	_fix_img(img)
+	_fix_img(emis)
+	m.albedo_texture = ImageTexture.create_from_image(img)
+	m.emission_texture = ImageTexture.create_from_image(emis)
 	_cache()[key] = m
 	_night_mats().append([m, 1.9])
 	return m
