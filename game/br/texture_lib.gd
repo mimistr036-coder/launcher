@@ -145,7 +145,10 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 			for yy in range(ch - 4):
 				for xx in range(cw - 12):
 					img.set_pixel(dx + xx, y0 + 4 + yy, Color(0.22, 0.16, 0.12))
+	_fix_img(img)
+	_fix_img(emis)
 	var m := StandardMaterial3D.new()
+	m.cull_mode = BaseMaterial3D.CULL_DISABLED
 	m.albedo_texture = ImageTexture.create_from_image(img)
 	m.emission_enabled = true
 	m.emission_texture = ImageTexture.create_from_image(emis)
