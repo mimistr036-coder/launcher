@@ -1,10 +1,10 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
 [launcher] Проверка обновлений...
-[launcher] Скачивание кэша v10 (109 КБ)...
+[launcher] Скачивание кэша v11 (109 КБ)...
 [launcher] Скачивание кэша... 64 КБ / 109 КБ
-[launcher] Готово! Кэш v10 установлен.
+[launcher] Готово! Кэш v11 установлен.
 [CACHE] load_pack=true
 [CACHE] exists boot.tscn=true boot.gd=true util.gd=true
 [CACHE] scene=<PackedScene#-9223372003770104394>
-[LAUNCHER_AUTOTEST] OK version=10 size=111573 scene=found
+[LAUNCHER_AUTOTEST] OK version=11 size=111365 scene=found
