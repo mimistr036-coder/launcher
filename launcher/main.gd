@@ -195,6 +195,10 @@ func _build_settings() -> void:
 	var gh_btn := _mk_button("ИСТОЧНИК: GITHUB (авто)", 15, Color(0.25, 0.35, 0.5))
 	gh_btn.pressed.connect(_use_github)
 	v.add_child(gh_btn)
+	var upd_btn := _mk_button("НОВАЯ ВЕРСИЯ ЛАУНЧЕРА (APK)", 15, Color(0.35, 0.3, 0.2))
+	upd_btn.pressed.connect(func() -> void:
+		OS.shell_open("https://github.com/mimistr036-coder/launcher/releases/latest"))
+	v.add_child(upd_btn)
 	var save := _mk_button("СОХРАНИТЬ", 17, Color(0.2, 0.45, 0.3))
 	save.pressed.connect(_close_settings)
 	v.add_child(save)
