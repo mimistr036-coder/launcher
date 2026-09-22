@@ -58,11 +58,14 @@ func _apply(force: bool) -> void:
 		_sky_mat.ground_bottom_color = NIGHT_HOR.lerp(Color(0.2, 0.22, 0.2), day)
 		_sky_mat.ground_horizon_color = _sky_mat.sky_horizon_color
 	if env != null:
-		# ambient гаснет вместе с солнцем — иначе фасады «светятся белым» в сумерках
+		# ambient гаснет вместе с солнцем; источник — ЦВЕТ (не небо!), иначе фасады красятся кремовым горизонтом
+		env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
 		env.ambient_light_energy = 0.09 + day * 0.5
 		env.ambient_light_color = Color(0.6, 0.7, 0.85).lerp(Color(0.25, 0.3, 0.45), night)
-		env.fog_density = 0.0008 + night * 0.012
-		env.fog_light_color = _sky_mat.sky_horizon_color if _sky_mat != null else Color(0.5, 0.5, 0.5)
+		env.fog_density = 0.0008 + night * 0.008
+		# туман темнеет к ночи вместе с освещением — не «подсвечивает» здания кремом
+		var fcol := _sky_mat.sky_horizon_color if _sky_mat != null else Color(0.5, 0.5, 0.5)
+		env.fog_light_color = fcol * (0.25 + 0.75 * day)
 	TL.set_night(night)
 
 
