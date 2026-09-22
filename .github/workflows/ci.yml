@@ -160,7 +160,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create latest updates/www/game.pck updates/www/version.json updates/www/news.json             --title "Провинция RP — кэш v$(python3 -c "import json;print(json.load(open('updates/www/version.json'))['version'])")"             --notes "Автоматическая сборка CI. Лаунчер обновится сам."             --clobber || gh release upload latest updates/www/game.pck updates/www/version.json updates/www/news.json --clobber
+          gh release view latest > /dev/null 2>&1 || gh release create latest --title "Провинция RP — последняя сборка" --notes "Автосборка CI. Лаунчер обновится сам."
+          gh release upload latest updates/www/game.pck updates/www/version.json updates/www/news.json --clobber
           gh release view latest --json assets --jq '.assets[].name'
 
   apk:
@@ -218,7 +219,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create latest launcher/builds/provinciya-launcher.apk launcher/builds/provinciya-launcher.exe             --title "Провинция RP" --notes "Автосборка CI" --clobber             || gh release upload latest launcher/builds/provinciya-launcher.apk launcher/builds/provinciya-launcher.exe --clobber
+          gh release view latest > /dev/null 2>&1 || gh release create latest --title "Провинция RP — последняя сборка" --notes "Автосборка CI."
+          gh release upload latest launcher/builds/provinciya-launcher.apk launcher/builds/provinciya-launcher.exe --clobber
           gh release view latest --json assets --jq '.assets[].name'
 
       - name: Upload builds
