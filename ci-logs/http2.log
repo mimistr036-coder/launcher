@@ -1,5 +1,5 @@
 Сервер обновлений: http://0.0.0.0:8092/  (папка /home/runner/work/launcher/launcher/updates/www)
-  в локальной сети: http://10.1.0.83:8092/  <- впиши этот адрес в лаунчер
+  в локальной сети: http://10.1.0.21:8092/  <- впиши этот адрес в лаунчер
 HTTP "GET /version.json HTTP/1.1" 200 -
 HTTP "GET /news.json HTTP/1.1" 200 -
 HTTP code 404, message File not found
