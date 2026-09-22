@@ -1,8 +1,12 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
 [AUTOTEST] start mode=mp:127.0.0.1:17777
-SCRIPT ERROR: Parse Error: Unexpected "Identifier" in class body.
-          at: GDScript::reload (res://br/city_builder.gd:632)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "fb" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://br/city_builder.gd:520)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "h_b" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://br/city_builder.gd:521)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "c1" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://br/city_builder.gd:736)
 ERROR: Failed to load script "res://br/city_builder.gd" with error "Parse error".
    at: load (modules/gdscript/gdscript.cpp:2936)
 SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
@@ -843,12 +847,12 @@ SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object o
           at: _update_camera (res://br/world.gd:220)
 SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
           at: _process (res://br/world.gd:208)
-SCRIPT ERROR: Invalid access to property or key 'global_position' on a base object of type 'Nil'.
-          at: spawn_car (res://br/world.gd:142)
 SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
           at: _update_camera (res://br/world.gd:220)
 SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
           at: _process (res://br/world.gd:208)
+SCRIPT ERROR: Invalid access to property or key 'global_position' on a base object of type 'Nil'.
+          at: spawn_car (res://br/world.gd:142)
 SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
           at: _update_camera (res://br/world.gd:220)
 SCRIPT ERROR: Invalid access to property or key 'current_car' on a base object of type 'Nil'.
