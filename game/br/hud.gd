@@ -460,8 +460,7 @@ func _draw() -> void:
 	if world == null:
 		return
 	_draw_minimap()
-	# джойстик
-	if mode == "walk":
+	# плавающий джойстик: рисуется только пока палец на экране
 	if _stick_active:
 		draw_circle(_stick_center, _stick_r, Color(0, 0, 0, 0.28))
 		draw_arc(_stick_center, _stick_r, 0, TAU, 40, Color(1, 1, 1, 0.25), 2.0)
