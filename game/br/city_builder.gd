@@ -43,6 +43,8 @@ const BT_PHARM := 5
 const BT_PARK := 6
 const BT_GARAGES := 7
 const BT_MOTOPARK := 8
+const BT_VILLAGE := 9   # частный сектор (модели Kenney, CC0)
+const ML = "res://br/model_lib.gd"
 const BT_CLINIC := 9
 
 
@@ -53,6 +55,9 @@ static func line_coord(i: int) -> float:
 func block_type(i: int, j: int) -> int:
 	if i == 3 and j == 3:
 		return BT_PLAZA
+	# кирпичный центр вокруг площади
+	if absi(i - 3) + absi(j - 3) == 1:
+		return BT_DEFAULT
 	if i == 1 and j == 1:
 		return BT_SCHOOL
 	if i == 5 and j == 2:
@@ -69,7 +74,23 @@ func block_type(i: int, j: int) -> int:
 		return BT_MOTOPARK
 	if i == 0 and j == 3:
 		return BT_CLINIC
+	# частный сектор по краям карты
+	if (i == 6 and j == 6) or (i == 0 and j == 6) or (i == 6 and j == 0):
+		return BT_VILLAGE
 	return BT_DEFAULT
+
+
+## Район города: влияет на этажность и материал домов
+func district_of(i: int, j: int) -> String:
+	var t := block_type(i, j)
+	if t != BT_DEFAULT:
+		return "special"
+	if absi(i - 3) + absi(j - 3) == 1:
+		return "center"   # кирпичный центр
+	var d := maxi(absi(i - 3), absi(j - 3))
+	if d <= 2:
+		return "mid"      # панельные 9-12 эт
+	return "edge"         # хрущёвки 5 эт
 
 
 func build() -> void:
@@ -290,7 +311,28 @@ func _ground_and_roads() -> void:
 				var zc: float = zj + side * (ROAD_W * 0.5 + 2.2)
 				for k in range(-2, 3):
 					_box(white, Vector3(xi + k * 1.4, 0.01, zc), Vector3(0.7, 0.02, 3.0))
-
+	# бордюры: сегменты вдоль дорог между перекрёстками
+	var curb = TL.flat(Color(0.62, 0.62, 0.60))
+	var edge := ROAD_W * 0.5 + 0.25
+	var pad := ROAD_W * 0.5 + 0.9
+	for i4 in range(GRID + 1):
+		var lx := line_coord(i4)
+		for side4 in [-1.0, 1.0]:
+			for j4 in range(GRID):
+				var z0 := line_coord(j4) + pad
+				var z1 := line_coord(j4 + 1) - pad
+				if z1 - z0 < 4.0:
+					continue
+				_box(curb, Vector3(lx + side4 * edge, 0.12, (z0 + z1) * 0.5), Vector3(0.35, 0.35, z1 - z0))
+	for j5 in range(GRID + 1):
+		var lz := line_coord(j5)
+		for side5 in [-1.0, 1.0]:
+			for i5 in range(GRID):
+				var x0 := line_coord(i5) + pad
+				var x1 := line_coord(i5 + 1) - pad
+				if x1 - x0 < 4.0:
+					continue
+				_box(curb, Vector3((x0 + x1) * 0.5, 0.12, lz + side5 * edge), Vector3(x1 - x0, 0.35, 0.35))
 
 func _away_from_lines(t: float) -> bool:
 	for j in range(GRID + 1):
@@ -347,17 +389,21 @@ func _blocks() -> void:
 					_block_motopark(cx0, cx1, cz0, cz1)
 				BT_CLINIC:
 					_block_clinic(cx0, cx1, cz0, cz1)
+				BT_VILLAGE:
+					_block_village(cx0, cx1, cz0, cz1)
 				_:
-					_block_default(cx0, cx1, cz0, cz1)
+					_block_default(cx0, cx1, cz0, cz1, district_of(i, j))
 
 # ---------- жилой квартал ----------
 
-func _block_default(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
+func _block_default(cx0: float, cx1: float, cz0: float, cz1: float, district: String = "mid") -> void:
 	_box(TL.ground("grass"), Vector3((cx0 + cx1) * 0.5, -0.1, (cz0 + cz1) * 0.5),
 		Vector3(cx1 - cx0, 0.2, cz1 - cz0))
 	var rects: Array = []
 	var pal: int = rng.randi() % 6  # палитра квартала — дома в одном тоне
 	var arch := rng.randi() % 5
+	if district == "center":
+		arch = rng.randi() % 2 + 4  # perimeter или «лицом к лицу» — сплошной центр
 	if arch == 0:
 		# классический микрорайон: 1-2 дома на каждой стороне периметра
 		for side in range(4):
@@ -375,7 +421,7 @@ func _block_default(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 				var wq := _qw(room * frac)
 				if wq < 20.0 or cursor + wq > along1 - 6.0:
 					break
-				_house(cursor, wq, side, cx0, cx1, cz0, cz1, pal)
+				_house(cursor, wq, side, cx0, cx1, cz0, cz1, pal, 0, district)
 				cursor += wq + 4.0 + rng.randf() * 6.0
 	elif arch == 1:
 		# башни во дворе
@@ -383,7 +429,9 @@ func _block_default(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 			var wq := _qw(rng.randf_range(17.0, 25.0))
 			if wq < 14.0 or wq > cx1 - cx0 - 12.0:
 				continue
-			var floors: int = [12, 14, 16][rng.randi() % 3]
+			var floors: int = [9, 12, 14, 16][rng.randi() % 4]
+			if district == "edge":
+				floors = [9, 12][rng.randi() % 2]
 			var px: float = rng.randf_range(cx0 + wq * 0.5 + 6.0, cx1 - wq * 0.5 - 6.0)
 			var pz: float = rng.randf_range(cz0 + wq * 0.5 + 6.0, cz1 - wq * 0.5 - 6.0)
 			var h := floors * 2.8 + 0.9
@@ -393,11 +441,15 @@ func _block_default(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 	elif arch == 2:
 		# «колодец»: одинаковые дома по всем четырём сторонам
 		var floors: int = [5, 9][rng.randi() % 2]
+		if district == "center":
+			floors = [6, 7][rng.randi() % 2]
+		elif district == "edge":
+			floors = 5
 		for side in range(4):
 			var along0: float = cx0 if side < 2 else cz0
 			var along1: float = cx1 if side < 2 else cz1
 			var wq := _qw((along1 - along0) - 14.0)
-			_house(along0 + 7.0, wq, side, cx0, cx1, cz0, cz1, pal, floors)
+			_house(along0 + 7.0, wq, side, cx0, cx1, cz0, cz1, pal, floors, district)
 	elif arch == 3:
 		# длинный дом через весь квартал + башня
 		var side := rng.randi() % 4
@@ -408,6 +460,8 @@ func _block_default(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 		var px: float = rng.randf_range(cx0 + wq2 * 0.5 + 8.0, cx1 - wq2 * 0.5 - 8.0)
 		var pz: float = rng.randf_range(cz0 + wq2 * 0.5 + 8.0, cz1 - wq2 * 0.5 - 8.0)
 		var fl2: int = [9, 12, 14][rng.randi() % 3]
+		if district == "edge":
+			fl2 = 9
 		var h2 := fl2 * 2.8 + 0.9
 		var mat2 = TL.facade(clampi(roundi(wq2 / 4.0), 4, 12), fl2, (pal + 3) % 6)
 		_building(Vector3(px, h2 * 0.5, pz), Vector3(wq2, h2, wq2 * 0.8), mat2, fl2, rng.randi() % 4)
@@ -418,21 +472,32 @@ func _block_default(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 		for side in [side_a, side_b]:
 			var along0: float = cx0 if side < 2 else cz0
 			var along1: float = cx1 if side < 2 else cz1
-			_house(along0 + 6.0, _qw(along1 - along0 - 12.0), side, cx0, cx1, cz0, cz1, pal)
+			_house(along0 + 6.0, _qw(along1 - along0 - 12.0), side, cx0, cx1, cz0, cz1, pal, 0, district)
 	_courtyard(cx0, cx1, cz0, cz1, rects)
 	if job_points.size() < 26:
 		job_points.append(Vector3(rng.randf_range(cx0 + 15, cx1 - 15), 0.1, rng.randf_range(cz0 + 15, cz1 - 15)))
 
 
 ## Дом вдоль стороны квартала (cursor — начало вдоль стороны)
-func _house(cursor: float, wq: float, side: int, cx0: float, cx1: float, cz0: float, cz1: float, pal: int, force_floors: int = 0) -> void:
+func _house(cursor: float, wq: float, side: int, cx0: float, cx1: float, cz0: float, cz1: float, pal: int, force_floors: int = 0, district: String = "mid") -> void:
 	if wq < 18.0:
 		return
-	var floors: int = force_floors if force_floors > 0 else [5, 5, 5, 9, 9, 12][rng.randi() % 6]
+	var floors: int = force_floors
+	if floors <= 0:
+		if district == "center":
+			floors = [6, 6, 7, 7, 8][rng.randi() % 5]
+		elif district == "mid":
+			floors = [9, 9, 12, 12, 14][rng.randi() % 5]
+		else:
+			floors = [5, 5, 5, 5, 9][rng.randi() % 5]
 	var depth: float = [14.0, 16.0, 18.0][rng.randi() % 3]
 	var h := floors * 2.8 + 0.9
 	var cols: int = clampi(roundi(wq / 4.0), 4, 12)
-	var mat = TL.facade(cols, floors, (pal + rng.randi() % 2) % 6)
+	var mat
+	if district == "center":
+		mat = TL.facade_brick(cols, floors, (pal + rng.randi() % 2) % 4)
+	else:
+		mat = TL.facade(cols, floors, (pal + rng.randi() % 2) % 6)
 	var pos: Vector3
 	var sz: Vector3
 	if side == 0:
@@ -447,6 +512,27 @@ func _house(cursor: float, wq: float, side: int, cx0: float, cx1: float, cz0: fl
 	else:
 		pos = Vector3(cx1 - depth * 0.5, h * 0.5, cursor + wq * 0.5)
 		sz = Vector3(depth, h, wq)
+	# ступенчатый объём: высокие дома — два смежных объёма разной высоты
+	if floors >= 9 and wq >= 34 and rng.randf() < 0.65:
+		var wa := _qw(wq * rng.randf_range(0.52, 0.62))
+		var wb := wq - wa - 4.0
+		if wb >= 20.0:
+			var fb := floors - [2, 3, 4][rng.randi() % 3]
+			var h_b := fb * 2.8 + 0.9
+			var matb
+			if district == "center":
+				matb = TL.facade_brick(clampi(roundi(wb / 4.0), 4, 12), fb, (pal + 2) % 4)
+			else:
+				matb = TL.facade(clampi(roundi(wb / 4.0), 4, 12), fb, (pal + 2) % 6)
+			var off_a: float = -(wq - wa) * 0.5
+			var off_b: float = -wq * 0.5 + wa + 4.0 + wb * 0.5
+			if side == 0 or side == 1:
+				_building(pos + Vector3(off_a, 0, 0), Vector3(wa, h, sz.z), mat, floors, side)
+				_building(pos + Vector3(off_b, (h_b - h) * 0.5, 0), Vector3(wb, h_b, sz.z), matb, fb, side)
+			else:
+				_building(pos + Vector3(0, 0, off_a), Vector3(sz.x, h, wa), mat, floors, side)
+				_building(pos + Vector3(0, (h_b - h) * 0.5, off_b), Vector3(sz.x, h_b, wb), matb, fb, side)
+			return
 	_building(pos, sz, mat, floors, side)
 
 
@@ -455,17 +541,27 @@ func _qw(v: float) -> float:
 
 
 func _building(pos: Vector3, sz: Vector3, mat: Material, floors: int, side: int) -> void:
-	var roof = TL.flat(Color(0.24, 0.25, 0.28))
-	# стены с фасадной текстурой, крыша — тёмным материалом (не «окна на небо»)
+	var roof = TL.roof_mat()
+	# стены с фасадной текстурой, крыша — рулонная с гравием
 	_box(mat, pos, sz, true, 4.0, roof)
 	_rects.append({"x": pos.x - sz.x * 0.5, "z": pos.z - sz.z * 0.5, "w": sz.x, "d": sz.z})
+	# цоколь: тёмный пояс высотой 1 м, чуть шире дома
+	var base_m = TL.flat(Color(0.34, 0.33, 0.31))
+	var by := 0.5
+	if side == 0 or side == 1:
+		_box(base_m, Vector3(pos.x, by, pos.z), Vector3(sz.x + 0.3, 1.0, sz.z + 0.3), false, 4.0, roof)
+	else:
+		_box(base_m, Vector3(pos.x, by, pos.z), Vector3(sz.x + 0.3, 1.0, sz.z + 0.3), false, 4.0, roof)
+	# карниз под парапетом: тёмная полоса по периметру
+	_box(TL.flat(Color(0.30, 0.30, 0.32)), Vector3(pos.x, sz.y - 0.25, pos.z),
+		Vector3(sz.x + 0.45, 0.5, sz.z + 0.45), false, 4.0, roof)
 	# парапет по краю крыши
-	_box(TL.flat(Color(0.4, 0.41, 0.44)), Vector3(pos.x, sz.y + 0.35, pos.z),
+	_box(TL.flat(Color(0.42, 0.42, 0.45)), Vector3(pos.x, sz.y + 0.35, pos.z),
 		Vector3(sz.x + 0.35, 0.5, sz.z + 0.35), false, 4.0, roof)
 	# лифтовая будка и вентшахты
 	if floors >= 5:
 		_box(TL.flat(Color(0.52, 0.53, 0.55)), Vector3(pos.x + rng.randf_range(-sz.x * 0.2, sz.x * 0.2),
-			sz.y + 1.15, pos.z + rng.randf_range(-sz.z * 0.2, sz.z * 0.2)), Vector3(3.2, 1.6, 2.6), false, 4.0, roof)
+				sz.y + 1.15, pos.z + rng.randf_range(-sz.z * 0.2, sz.z * 0.2)), Vector3(3.2, 1.6, 2.6), false, 4.0, roof)
 		_box(TL.flat(Color(0.45, 0.46, 0.48)), Vector3(pos.x - sz.x * 0.28, sz.y + 0.55, pos.z + sz.z * 0.22),
 			Vector3(1.3, 0.9, 1.3))
 	if floors >= 9 and rng.randf() < 0.7:
@@ -491,12 +587,49 @@ func _building(pos: Vector3, sz: Vector3, mat: Material, floors: int, side: int)
 				bs = Vector3(2.5, 0.16, 1.15)
 			else:
 				bp.z += along_w * t
+				bs = bs
 			_box(balc, bp, bs)
 			var rs := Vector3(2.5, 1.0, 0.09)
 			if side < 2:
 				rs = Vector3(0.09, 1.0, 1.15)
 			_box(rail, bp + out * 0.5 + Vector3(0, 0.55, 0), rs)
-	_col_box(pos, sz)
+		# эркер-лента: остекление выступом на левой трети фасада
+		if floors >= 5 and rng.randf() < 0.45 and along_w >= 24.0:
+			var bw := along_w * 0.26
+			var bh := (floors - 1) * 2.8 - 1.0
+			var glass = TL.flat(Color(0.30, 0.40, 0.50), 0.5, 0.35)
+			var tpos: Vector3
+			var tsz: Vector3
+			var tc := pos + out * (out_d * 0.5 + 0.3) + Vector3(0, 1.6 + bh * 0.5, 0)
+			if side < 2:
+				tpos = tc + Vector3(-along_w * 0.26, 0, 0)
+				tsz = Vector3(bw, bh, 0.9)
+			else:
+				tpos = tc + Vector3(0, 0, -along_w * 0.26)
+				tsz = Vector3(0.9, bh, bw)
+			_box(glass, tpos, tsz)
+			# крышка эркера
+			var cap := pos + out * (out_d * 0.5 + 0.42) + Vector3(0, 1.6 + bh + 0.12, 0)
+			if side < 2:
+				_box(TL.flat(Color(0.5, 0.5, 0.53)), cap + Vector3(-along_w * 0.26, 0, 0), Vector3(bw + 0.4, 0.22, 1.2))
+			else:
+				_box(TL.flat(Color(0.5, 0.5, 0.53)), cap + Vector3(0, 0, -along_w * 0.26), Vector3(1.2, 0.22, bw + 0.4))
+		# козырёк над подъездом: по центру уличного фасада
+		var cp := pos + out * (out_d * 0.5 + 0.75) + Vector3(0, 2.65, 0)
+		var csz := Vector3(3.4, 0.14, 1.8)
+		if side >= 2:
+			csz = Vector3(1.8, 0.14, 3.4)
+		_box(TL.canopy_mat(), cp, csz)
+		# стойки козырька
+		for sx in [-1.0, 1.0]:
+			var pp := cp + out * 0.5 + Vector3(0, -1.25, 0)
+			if side < 2:
+				pp.x += sx * 1.3
+				_box(TL.flat(Color(0.35, 0.36, 0.38), 0.5, 0.5), pp, Vector3(0.09, 2.5, 0.09))
+			else:
+				pp.z += sx * 1.3
+				_box(TL.flat(Color(0.35, 0.36, 0.38), 0.5, 0.5), pp, Vector3(0.09, 2.5, 0.09))
+_col_box(pos, sz)
 	# вывеска/магазин на первом этаже (только к улице)
 	if floors >= 5 and rng.randf() < 0.3:
 		var sw = TL.shop_window()
@@ -555,6 +688,64 @@ func _courtyard(cx0: float, cx1: float, cz0: float, cz1: float, rects: Array) ->
 		var gcol: Color = [Color(0.5, 0.3, 0.2), Color(0.35, 0.42, 0.5), Color(0.55, 0.5, 0.4)][rng.randi() % 3]
 		for g in range(6):
 			_garage(Vector3(gx + g * 6.2, 0, gz), gcol)
+	# забор-профлист вокруг части двора
+	if rng.randf() < 0.5:
+		var fx0 := cx0 + rng.randf_range(8, 14)
+		var fz0 := cz0 + rng.randf_range(8, 14)
+		var fx1 := fx0 + rng.randf_range(30, minf(cx1 - fx0 - 4, 55))
+		var fz1 := fz0 + rng.randf_range(24, minf(cz1 - fz0 - 4, 45))
+		if fx1 > fx0 + 16 and fz1 > fz0 + 14:
+			_fence_proflist(fx0, fz0, fx1, fz1)
+	# кусты вдоль домов
+	for bsh in range(rng.randi_range(3, 7)):
+		var bsp := _yard_point(cx0 + 4, cx1 - 4, cz0 + 4, cz1 - 4, rects, 2.2)
+		if bsp.x != INF:
+			var bcol := Color(0.22, 0.38, 0.18) * (0.85 + rng.randf() * 0.3)
+			_box(TL.flat(bcol), bsp + Vector3(0, 0.35, 0), Vector3(rng.randf_range(0.9, 1.6), 0.7, rng.randf_range(0.9, 1.6)))
+	# лужайка с деревьями (модель Kenney, CC0)
+	if rng.randf() < 0.35:
+		var lp := _yard_point(cx0 + 14, cx1 - 14, cz0 + 14, cz1 - 14, rects, 1.0)
+		if lp.x != INF:
+			var tile = load(ML).spawn("res://models/grass-trees.glb", rng.randf_range(5.5, 7.0), false)
+			if tile != null:
+				tile.position = lp + Vector3(0, 0.03, 0)
+				tile.rotation.y = rng.randf() * TAU
+				add_child(tile)
+
+
+## Забор из профлиста с воротами
+func _fence_proflist(x0: float, z0: float, x1: float, z1: float) -> void:
+	var m = TL.proflist([Color("4a6a8a"), Color("5a705a"), Color("7a6a5a"), Color("6a6f75")][rng.randi() % 4])
+	var pm = TL.flat(Color(0.3, 0.3, 0.32), 0.5, 0.6)
+	var h := 2.1
+	var gap_side := rng.randi() % 4
+	for side in range(4):
+		var a := Vector3(x0, 0, z0)
+		var b := Vector3(x1, 0, z0)
+		if side == 1: b = Vector3(x1, 0, z1)
+		elif side == 2: a = Vector3(x1, 0, z1)
+		elif side == 3: b = Vector3(x0, 0, z1)
+		var mid := (a + b) * 0.5
+		var len := a.distance_to(b)
+		var horizontal := absf(b.x - a.x) > absf(b.z - a.z)
+		if side == gap_side:
+			# проём 4 м в центре стороны
+			var half := (len - 4.0) * 0.5
+			var dir := (b - a).normalized()
+			for seg in [-1.0, 1.0]:
+				var c1 := mid + dir * (2.0 + half * 0.5) * seg
+				var sz := Vector3(half, h, 0.08)
+				if not horizontal:
+					sz = Vector3(0.08, h, half)
+				_box(m, c1 + Vector3(0, h * 0.5, 0), sz)
+		else:
+			var sz2 := Vector3(len, h, 0.08)
+			if not horizontal:
+				sz2 = Vector3(0.08, h, len)
+			_box(m, mid + Vector3(0, h * 0.5, 0), sz2)
+		# столбы по углам стороны
+		for e in [a, b]:
+			_box(pm, e + Vector3(0, h * 0.5 + 0.15, 0), Vector3(0.14, h + 0.3, 0.14))
 
 
 func _yard_point(x0: float, x1: float, z0: float, z1: float, rects: Array, margin: float) -> Vector3:
@@ -605,8 +796,41 @@ func _bench_fixed(p: Vector3, ang: float) -> void:
 func _garage(p: Vector3, col: Color) -> void:
 	var m = TL.flat(col)
 	_box(m, p + Vector3(0, 1.5, 0), Vector3(6.0, 3.0, 4.6))
-	_box(TL.flat(col.darkened(0.4)), p + Vector3(0, 1.2, 2.32), Vector3(4.6, 2.4, 0.08))
+	_box(TL.shutter(), p + Vector3(0, 1.2, 2.32), Vector3(4.6, 2.4, 0.08))
 	_col_box(p + Vector3(0, 1.5, 0), Vector3(6.0, 3.0, 4.6))
+
+## Частный сектор: домики Kenney City Kit (CC0) с заборами
+func _block_village(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
+	_box(TL.ground("grass"), Vector3((cx0 + cx1) * 0.5, -0.1, (cz0 + cz1) * 0.5),
+		Vector3(cx1 - cx0, 0.2, cz1 - cz0))
+	var homes := ["res://models/building-small-a.glb", "res://models/building-small-b.glb",
+		"res://models/building-small-c.glb", "res://models/building-small-d.glb", "res://models/building-garage.glb"]
+	var pw := 28.0
+	var ph := 30.0
+	var cols := 3
+	var rows := 3
+	var mstart := Vector3((cx0 + cx1) * 0.5 - pw * cols * 0.5, 0, (cz0 + cz1) * 0.5 - ph * rows * 0.5)
+	for r in range(rows):
+		for c in range(cols):
+			var cellc := mstart + Vector3(pw * (c + 0.5), 0, ph * (r + 0.5))
+			if rng.randf() < 0.12:
+				continue  # пустой участок
+			var path: String = homes[rng.randi() % homes.size()]
+			var hm = load(ML).spawn(path, rng.randf_range(5.2, 6.8), true)
+			if hm == null:
+				continue
+			hm.position = cellc + Vector3(rng.randf_range(-3, 3), 0.05, rng.randf_range(-3, 3))
+			hm.rotation.y = (PI * 0.5 * rng.randi_range(0, 3)) + rng.randf_range(-0.1, 0.1)
+			add_child(hm)
+			_rects.append({"x": hm.position.x - 5, "z": hm.position.z - 5, "w": 10, "d": 10})
+			# заборчик участка с проёмом к улице
+			_fence_proflist(cellc.x - pw * 0.5 + 2.0, cellc.z - ph * 0.5 + 2.0,
+				cellc.x + pw * 0.5 - 2.0, cellc.z + ph * 0.5 - 2.0)
+			if rng.randf() < 0.5:
+				_tree(cellc + Vector3(rng.randf_range(-8, 8), 0, rng.randf_range(-9, 9)))
+	if job_points.size() < 26:
+		job_points.append(Vector3((cx0 + cx1) * 0.5, 0.1, (cz0 + cz1) * 0.5))
+
 
 # ---------- особые кварталы ----------
 
@@ -614,12 +838,16 @@ func _block_plaza(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 	_box(TL.ground("plaza"), Vector3((cx0 + cx1) * 0.5, -0.1, (cz0 + cz1) * 0.5),
 		Vector3(cx1 - cx0, 0.2, cz1 - cz0))
 	var m := Vector3((cx0 + cx1) * 0.5, 0, (cz0 + cz1) * 0.5)
-	var stone = TL.flat(Color(0.5, 0.5, 0.52))
-	_box(stone, m + Vector3(0, 0.6, 0), Vector3(5, 1.2, 5))
-	_box(stone, m + Vector3(0, 1.8, 0), Vector3(3, 1.2, 3))
-	_box(TL.flat(Color(0.55, 0.56, 0.6)), m + Vector3(0, 8.5, 0), Vector3(1.4, 12, 1.4))
-	_box(TL.night_mat(Color(1.0, 0.25, 0.2), 1.2), m + Vector3(0, 15.0, 0), Vector3(0.9, 0.9, 0.25))
-	_col_box(m + Vector3(0, 4, 0), Vector3(5, 8, 5))
+	# фонтан — модель Kenney City Kit (CC0), загрузка в рантайме
+	var ftn = load(ML).spawn("res://models/pavement-fountain.glb", 5.5, true)
+	if ftn != null:
+		ftn.position = m + Vector3(0, 0.05, 0)
+		add_child(ftn)
+	else:
+		var stone = TL.flat(Color(0.5, 0.5, 0.52))
+		_box(stone, m + Vector3(0, 0.6, 0), Vector3(5, 1.2, 5))
+		_box(stone, m + Vector3(0, 1.8, 0), Vector3(3, 1.2, 3))
+	_col_box(m + Vector3(0, 1, 0), Vector3(5, 2, 5))
 	_rects.append({"x": m.x - 2.5, "z": m.z - 2.5, "w": 5, "d": 5})
 	for k in range(8):
 		var a := TAU * k / 8.0
@@ -741,6 +969,16 @@ func _block_park(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 		var p := _yard_point(cx0 + 5, cx1 - 5, cz0 + 5, cz1 - 5, [pond], 2.5)
 		if p.x != INF:
 			_tree(p)
+	# поляны с деревьями (модели Kenney, CC0)
+	for t2 in range(5):
+		var p2 := _yard_point(cx0 + 10, cx1 - 10, cz0 + 10, cz1 - 10, [pond], 3.0)
+		if p2.x != INF:
+			var tmodel = "res://models/grass-trees-tall.glb" if rng.randf() < 0.5 else "res://models/grass-trees.glb"
+			var tile2 = load(ML).spawn(tmodel, rng.randf_range(6.0, 8.0), false)
+			if tile2 != null:
+				tile2.position = p2 + Vector3(0, 0.03, 0)
+				tile2.rotation.y = rng.randf() * TAU
+				add_child(tile2)
 	for b in range(6):
 		var bp := _yard_point(cx0 + 8, cx1 - 8, cz0 + 8, cz1 - 8, [pond], 2.0)
 		if bp.x != INF:

@@ -11,6 +11,7 @@ const VER_PATH := "user://cache/version.txt"
 ## Обновления кэша публикуются CI в GitHub Release "latest" (автоматически).
 ## Можно указать свой сервер в НАСТРОЙКАХ (кнопка «ИСТОЧНИК: GITHUB» возвращает авто).
 const DEFAULT_URL := "https://github.com/mimistr036-coder/launcher/releases/latest/download"
+const LVER := 2  # версия сборки лаунчера (CI кладёт launcher_version.txt в релиз)
 
 var base_url := ""
 var remote := {}           # содержимое version.json
@@ -278,6 +279,7 @@ func _on_http_done(result: int, code: int, _headers: PackedStringArray, body: Pa
 		_srv_ver.text = "Сервер: v%d" % int(remote.version)
 		_busy = false
 		_load_news()
+		_check_launcher_update()
 		var rv := int(remote.version)
 		if rv == local_version and FileAccess.file_exists(PCK_PATH):
 			_state = "ready"
@@ -290,7 +292,63 @@ func _on_http_done(result: int, code: int, _headers: PackedStringArray, body: Pa
 		_finish_download(result, code)
 
 
-func _start_download() -> void:
+## Самообновление лаунчера (ПК/Windows): качаем новый exe и подменяем себя.
+func _check_launcher_update() -> void:
+	if OS.has_feature("android") or OS.has_feature("web"):
+		return
+	var lv_http := HTTPRequest.new()
+	add_child(lv_http)
+	var url := base_url + "/launcher_version.txt"
+	var err := lv_http.request(url)
+	if err != OK:
+		lv_http.queue_free()
+		return
+	var resp: Array = await lv_http.request_completed
+	var result: int = resp[0]
+	var code: int = resp[1]
+	var body: PackedByteArray = resp[3]
+	lv_http.queue_free()
+	if result != HTTPRequest.RESULT_SUCCESS or code != 200:
+		return
+	var remote_lver := int(body.get_string_from_utf8().strip_edges())
+	if remote_lver <= LVER:
+		return
+	print("[launcher] новая версия лаунчера: v", remote_lver, " (у меня v", LVER, ")")
+	_set_status("Обновляю лаунчер v%d → v%d, не закрывайте..." % [LVER, remote_lver])
+	var dl := HTTPRequest.new()
+	add_child(dl)
+	dl.timeout = 300.0
+	var new_exe := OS.get_user_data_dir() + "/launcher_new.exe"
+	dl.download_file = new_exe
+	var err2 := dl.request(base_url + "/provinciya-launcher.exe")
+	if err2 != OK:
+		dl.queue_free()
+		return
+	var resp2: Array = await dl.request_completed
+	dl.queue_free()
+	if resp2[0] != HTTPRequest.RESULT_SUCCESS or resp2[1] != 200:
+		_set_status("Лаунчер обновить не удалось (код %d). Игра доступна." % resp2[1])
+		return
+	# bat: ждём выхода нашего процесса, подменяем exe, запускаем заново
+	var exe_path := OS.get_executable_path()
+	var bat := "@echo off\r\n"
+	bat += ":wait\r\n"
+	bat += 'tasklist /FI "PID eq %1" 2>nul | find "%1" >nul\r\n'
+	bat += "if not errorlevel 1 (timeout /t 1 /nobreak >nul\r\ngoto wait)\r\n"
+	bat += 'copy /y "%s" "%s"\r\n' % [new_exe, exe_path]
+	bat += 'del "%s"\r\n' % new_exe
+	bat += 'start "" "%s"\r\n' % exe_path
+	bat += 'del "%~f0"\r\n'
+	var bat_path := OS.get_user_data_dir() + "/update_launcher.bat"
+	var f := FileAccess.open(bat_path, FileAccess.WRITE)
+	if f == null:
+		return
+	f.store_string(bat)
+	f.close()
+	print("[launcher] перезапуск после обновления...")
+	OS.execute("cmd.exe", ["/c", bat_path, str(OS.get_process_id()), exe_path, new_exe], false)
+	get_tree().quit()
+
 	_busy = true
 	_state = "download"
 	_set_status("Скачивание кэша v%d (%s)..." % [int(remote.version), _fmt_size(float(remote.get("size", 0)))])

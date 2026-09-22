@@ -219,8 +219,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          LVER=$(grep -oP 'const LVER := \K\d+' launcher/main.gd || echo 1)
+          echo "$LVER" > launcher_version.txt
+          echo "launcher version: $LVER"
           gh release view latest > /dev/null 2>&1 || gh release create latest --title "Провинция RP — последняя сборка" --notes "Автосборка CI."
-          gh release upload latest launcher/builds/provinciya-launcher.apk launcher/builds/provinciya-launcher.exe --clobber
+          gh release upload latest launcher/builds/provinciya-launcher.apk launcher/builds/provinciya-launcher.exe launcher_version.txt --clobber
           gh release view latest --json assets --jq '.assets[].name'
 
       - name: Upload builds
