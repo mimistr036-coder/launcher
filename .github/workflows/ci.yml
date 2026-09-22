@@ -1,0 +1,236 @@
+name: CI
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Godot 4.3
+        run: |
+          curl -sL -o /tmp/godot.zip https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
+          unzip -o /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.3-stable_linux.x86_64
+          /tmp/Godot_v4.3-stable_linux.x86_64 --version
+
+      - name: Build cache (PCK)
+        run: |
+          python3 tools/build_cache.py
+          python3 -m json.tool updates/www/version.json
+
+      - name: Game autotest (offline city build)
+        id: t1
+        continue-on-error: true
+        run: |
+          set +e
+          GAME_AUTOTEST=offline timeout 150 /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path game > /tmp/offline.log 2>&1
+          echo $? > /tmp/offline.code
+          echo "offline exit: $(cat /tmp/offline.code)"
+
+      - name: City screenshot (4.3, virtual display)
+        if: always()
+        continue-on-error: true
+        run: |
+          set +e
+          sudo apt-get install -y -qq xvfb > /dev/null 2>&1
+          GAME_AUTOTEST=shot LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.3-stable_linux.x86_64 --path game > /tmp/shot43.log 2>&1
+          echo "shot43 exit: $?"
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-4.3.png && echo "скриншот 4.3 готов"
+          GAME_AUTOTEST=shot15 LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.3-stable_linux.x86_64 --path game > /tmp/shot15.log 2>&1
+          echo "shot15 exit: $?"
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-day1534.png && echo "скриншот 15:34 готов"
+          SHOT_POS="-80,0.2,0" SHOT_YAW="-1.5708" GAME_AUTOTEST=shot LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.3-stable_linux.x86_64 --path game > /tmp/shotw.log 2>&1
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-west.png && echo "запад готов"
+          SHOT_POS="0,0.2,-80" SHOT_YAW="3.1416" GAME_AUTOTEST=shot LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.3-stable_linux.x86_64 --path game > /tmp/shotn.log 2>&1
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-north.png && echo "север готов"
+
+      - name: Multiplayer autotest (server + client)
+        id: t2
+        if: always()
+        continue-on-error: true
+        run: |
+          set +e
+          /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path server -- --port=17777 > /tmp/server.log 2>&1 &
+          SRV=$!
+          sleep 4
+          GAME_AUTOTEST=mp:127.0.0.1:17777 timeout 150 /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path game > /tmp/client.log 2>&1
+          echo $? > /tmp/client.code
+          kill $SRV 2>/dev/null
+          echo "client exit: $(cat /tmp/client.code)"
+
+      - name: Launcher E2E autotest (download + load cache)
+        id: t3
+        if: always()
+        continue-on-error: true
+        run: |
+          set +e
+          python3 tools/serve_updates.py 8090 > /tmp/http.log 2>&1 &
+          HTTPD=$!
+          sleep 2
+          LAUNCHER_AUTOTEST=1 LAUNCHER_URL=http://127.0.0.1:8090 timeout 180 /tmp/Godot_v4.3-stable_linux.x86_64 --headless --path launcher > /tmp/launcher.log 2>&1
+          echo $? > /tmp/launcher.code
+          kill $HTTPD 2>/dev/null
+          echo "launcher exit: $(cat /tmp/launcher.code)"
+
+      - name: Launcher E2E on Godot 4.0 (совместимость с ПК пользователя)
+        id: t4
+        if: always()
+        continue-on-error: true
+        run: |
+          set +e
+          curl -sL -o /tmp/g40.zip https://github.com/godotengine/godot/releases/download/4.0-stable/Godot_v4.0-stable_linux.x86_64.zip
+          unzip -o /tmp/g40.zip -d /tmp
+          chmod +x /tmp/Godot_v4.0-stable_linux.x86_64
+          /tmp/Godot_v4.0-stable_linux.x86_64 --version
+          python3 tools/serve_updates.py 8091 > /tmp/compat40-http.log 2>&1 &
+          HTTPD=$!
+          sleep 2
+          LAUNCHER_AUTOTEST=1 LAUNCHER_URL=http://127.0.0.1:8091 timeout 180 /tmp/Godot_v4.0-stable_linux.x86_64 --headless --path launcher > /tmp/compat40.log 2>&1
+          echo $? > /tmp/compat40.code
+          kill $HTTPD 2>/dev/null
+          echo "compat40 exit: $(cat /tmp/compat40.code)"
+          GAME_AUTOTEST=shot LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.0-stable_linux.x86_64 --path game > /tmp/shot40.log 2>&1
+          echo "shot40 exit: $?"
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-4.0.png && echo "скриншот 4.0 готов"
+          SHOT_TIME="19.6" GAME_AUTOTEST=shot LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.0-stable_linux.x86_64 --path game > /tmp/shotdusk.log 2>&1
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-dusk.png && echo "сумерки готовы"
+          # сквозной путь пользователя: лаунчер качает кэш, монтирует и запускает игру
+          python3 tools/serve_updates.py 8092 > /tmp/http2.log 2>&1 &
+          sleep 2
+          LAUNCHER_SHOT=1 GAME_AUTOTEST=shot LAUNCHER_URL=http://127.0.0.1:8092 LIBGL_ALWAYS_SOFTWARE=1 timeout 150 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.0-stable_linux.x86_64 --path launcher > /tmp/shot-launcher.log 2>&1
+          echo "shot-launcher exit: $?"
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-via-launcher.png && echo "скриншот через лаунчер готов"
+          # крупный план: стоим на дороге, смотрим на дом через улицу
+          SHOT_POS="76,0.2,50" SHOT_YAW="-2.35" GAME_AUTOTEST=shot LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.0-stable_linux.x86_64 --path game > /tmp/shotclose.log 2>&1
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-close.png && echo "крупный план готов"
+
+      - name: Save logs into repo
+        if: always()
+        run: |
+          set +e
+          rm -rf ci-logs
+          mkdir -p ci-logs
+          for f in offline server client launcher http compat40 compat40-http gate shot43 shot40 shot15 shotw shotn shot-launcher shotclose http2; do
+            [ -f /tmp/$f.log ] && cp /tmp/$f.log ci-logs/$f.log
+            [ -f /tmp/$f.code ] && cp /tmp/$f.code ci-logs/$f.code
+          done
+          for p in city-4.3 city-4.0 city-day1534 city-west city-north city-via-launcher city-close city-dusk; do
+            [ -f /tmp/$p.png ] && cp /tmp/$p.png ci-logs/$p.png
+          done
+          # вердикт Gate для разбора в репозитории (нужен, т.к. логи джоб из песочницы не скачать)
+          for t in offline client launcher compat40; do
+            echo "$t = '$(cat /tmp/$t.code 2>/dev/null || echo missing)'" >> ci-logs/gate.log
+          done
+          git config user.name "arena-bot"
+          git config user.email "actions@arena.local"
+          git add ci-logs
+          git add updates/www/game.pck updates/www/version.json
+          if ! git diff --cached --quiet; then
+            git commit -m "ci: логи автотестов и кэш [skip ci]"
+            for i in 1 2 3 4 5; do
+              git fetch origin "${{ github.ref_name }}" > /dev/null 2>&1
+              git rebase FETCH_HEAD > /dev/null 2>&1
+              if git push origin HEAD:${{ github.ref_name }}; then break; fi
+              sleep 5
+            done
+          fi
+
+      - name: Gate
+        if: always()
+        run: |
+          fail=0
+          for t in offline client launcher compat40; do
+            code=$(cat /tmp/$t.code 2>/dev/null || echo 99)
+            if [ "$code" != "0" ]; then
+              echo "STEP $t FAILED (exit $code)"
+              fail=1
+            else
+              echo "STEP $t OK"
+            fi
+          done
+          exit "$fail"
+
+      - name: Publish cache to GitHub Release (latest)
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view latest > /dev/null 2>&1 || gh release create latest --title "Провинция RP — последняя сборка" --notes "Автосборка CI. Лаунчер обновится сам."
+          gh release upload latest updates/www/game.pck updates/www/version.json updates/www/news.json --clobber
+          gh release view latest --json assets --jq '.assets[].name'
+
+  apk:
+    # Готовый APK лаунчера для Android + exe для Windows — только на зелёные тесты.
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Godot 4.3 + export templates
+        run: |
+          curl -sL -o /tmp/godot.zip https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
+          unzip -o /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.3-stable_linux.x86_64
+          curl -sL -o /tmp/tpl.tpz https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_export_templates.tpz
+          unzip -o /tmp/tpl.tpz 'templates/*' -d /tmp/tpl
+          mkdir -p ~/.local/share/godot/export_templates/4.3.stable
+          cp /tmp/tpl/templates/android_debug.apk ~/.local/share/godot/export_templates/4.3.stable/
+          cp /tmp/tpl/templates/windows_debug_x86_64.exe ~/.local/share/godot/export_templates/4.3.stable/
+          cp /tmp/tpl/templates/windows_release_x86_64.exe ~/.local/share/godot/export_templates/4.3.stable/
+
+      - name: Editor settings (SDK, JDK, debug-keystore)
+        run: |
+          mkdir -p ~/.android
+          keytool -genkeypair -keystore ~/.android/debug.keystore \
+            -storepass android -alias androiddebugkey -keypass android \
+            -dname "CN=Android Debug,O=Android,C=US" -keyalg RSA -keysize 2048 -validity 10000
+          mkdir -p ~/.config/godot
+          for name in editor_settings-4.tres editor_settings-4.3.tres; do
+            cat > ~/.config/godot/$name <<EOF
+          [export]
+
+          android/java_sdk_path="${JAVA_HOME}"
+          android/android_sdk_path="/usr/local/lib/android/sdk"
+          android/debug_keystore="${HOME}/.android/debug.keystore"
+          android/debug_keystore_user="androiddebugkey"
+          android/debug_keystore_pass="android"
+          EOF
+          done
+
+      - name: Export Android APK + Windows exe
+        run: |
+          cd launcher
+          mkdir -p builds
+          /tmp/Godot_v4.3-stable_linux.x86_64 --headless --export-debug "Android" builds/provinciya-launcher.apk
+          /tmp/Godot_v4.3-stable_linux.x86_64 --headless --export-debug "Windows" builds/provinciya-launcher.exe
+          ls -la builds/
+
+      - name: Publish APK/exe to GitHub Release (latest)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          LVER=$(grep -oP 'const LVER := \K\d+' launcher/main.gd || echo 1)
+          echo "$LVER" > launcher_version.txt
+          echo "launcher version: $LVER"
+          gh release view latest > /dev/null 2>&1 || gh release create latest --title "Провинция RP — последняя сборка" --notes "Автосборка CI."
+          gh release upload latest launcher/builds/provinciya-launcher.apk launcher/builds/provinciya-launcher.exe launcher_version.txt --clobber
+          gh release view latest --json assets --jq '.assets[].name'
+
+      - name: Upload builds
+        uses: actions/upload-artifact@v4
+        with:
+          name: provinciya-launcher
+          path: launcher/builds/*
+          if-no-files-found: error
