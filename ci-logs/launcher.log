@@ -1,7 +1,7 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
 [launcher] Проверка обновлений...
-[launcher] Скачивание кэша v60 (494 КБ)...
+[launcher] Скачивание кэша v61 (494 КБ)...
 [launcher] Скачивание кэша... 64 КБ / 494 КБ
 [launcher] Скачивание кэша... 128 КБ / 494 КБ
 [launcher] Скачивание кэша... 192 КБ / 494 КБ
@@ -9,13 +9,5 @@ Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 [launcher] Скачивание кэша... 320 КБ / 494 КБ
 [launcher] Скачивание кэша... 384 КБ / 494 КБ
 [launcher] Скачивание кэша... 448 КБ / 494 КБ
-[launcher] Готово! Кэш v60 установлен.
-SCRIPT ERROR: Parse Error: Cannot pass a value of type "int" as "Callable".
-          at: GDScript::reload (res://br/editor.gd:67)
-SCRIPT ERROR: Parse Error: Invalid argument for "_mk_btn()" function: argument 2 should be "Callable" but is "int".
-          at: GDScript::reload (res://br/editor.gd:67)
-SCRIPT ERROR: Parse Error: Cannot infer the type of "hit" variable because the value doesn't have a set type.
-          at: GDScript::reload (res://br/editor.gd:179)
-ERROR: Failed to load script "res://br/editor.gd" with error "Parse error".
-   at: load (modules/gdscript/gdscript.cpp:2936)
-[LAUNCHER_AUTOTEST] FAIL scene=<PackedScene#-9223372008702605892> boot=<GDScript#-9223372008887155266> bad_scripts=editor.gd 
+[launcher] Готово! Кэш v61 установлен.
+[LAUNCHER_AUTOTEST] OK version=61 size=506156 scene=found
