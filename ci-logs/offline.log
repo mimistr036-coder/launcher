@@ -33,9 +33,1789 @@ ERROR: No loader found for resource: res://models/Textures/colormap.png (expecte
    at: _load (core/io/resource_loader.cpp:291)
 ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
    at: _load (core/io/resource_loader.cpp:291)
+SCRIPT ERROR: Parse Error: Cannot pass a value of type "int" as "Callable".
+          at: GDScript::reload (res://br/editor.gd:67)
+SCRIPT ERROR: Parse Error: Invalid argument for "_mk_btn()" function: argument 2 should be "Callable" but is "int".
+          at: GDScript::reload (res://br/editor.gd:67)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "cc" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://br/editor.gd:89)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "hit" variable because the value doesn't have a set type.
+          at: GDScript::reload (res://br/editor.gd:170)
+ERROR: Failed to load script "res://br/editor.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript.cpp:2936)
+SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
+          at: _ready (res://br/world.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
 [AUTOTEST] движение W: velocity*fwd=3.90000009536743
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
 [AUTOTEST] геометрия: поверхностей=440 треугольников=77110 битых индексов=0
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
 [AUTOTEST] руление вправо: rotation.y=-0.54349637031555 speed=6.22065782546997 y=0.0719403848052
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:219)
+SCRIPT ERROR: Invalid access to property or key 'active' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:504)
 [AUTOTEST] OK cars=1 npcs=8 job_points=36
 ERROR: Parameter "m" is null.
    at: mesh_get_surface_count (servers/rendering/dummy/storage/mesh_storage.h:120)
