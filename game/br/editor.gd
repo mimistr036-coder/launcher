@@ -64,7 +64,9 @@ func _build_panel() -> void:
 	r1.add_theme_constant_override("separation", 4)
 	for t in [["БЛОК", "block"], ["ПЛИТА", "plate"], ["КОЛОННА", "column"],
 			["ДОМ", "house"], ["ФОНТАН", "fountain"], ["ДЕРЕВО", "tree"]]:
-		var b := _mk_btn(t[0], 12)
+		var b := Button.new()
+		b.text = t[0]
+		b.add_theme_font_size_override("font_size", 12)
 		b.toggle_mode = true
 		var tt: String = t[1]
 		b.pressed.connect(func() -> void:
@@ -176,7 +178,7 @@ func _tap(pos: Vector2) -> void:
 	var q := PhysicsRayQueryParameters3D.create(from, from + dir * 150.0)
 	if world.player != null:
 		q.exclude = [world.player.get_rid()]
-	var hit := world.get_world_3d().direct_space_state.intersect_ray(q)
+	var hit: Dictionary = world.get_world_3d().direct_space_state.intersect_ray(q)
 	if hit.is_empty():
 		return
 	var hit_col: Object = hit.get("collider")
