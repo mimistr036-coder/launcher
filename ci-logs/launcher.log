@@ -1,7 +1,7 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
 [launcher] Проверка обновлений...
-[launcher] Скачивание кэша v53 (480 КБ)...
+[launcher] Скачивание кэша v54 (480 КБ)...
 [launcher] Скачивание кэша... 64 КБ / 480 КБ
 [launcher] Скачивание кэша... 128 КБ / 480 КБ
 [launcher] Скачивание кэша... 192 КБ / 480 КБ
@@ -9,11 +9,5 @@ Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 [launcher] Скачивание кэша... 320 КБ / 480 КБ
 [launcher] Скачивание кэша... 384 КБ / 480 КБ
 [launcher] Скачивание кэша... 448 КБ / 480 КБ
-[launcher] Готово! Кэш v53 установлен.
-SCRIPT ERROR: Parse Error: Cannot infer the type of "c" variable because the value doesn't have a set type.
-          at: GDScript::reload (res://br/city_builder.gd:383)
-SCRIPT ERROR: Parse Error: Cannot infer the type of "c2" variable because the value doesn't have a set type.
-          at: GDScript::reload (res://br/city_builder.gd:398)
-ERROR: Failed to load script "res://br/city_builder.gd" with error "Parse error".
-   at: load (modules/gdscript/gdscript.cpp:2936)
-[LAUNCHER_AUTOTEST] FAIL scene=<PackedScene#-9223372008702605892> boot=<GDScript#-9223372008887155266> bad_scripts=city_builder.gd 
+[launcher] Готово! Кэш v54 установлен.
+[LAUNCHER_AUTOTEST] OK version=54 size=491916 scene=found
