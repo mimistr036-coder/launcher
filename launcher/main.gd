@@ -346,7 +346,7 @@ func _check_launcher_update() -> void:
 	f.store_string(bat)
 	f.close()
 	print("[launcher] перезапуск после обновления...")
-	OS.execute("cmd.exe", ["/c", bat_path, str(OS.get_process_id()), exe_path, new_exe], false)
+	OS.execute("cmd.exe", ["/c", bat_path, str(OS.get_process_id()), exe_path, new_exe], [], false, false)
 	get_tree().quit()
 
 
