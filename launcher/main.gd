@@ -192,7 +192,7 @@ func _build_settings() -> void:
 	_url_edit.text = base_url
 	_url_edit.add_theme_font_size_override("font_size", 17)
 	v.add_child(_url_edit)
-	var gh_btn = UTIL.button("ИСТОЧНИК: GITHUB (авто)", 15)
+	var gh_btn := _mk_button("ИСТОЧНИК: GITHUB (авто)", 15, Color(0.25, 0.35, 0.5))
 	gh_btn.pressed.connect(_use_github)
 	v.add_child(gh_btn)
 	var save := _mk_button("СОХРАНИТЬ", 17, Color(0.2, 0.45, 0.3))
