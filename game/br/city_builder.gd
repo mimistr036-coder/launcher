@@ -311,6 +311,13 @@ func _ground_and_roads() -> void:
 				var zc: float = zj + side * (ROAD_W * 0.5 + 2.2)
 				for k in range(-2, 3):
 					_box(white, Vector3(xi + k * 1.4, 0.01, zc), Vector3(0.7, 0.02, 3.0))
+	# дорожные знаки «пешеходный переход» у некоторых зебр
+	for i6 in [2, 4]:
+		for j6 in [2, 4]:
+			var sx := line_coord(i6)
+			var szc := line_coord(j6)
+			_road_sign(Vector3(sx + ROAD_W * 0.5 + 1.8, 0, szc - ROAD_W * 0.5 - 3.0))
+			_road_sign(Vector3(sx - ROAD_W * 0.5 - 1.8, 0, szc + ROAD_W * 0.5 + 3.0))
 	# бордюры: сегменты вдоль дорог между перекрёстками
 	var curb = TL.flat(Color(0.62, 0.62, 0.60))
 	var edge := ROAD_W * 0.5 + 0.25
@@ -422,6 +429,13 @@ func _block_default(cx0: float, cx1: float, cz0: float, cz1: float, district: St
 				if wq < 20.0 or cursor + wq > along1 - 6.0:
 					break
 				_house(cursor, wq, side, cx0, cx1, cz0, cz1, pal, 0, district)
+				if district == "center" and rng.randf() < 0.45:
+					# крыло во двор — П-образный план дома
+					var wing_fl: int = [5, 6, 6, 7][rng.randi() % 4]
+					if side < 2:
+						_house(cz0 + 13.0, _qw((cz1 - cz0) * 0.5), 2, cx0, cx1, cz0, cz1, pal, wing_fl, district)
+					else:
+						_house(cx0 + 13.0, _qw((cx1 - cx0) * 0.5), 0, cx0, cx1, cz0, cz1, pal, wing_fl, district)
 				cursor += wq + 4.0 + rng.randf() * 6.0
 	elif arch == 1:
 		# башни во дворе
@@ -474,6 +488,15 @@ func _block_default(cx0: float, cx1: float, cz0: float, cz1: float, district: St
 			var along1: float = cx1 if side < 2 else cz1
 			_house(along0 + 6.0, _qw(along1 - along0 - 12.0), side, cx0, cx1, cz0, cz1, pal, 0, district)
 	_courtyard(cx0, cx1, cz0, cz1, rects)
+	# киоск у угла квартала
+	if district != "village" and rng.randf() < 0.4:
+		var ki := rng.randi() % 4
+		var kp := Vector3(cx0 + 5.0, 0, cz0 + 9.0)
+		if ki == 1:
+			kp = Vector3(cx1 - 5.0, 0, cz1 - 9.0)
+		elif ki == 2:
+			kp = Vector3(cx1 - 9.0, 0, cz0 + 5.0)
+		_kiosk(kp, ki, KIOSK_NAMES[rng.randi() % KIOSK_NAMES.size()])
 	if job_points.size() < 26:
 		job_points.append(Vector3(rng.randf_range(cx0 + 15, cx1 - 15), 0.1, rng.randf_range(cz0 + 15, cz1 - 15)))
 
@@ -485,7 +508,7 @@ func _house(cursor: float, wq: float, side: int, cx0: float, cx1: float, cz0: fl
 	var floors: int = force_floors
 	if floors <= 0:
 		if district == "center":
-			floors = [6, 6, 7, 7, 8][rng.randi() % 5]
+			floors = [6, 7, 7, 8, 9][rng.randi() % 5]
 		elif district == "mid":
 			floors = [9, 9, 12, 12, 14][rng.randi() % 5]
 		else:
@@ -566,14 +589,23 @@ func _building(pos: Vector3, sz: Vector3, mat: Material, floors: int, side: int)
 			Vector3(1.3, 0.9, 1.3))
 	if floors >= 9 and rng.randf() < 0.7:
 		_cyl(TL.flat(Color(0.3, 0.3, 0.33)), Vector3(pos.x + sz.x * 0.25, sz.y + 0.5, pos.z - sz.z * 0.2), 0.05, 0.03, 6.0, 4)
+	# ориентация уличного фасада
+	var out := Vector3(0, 0, -1)
+	if side == 1: out = Vector3(0, 0, 1)
+	elif side == 2: out = Vector3(-1, 0, 0)
+	elif side == 3: out = Vector3(1, 0, 0)
+	var along_w: float = sz.x if side < 2 else sz.z
+	var out_d: float = sz.z if side < 2 else sz.x
+	# лестничная клетка: остеклённая полоса во всю высоту
+	if floors >= 5 and rng.randf() < 0.65:
+		var sg = TL.flat(Color(0.5, 0.56, 0.62), 0.35, 0.4)
+		var soff := along_w * 0.3
+		if side < 2:
+			_box(sg, pos + out * (out_d * 0.5 + 0.06) + Vector3(soff, sz.y * 0.5 + 0.3, 0), Vector3(2.4, sz.y - 3.0, 0.14))
+		else:
+			_box(sg, pos + out * (out_d * 0.5 + 0.06) + Vector3(0, sz.y * 0.5 + 0.3, soff), Vector3(0.14, sz.y - 3.0, 2.4))
 	# балконы на уличном фасаде
 	if floors >= 5 and rng.randf() < 0.85:
-		var out := Vector3(0, 0, -1)
-		if side == 1: out = Vector3(0, 0, 1)
-		elif side == 2: out = Vector3(-1, 0, 0)
-		elif side == 3: out = Vector3(1, 0, 0)
-		var along_w: float = sz.x if side < 2 else sz.z
-		var out_d: float = sz.z if side < 2 else sz.x
 		var n := clampi(int(along_w / 9.0), 2, 5)
 		var balc = TL.flat(Color(0.75, 0.74, 0.71))
 		var rail = TL.flat(Color(0.5, 0.52, 0.56))
@@ -587,7 +619,6 @@ func _building(pos: Vector3, sz: Vector3, mat: Material, floors: int, side: int)
 				bs = Vector3(2.5, 0.16, 1.15)
 			else:
 				bp.z += along_w * t
-				bs = bs
 			_box(balc, bp, bs)
 			var rs := Vector3(2.5, 1.0, 0.09)
 			if side < 2:
@@ -665,7 +696,10 @@ func _courtyard(cx0: float, cx1: float, cz0: float, cz1: float, rects: Array) ->
 	for t in range(rng.randi_range(5, 11)):
 		var p := _yard_point(cx0 + 5, cx1 - 5, cz0 + 5, cz1 - 5, rects, 3.0)
 		if p.x != INF:
-			_tree(p)
+			if rng.randf() < 0.35:
+				_birch(p)
+			else:
+				_tree(p)
 	for b in range(rng.randi_range(1, 3)):
 		var bp := _yard_point(cx0 + 6, cx1 - 6, cz0 + 6, cz1 - 6, rects, 2.0)
 		if bp.x != INF:
@@ -773,6 +807,49 @@ func _tree(p: Vector3) -> void:
 	_cyl(TL.foliage(rng.randi() % 3), p + Vector3(0, 1.4, 0), 1.7, 0.1, 3.2, 6)
 	_cyl(TL.foliage(rng.randi() % 3), p + Vector3(0, 3.4, 0), 1.15, 0.05, 1.8, 6)
 	_col_cyl(p, 0.28, 3.0)
+
+
+## Берёза: белый ствол в чёрную крапинку, светлая листва
+func _birch(p: Vector3) -> void:
+	_cyl(TL.birch(), p, 0.17, 0.12, 3.4, 5)
+	_cyl(TL.foliage(rng.randi() % 3), p + Vector3(0, 2.2, 0), 1.35, 0.08, 3.0, 6)
+	_col_cyl(p, 0.22, 3.0)
+
+
+## Киоск у дороги: «ШАУРМА», «ЦВЕТЫ» и т.д.
+const KIOSK_NAMES := ["ШАУРМА", "ЦВЕТЫ", "ОВОЩИ", "КОФЕ", "ПЕЧАТЬ", "ЖЕМЧУЖИНКА"]
+
+func _kiosk(p: Vector3, rot_i: int, kname: String) -> void:
+	var col: Color = [Color("c2503c"), Color("3c6ac2"), Color("3ca05a"), Color("c2923c")][rot_i % 4]
+	var m = TL.flat(col)
+	_box(m, p + Vector3(0, 1.35, 0), Vector3(3.2, 2.7, 2.4))
+	# окно выдачи на фронт (+z локально)
+	var front := Vector3(0, 0, 1)
+	if rot_i % 2 == 1:
+		front = Vector3(1, 0, 0) if rot_i == 1 else Vector3(-1, 0, 0)
+	elif rot_i == 2:
+		front = Vector3(0, 0, -1)
+	var fp := p + front * 1.23 + Vector3(0, 1.3, 0)
+	var fsz := Vector3(2.0, 0.9, 0.08)
+	if absf(front.x) > 0.5:
+		fsz = Vector3(0.08, 0.9, 2.0)
+	_box(TL.flat(Color(0.15, 0.2, 0.25)), fp, fsz)
+	# крыша-козырёк
+	_box(TL.flat(col.darkened(0.35)), p + Vector3(0, 2.85, 0), Vector3(3.7, 0.3, 2.9))
+	# вывеска
+	var sp := p + front * 1.3 + Vector3(0, 3.4, 0)
+	_sign(kname, sp, 0.62, Color(1, 0.95, 0.7))
+	_col_box(p + Vector3(0, 1.35, 0), Vector3(3.2, 2.7, 2.4))
+
+
+## Дорожный знак «пешеходный переход»
+func _road_sign(p: Vector3) -> void:
+	_cyl(TL.flat(Color(0.6, 0.62, 0.65), 0.7, 0.4), p, 0.05, 0.04, 2.8, 5)
+	# синий квадрат с белой каймой
+	var plate = TL.flat(Color(0.16, 0.35, 0.75))
+	_box(plate, p + Vector3(0, 2.55, 0), Vector3(0.66, 0.66, 0.05))
+	_box(TL.flat(Color(0.92, 0.92, 0.92)), p + Vector3(0, 2.55, -0.03), Vector3(0.4, 0.3, 0.02))
+	_col_cyl(p, 0.08, 2.8)
 
 
 func _bench_fixed(p: Vector3, ang: float) -> void:
@@ -968,7 +1045,10 @@ func _block_park(cx0: float, cx1: float, cz0: float, cz1: float) -> void:
 	for t in range(20):
 		var p := _yard_point(cx0 + 5, cx1 - 5, cz0 + 5, cz1 - 5, [pond], 2.5)
 		if p.x != INF:
-			_tree(p)
+			if rng.randf() < 0.4:
+				_birch(p)
+			else:
+				_tree(p)
 	# поляны с деревьями (модели Kenney, CC0)
 	for t2 in range(5):
 		var p2 := _yard_point(cx0 + 10, cx1 - 10, cz0 + 10, cz1 - 10, [pond], 3.0)

@@ -301,6 +301,51 @@ static func set_night(f: float) -> void:
 
 # ---------------- Машины ----------------
 
+## Спортивная классика: две белые полосы
+static func stripes(base: Color) -> StandardMaterial3D:
+	var key := "stripes_" + base.to_html(false)
+	if _cache().has(key):
+		return _cache()[key]
+	var img := Image.create(64, 64, false, Image.FORMAT_RGB8)
+	for y in range(64):
+		for x in range(64):
+			var c := base * (0.95 + 0.1 * sin(float(x) * 0.7))
+			if x >= 44 and x <= 48:
+				c = Color(0.94, 0.94, 0.94)
+			elif x >= 52 and x <= 56:
+				c = Color(0.94, 0.94, 0.94)
+			img.set_pixel(x, y, c)
+	_fix_img(img)
+	var m := flat(Color(1, 1, 1))
+	m.albedo_texture = ImageTexture.create_from_image(img)
+	_cache()[key] = m
+	return m
+
+
+## Кора берёзы: белая с чёрными чёрточками
+static func birch() -> StandardMaterial3D:
+	if _cache().has("birch"):
+		return _cache()["birch"]
+	var img := Image.create(32, 64, false, Image.FORMAT_RGB8)
+	var rng := RandomNumberGenerator.new()
+	rng.seed = 812
+	for y in range(64):
+		for x in range(32):
+			var c := Color(0.88, 0.87, 0.83) * (0.94 + rng.randf() * 0.08)
+			img.set_pixel(x, y, c)
+	for d in range(14):
+		var dx := rng.randi_range(2, 28)
+		var dy := rng.randi_range(2, 60)
+		var dl := rng.randi_range(2, 5)
+		for xx in range(dl):
+			img.set_pixel(clampi(dx + xx, 0, 31), dy, Color(0.13, 0.13, 0.12))
+	_fix_img(img)
+	var m := flat(Color(1, 1, 1))
+	m.albedo_texture = ImageTexture.create_from_image(img)
+	_cache()["birch"] = m
+	return m
+
+
 ## Рулонная кровля с гравием
 static func roof_mat() -> StandardMaterial3D:
 	if _cache().has("roof"):

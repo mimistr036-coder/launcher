@@ -29,6 +29,18 @@ func setup(t: int, c: int) -> void:
 	paint_idx = c % CT.PAINTS.size()
 
 
+## Наклонная деталь (лобовые стёкла, клин капота)
+func _mkangled(sz: Vector3, mat: Material, pos: Vector3, ang_x: float) -> void:
+	var mi := MeshInstance3D.new()
+	var bm := BoxMesh.new()
+	bm.size = sz
+	bm.material = mat
+	mi.mesh = bm
+	mi.position = pos
+	mi.rotation.x = ang_x
+	add_child(mi)
+
+
 func _ready() -> void:
 	collision_layer = 4
 	collision_mask = 1 | 2 | 4
@@ -76,6 +88,36 @@ func _ready() -> void:
 		_mkbox(cabin, glass, Vector3(0, by + body.y + cabin.y * 0.5, T.cabin_z))
 		_mkbox(Vector3(cabin.x * 1.04, 0.07, cabin.z * 1.06), paint,
 			Vector3(0, by + body.y + cabin.y + 0.035, T.cabin_z))
+		# лобовое стекло с наклоном (как у настоящей машины)
+		var ws_len: float = sqrt(cabin.y * cabin.y + 0.7 * 0.7)
+		_mkangled(Vector3(cabin.x * 0.92, 0.05, ws_len), glass,
+			Vector3(0, by + body.y + cabin.y * 0.45, T.cabin_z - cabin.z * 0.5 - 0.28), deg_to_rad(-38.0 if style != "uaz" else -22.0))
+		# заднее стекло (у хэтча — круто, у седана — полого)
+		var rs_ang := deg_to_rad(36.0) if style == "hatch" else deg_to_rad(24.0)
+		_mkangled(Vector3(cabin.x * 0.92, 0.05, sqrt(cabin.y * cabin.y + 0.5 * 0.5)), glass,
+			Vector3(0, by + body.y + cabin.y * 0.45, T.cabin_z + cabin.z * 0.5 + 0.22), rs_ang)
+		# клин капота — силуэт с рельефом
+		_mkangled(Vector3(body.x * 0.92, 0.07, body.z * 0.26), paint,
+			Vector3(0, by + body.y + 0.03, -body.z * 0.5 + body.z * 0.17), deg_to_rad(6.0))
+		if style == "uaz":
+			# запаска на пятой двери + рейлинги
+			var spare := MeshInstance3D.new()
+			var sm := CylinderMesh.new()
+			sm.top_radius = T.wheel_r * 0.94
+			sm.bottom_radius = T.wheel_r * 0.94
+			sm.height = 0.2
+			sm.radial_segments = 10
+			sm.material = TL.flat(Color(0.07, 0.07, 0.08), 0.0, 0.95)
+			spare.mesh = sm
+			spare.rotation.x = PI / 2.0
+			spare.position = Vector3(0, by + body.y * 0.6, body.z * 0.5 + 0.14)
+			add_child(spare)
+			_mkbox(Vector3(0.06, 0.05, cabin.z * 0.8), dark, Vector3(body.x * 0.34, by + body.y + cabin.y + 0.09, T.cabin_z))
+			_mkbox(Vector3(0.06, 0.05, cabin.z * 0.8), dark, Vector3(-body.x * 0.34, by + body.y + cabin.y + 0.09, T.cabin_z))
+		elif style == "hatch":
+			# спойлер-губка на крыше сзади
+			_mkbox(Vector3(cabin.x * 1.02, 0.06, 0.16), paint,
+				Vector3(0, by + body.y + cabin.y + 0.1, T.cabin_z + cabin.z * 0.5 + 0.1))
 		if style == "pickup":
 			# открытый кузов: пол + три стенки
 			var bed_z: float = T.cabin_z + cabin.z * 0.5

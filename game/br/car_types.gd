@@ -32,6 +32,24 @@ const TYPES := [
 		"track": 1.54, "wheelbase": 3.0, "wheel_r": 0.34,
 		"max_speed": 24.0, "accel": 9.0,
 	},
+	{
+		"name": "Хэтчбек",
+		"body": Vector3(1.6, 0.5, 3.5), "cabin": Vector3(1.48, 0.55, 1.7), "cabin_z": 0.3,
+		"track": 1.34, "wheelbase": 2.1, "wheel_r": 0.28,
+		"max_speed": 30.0, "accel": 15.0, "style": "hatch",
+	},
+	{
+		"name": "Газель",
+		"body": Vector3(1.95, 1.35, 5.6), "cabin": Vector3(1.9, 0.7, 1.8), "cabin_z": -1.6,
+		"track": 1.56, "wheelbase": 3.2, "wheel_r": 0.37,
+		"max_speed": 25.0, "accel": 8.0, "style": "van",
+	},
+	{
+		"name": "УАЗ",
+		"body": Vector3(1.75, 0.85, 4.3), "cabin": Vector3(1.7, 0.6, 2.5), "cabin_z": -0.2,
+		"track": 1.5, "wheelbase": 2.5, "wheel_r": 0.39,
+		"max_speed": 26.0, "accel": 10.0, "style": "uaz",
+	},
 ]
 
 const PAINTS := [

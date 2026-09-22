@@ -116,6 +116,9 @@ func car_controls() -> Dictionary:
 		var a: Vector2 = hud.move_axis()
 		if absf(a.x) > 0.1:
 			steer = clampf(steer + a.x, -1.0, 1.0)
+		# плавающий джойстик: вверх = газ, вниз = тормоз/задний
+		if absf(a.y) > 0.15 and not hud.is_held("gas") and not hud.is_held("brake"):
+			throttle = clampf(-a.y, -1.0, 1.0)
 		if hud.is_held("gas"):
 			throttle = 1.0
 		elif hud.is_held("brake"):

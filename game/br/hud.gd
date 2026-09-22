@@ -18,6 +18,7 @@ var _events: Array = []
 
 var _vs := Vector2.ZERO
 var _stick_center := Vector2.ZERO
+var _stick_active := false
 var _stick_r := 58.0
 var _buttons: Array = []      # {n, pos, r, l, hold}
 var _map_rect := Rect2()
@@ -144,7 +145,6 @@ func _layout() -> void:
 	if vp == null:
 		return
 	_vs = vp.get_visible_rect().size
-	_stick_center = Vector2(125, _vs.y - 135)
 	_map_rect = Rect2(12, 12, 150, 150)
 	var r := Vector2(_vs.x, _vs.y)
 	_buttons.clear()
@@ -215,7 +215,7 @@ func _hit_test(pos: Vector2) -> Dictionary:
 	for b in _buttons:
 		if pos.distance_to(b.pos) < b.r + 10.0:
 			return {"type": "btn", "n": b.n}
-	if mode == "walk" and pos.distance_to(_stick_center) < _stick_r * 1.7:
+	if pos.x < _vs.x * 0.42 and pos.y > 180.0:
 		return {"type": "stick"}
 	if pos.x > _vs.x * 0.42 and pos.y > 90.0:
 		return {"type": "cam"}
@@ -225,6 +225,8 @@ func _hit_test(pos: Vector2) -> Dictionary:
 func _press_role(role: Dictionary, pos: Vector2) -> void:
 	match role.get("type", ""):
 		"stick":
+			_stick_active = true
+			_stick_center = pos
 			_update_stick(pos)
 		"cam":
 			pass
@@ -252,6 +254,7 @@ func _release_role(role: Dictionary) -> void:
 	if role.get("type", "") == "stick":
 		_stick_vec = Vector2.ZERO
 		_knob = Vector2.ZERO
+		_stick_active = false
 	elif role.get("type", "") == "btn":
 		_held.erase(role.n)
 
@@ -459,6 +462,7 @@ func _draw() -> void:
 	_draw_minimap()
 	# джойстик
 	if mode == "walk":
+	if _stick_active:
 		draw_circle(_stick_center, _stick_r, Color(0, 0, 0, 0.28))
 		draw_arc(_stick_center, _stick_r, 0, TAU, 40, Color(1, 1, 1, 0.25), 2.0)
 		var knob_pos := _stick_center + _knob
