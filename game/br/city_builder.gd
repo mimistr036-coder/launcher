@@ -377,10 +377,10 @@ func _ground_and_roads() -> void:
 				var z1 := line_coord(j4 + 1) - pad
 				if z1 - z0 < 8.0:
 					continue
-				var zm := (z0 + z1) * 0.5
-				var half := (z1 - z0) * 0.5 - GAP * 0.5
+				var zm: float = (z0 + z1) * 0.5
+				var half: float = (z1 - z0) * 0.5 - GAP * 0.5
 				for sgn in [-1.0, 1.0]:
-					var c := zm + sgn * (GAP * 0.5 + half * 0.5)
+					var c: float = zm + sgn * (GAP * 0.5 + half * 0.5)
 					_box(curb, Vector3(lx + side4 * edge, -0.065, c), Vector3(0.4, 0.17, half))
 					_col_box_l8(Vector3(lx + side4 * edge, -0.065, c), Vector3(0.4, 0.17, half))
 				_ramp_l8(Vector3(lx + side4 * edge, -0.08, zm), Vector3(0.45, 0.16, GAP + 0.6), false)
@@ -392,10 +392,10 @@ func _ground_and_roads() -> void:
 				var x1 := line_coord(i5 + 1) - pad
 				if x1 - x0 < 8.0:
 					continue
-				var xm := (x0 + x1) * 0.5
-				var half2 := (x1 - x0) * 0.5 - GAP * 0.5
+				var xm: float = (x0 + x1) * 0.5
+				var half2: float = (x1 - x0) * 0.5 - GAP * 0.5
 				for sgn2 in [-1.0, 1.0]:
-					var c2 := xm + sgn2 * (GAP * 0.5 + half2 * 0.5)
+					var c2: float = xm + sgn2 * (GAP * 0.5 + half2 * 0.5)
 					_box(curb, Vector3(c2, -0.065, lz + side5 * edge), Vector3(half2, 0.17, 0.4))
 					_col_box_l8(Vector3(c2, -0.065, lz + side5 * edge), Vector3(half2, 0.17, 0.4))
 				_ramp_l8(Vector3(xm, -0.08, lz + side5 * edge), Vector3(GAP + 0.6, 0.16, 0.45), true)
