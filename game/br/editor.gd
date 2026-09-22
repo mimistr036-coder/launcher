@@ -86,7 +86,7 @@ func _build_panel() -> void:
 		sb.bg_color = c
 		sb.set_corner_radius_all(5)
 		sw.add_theme_stylebox_override("normal", sb)
-		var cc := c
+		var cc: Color = c
 		sw.pressed.connect(func() -> void:
 			obj_color = cc
 			_apply_color_to_selected())
@@ -95,22 +95,31 @@ func _build_panel() -> void:
 	# действия над выбранным
 	var r3 := HBoxContainer.new()
 	r3.add_theme_constant_override("separation", 4)
-	r3.add_child(_mk_btn("◀", func() -> void: _rotate_sel(-15.0)))
-	r3.add_child(_mk_btn("▶", func() -> void: _rotate_sel(15.0)))
-	r3.add_child(_mk_btn("РАЗМЕР-", func() -> void: _scale_sel(0.88)))
-	r3.add_child(_mk_btn("РАЗМЕР+", func() -> void: _scale_sel(1.14)))
+	r3.add_child(_mk_btn("◀", func() -> void:
+		_rotate_sel(-15.0)))
+	r3.add_child(_mk_btn("▶", func() -> void:
+		_rotate_sel(15.0)))
+	r3.add_child(_mk_btn("РАЗМЕР-", func() -> void:
+		_scale_sel(0.88)))
+	r3.add_child(_mk_btn("РАЗМЕР+", func() -> void:
+		_scale_sel(1.14)))
 	v.add_child(r3)
 	var r4 := HBoxContainer.new()
 	r4.add_theme_constant_override("separation", 4)
-	r4.add_child(_mk_btn("ПЕРЕНЕСТИ", func() -> void: moving = true))
-	r4.add_child(_mk_btn("КОПИЯ", func() -> void: _dup_sel()))
-	r4.add_child(_mk_btn("УДАЛИТЬ", func() -> void: _del_sel()))
+	r4.add_child(_mk_btn("ПЕРЕНЕСТИ", func() -> void:
+		moving = true))
+	r4.add_child(_mk_btn("КОПИЯ", func() -> void:
+		_dup_sel()))
+	r4.add_child(_mk_btn("УДАЛИТЬ", func() -> void:
+		_del_sel()))
 	v.add_child(r4)
 	# сохранение / выход
 	var r5 := HBoxContainer.new()
 	r5.add_theme_constant_override("separation", 4)
-	r5.add_child(_mk_btn("СОХРАНИТЬ", func() -> void: save_map()))
-	var exit_btn := _mk_btn("ВЫЙТИ ИЗ РЕДАКТОРА", func() -> void: set_active(false))
+	r5.add_child(_mk_btn("СОХРАНИТЬ", func() -> void:
+		save_map()))
+	var exit_btn := _mk_btn("ВЫЙТИ ИЗ РЕДАКТОРА", func() -> void:
+		set_active(false))
 	r5.add_child(exit_btn)
 	v.add_child(r5)
 	_sel_label = Label.new()
