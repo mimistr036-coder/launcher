@@ -517,8 +517,8 @@ func _house(cursor: float, wq: float, side: int, cx0: float, cx1: float, cz0: fl
 		var wa := _qw(wq * rng.randf_range(0.52, 0.62))
 		var wb := wq - wa - 4.0
 		if wb >= 20.0:
-			var fb := floors - [2, 3, 4][rng.randi() % 3]
-			var h_b := fb * 2.8 + 0.9
+			var fb: int = floors - [2, 3, 4][rng.randi() % 3]
+			var h_b: float = fb * 2.8 + 0.9
 			var matb
 			if district == "center":
 				matb = TL.facade_brick(clampi(roundi(wb / 4.0), 4, 12), fb, (pal + 2) % 4)
@@ -733,7 +733,7 @@ func _fence_proflist(x0: float, z0: float, x1: float, z1: float) -> void:
 			var half := (len - 4.0) * 0.5
 			var dir := (b - a).normalized()
 			for seg in [-1.0, 1.0]:
-				var c1 := mid + dir * (2.0 + half * 0.5) * seg
+				var c1: Vector3 = mid + dir * (2.0 + half * 0.5) * seg
 				var sz := Vector3(half, h, 0.08)
 				if not horizontal:
 					sz = Vector3(0.08, h, half)
