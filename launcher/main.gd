@@ -349,6 +349,8 @@ func _check_launcher_update() -> void:
 	OS.execute("cmd.exe", ["/c", bat_path, str(OS.get_process_id()), exe_path, new_exe], false)
 	get_tree().quit()
 
+
+func _start_download() -> void:
 	_busy = true
 	_state = "download"
 	_set_status("Скачивание кэша v%d (%s)..." % [int(remote.version), _fmt_size(float(remote.get("size", 0)))])
