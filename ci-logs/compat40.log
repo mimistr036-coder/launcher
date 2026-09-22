@@ -1,5 +1,5 @@
 Godot Engine v4.0.stable.official.92bee43ad - https://godotengine.org
  
 [launcher] Проверка обновлений...
-[launcher] Кэш актуален (v50). Готов к запуску!
-[LAUNCHER_AUTOTEST] OK version=50 size=479020 scene=found
+[launcher] Кэш актуален (v51). Готов к запуску!
+[LAUNCHER_AUTOTEST] FAIL scene=<PackedScene#-9223372008266398422> boot=<GDScript#-9223372008417393367> bad_scripts=hud.gd 

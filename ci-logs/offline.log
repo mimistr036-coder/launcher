@@ -1,6 +1,10 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
 [AUTOTEST] start mode=offline
+SCRIPT ERROR: Parse Error: Expected indented block after "if" block.
+          at: GDScript::reload (res://br/hud.gd:464)
+ERROR: Failed to load script "res://br/hud.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript.cpp:2936)
 ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
    at: _load (core/io/resource_loader.cpp:291)
 ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
@@ -33,19 +37,905 @@ ERROR: No loader found for resource: res://models/Textures/colormap.png (expecte
    at: _load (core/io/resource_loader.cpp:291)
 ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
    at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
+SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
+          at: _ready (res://br/world.gd:61)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
 [AUTOTEST] движение W: velocity*fwd=3.90000009536743
-[AUTOTEST] геометрия: поверхностей=184 треугольников=65484 битых индексов=0
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid call. Nonexistent function 'notice' in base 'Nil'.
+          at: spawn_car (res://br/world.gd:147)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_mode' in base 'Nil'.
+          at: try_enter_car (res://br/world.gd:365)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+[AUTOTEST] геометрия: поверхностей=216 треугольников=71722 битых индексов=0
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
 [AUTOTEST] руление вправо: rotation.y=-0.54349637031555 speed=6.22065782546997 y=0.07194396108389
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_mode' in base 'Nil'.
+          at: _exit_car (res://br/world.gd:380)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
+SCRIPT ERROR: Invalid assignment of property or key 'night' with value of type 'float' on a base object of type 'Nil'.
+          at: _process (res://br/world.gd:210)
 [AUTOTEST] OK cars=1 npcs=8 job_points=36
 ERROR: Parameter "m" is null.
    at: mesh_get_surface_count (servers/rendering/dummy/storage/mesh_storage.h:120)
@@ -53,9 +943,9 @@ ERROR: 1 RID allocations of type 'P11GodotBody3D' were leaked at exit.
 ERROR: 1 RID allocations of type 'P12GodotShape3D' were leaked at exit.
 ERROR: Pages in use exist at exit in PagedAllocator: N20RasterizerSceneDummy21GeometryInstanceDummyE
    at: ~PagedAllocator (./core/templates/paged_allocator.h:170)
-ERROR: 21 RID allocations of type 'PN13RendererDummy14TextureStorage12DummyTextureE' were leaked at exit.
-ERROR: 21 RID allocations of type 'N13RendererDummy11MeshStorage9DummyMeshE' were leaked at exit.
+ERROR: 16 RID allocations of type 'PN13RendererDummy14TextureStorage12DummyTextureE' were leaked at exit.
+ERROR: 16 RID allocations of type 'N13RendererDummy11MeshStorage9DummyMeshE' were leaked at exit.
 ERROR: 1 RID allocations of type 'N13RendererDummy15MaterialStorage11DummyShaderE' were leaked at exit.
-ERROR: 21 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
+ERROR: 16 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
 WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
      at: cleanup (core/object/object.cpp:2284)
