@@ -629,7 +629,7 @@ func _building(pos: Vector3, sz: Vector3, mat: Material, floors: int, side: int)
 			else:
 				pp.z += sx * 1.3
 				_box(TL.flat(Color(0.35, 0.36, 0.38), 0.5, 0.5), pp, Vector3(0.09, 2.5, 0.09))
-_col_box(pos, sz)
+	_col_box(pos, sz)
 	# вывеска/магазин на первом этаже (только к улице)
 	if floors >= 5 and rng.randf() < 0.3:
 		var sw = TL.shop_window()
