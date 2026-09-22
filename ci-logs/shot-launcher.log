@@ -17,4 +17,4 @@ WARNING: All audio drivers failed, falling back to the dummy driver.
      at: initialize (servers/audio_server.cpp:218)
  
 [launcher] Проверка обновлений...
-[launcher] Кэш актуален (v44). Готов к запуску!
+[launcher] Кэш актуален (v45). Готов к запуску!
