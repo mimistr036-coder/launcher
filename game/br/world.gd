@@ -24,6 +24,7 @@ var hud
 var day_night
 var job
 var traffic
+var editor = null
 var cars: Array = []
 var npcs: Array = []
 var remotes: Dictionary = {}   # peer_id -> remote player node
@@ -64,6 +65,12 @@ func _ready() -> void:
 	add_child(hud)
 	hud.setup()
 	player.hud = hud
+	var ED = load("res://br/editor.gd")
+	editor = ED.new()
+	editor.name = "MapEditor"
+	editor.world = self
+	add_child(editor)
+	editor.load_map()
 	traffic = TRAF.new()
 	traffic.name = "Traffic"
 	traffic.city = city
@@ -196,6 +203,8 @@ func _process(delta: float) -> void:
 		else:
 			cam_yaw -= d.x * 0.005
 			cam_pitch = clampf(cam_pitch - d.y * 0.004, -1.15, 0.45)
+		if hud.consume_event("edit") and editor != null:
+			editor.set_active(not editor.active)
 		if hud.consume_event("job"):
 			job.toggle()
 		if hud.consume_event("garage_pick") and hud.garage_pick >= 0:

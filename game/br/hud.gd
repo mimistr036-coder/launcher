@@ -155,6 +155,7 @@ func _layout() -> void:
 		_buttons.append({"n": "chat", "pos": r - Vector2(260, 75), "r": 30, "l": "ЧАТ", "hold": false})
 		_buttons.append({"n": "job", "pos": r - Vector2(180, 250), "r": 32, "l": "РАБОТА", "hold": false})
 		_buttons.append({"n": "garage", "pos": r - Vector2(280, 190), "r": 32, "l": "ГАРАЖ", "hold": false})
+		_buttons.append({"n": "edit", "pos": r - Vector2(390, 140), "r": 30, "l": "РЕДАКТ", "hold": false})
 	else:
 		_buttons.append({"n": "gas", "pos": r - Vector2(80, 175), "r": 50, "l": "ГАЗ", "hold": true})
 		_buttons.append({"n": "brake", "pos": r - Vector2(195, 115), "r": 42, "l": "ТОРМОЗ", "hold": true})
@@ -212,6 +213,8 @@ func _input(ev: InputEvent) -> void:
 
 
 func _hit_test(pos: Vector2) -> Dictionary:
+	if world != null and world.editor != null and world.editor.active:
+		return {"type": ""}  # в редакторе тапы уходят в него
 	for b in _buttons:
 		if pos.distance_to(b.pos) < b.r + 10.0:
 			return {"type": "btn", "n": b.n}
@@ -460,6 +463,8 @@ func _draw() -> void:
 	if world == null:
 		return
 	_draw_minimap()
+	if world != null and world.editor != null and world.editor.active:
+		return  # в редакторе рисуем только миникарту и панель редактора
 	# плавающий джойстик: рисуется только пока палец на экране
 	if _stick_active:
 		draw_circle(_stick_center, _stick_r, Color(0, 0, 0, 0.28))
