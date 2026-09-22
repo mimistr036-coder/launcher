@@ -1,4 +1,4 @@
-offline = '0'
-client = '0'
-launcher = '0'
-compat40 = '0'
+offline = '1'
+client = '1'
+launcher = '1'
+compat40 = '1'

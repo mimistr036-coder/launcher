@@ -18,695 +18,384 @@ WARNING: All audio drivers failed, falling back to the dummy driver.
      at: initialize (servers/audio_server.cpp:247)
 
 [AUTOTEST] start mode=shot
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-ERROR: No loader found for resource: res://models/Textures/colormap.png (expected type: )
-   at: _load (core/io/resource_loader.cpp:291)
-[GEO] @MeshInstance3D@20 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@27 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@34 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@41 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@48 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@55 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@62 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@69 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@76 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@83 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@90 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@97 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@104 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@111 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@118 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@125 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@132 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@139 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@146 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@153 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@160 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@167 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@174 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@181 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@188 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@195 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@202 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@209 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@216 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@223 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@230 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@237 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@244 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@251 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@258 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@265 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@272 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@279 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@286 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@293 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@300 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@307 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@314 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@321 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@328 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@335 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@342 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@349 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@356 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@363 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@370 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@377 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@384 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@391 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@398 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@405 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@412 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@419 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@426 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@433 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@440 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@447 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@454 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@461 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@468 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@475 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@482 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@489 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@496 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@503 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@510 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@517 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@524 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@531 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@538 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@545 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@552 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@559 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@566 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@573 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@580 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@587 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@594 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@601 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@608 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@615 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@622 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@629 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@636 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@643 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@650 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@657 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@664 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@671 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@678 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@685 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@692 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@699 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@706 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@713 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@720 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@727 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@734 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@741 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@748 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@755 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@762 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@769 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@776 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@783 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@790 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@797 aabb_pos=(-0.225, -0.08, -2.4) aabb_size=(0.45, 0.16, 4.8)
-[GEO] @MeshInstance3D@804 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@811 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@818 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@825 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@832 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@839 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@846 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@853 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@860 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@867 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@874 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@881 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@888 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@895 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@902 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@909 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@916 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@923 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@930 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@937 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@944 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@951 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@958 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@965 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@972 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@979 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@986 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@993 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1000 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1007 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1014 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1021 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1028 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1035 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1042 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1049 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1056 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1063 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1070 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1077 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1084 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1091 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1098 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1105 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1112 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1119 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1126 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1133 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1140 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1147 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1154 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1161 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1168 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1175 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1182 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1189 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1196 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1203 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1210 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1217 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1224 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1231 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1238 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1245 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1252 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1259 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1266 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1273 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1280 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1287 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1294 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1301 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1308 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1315 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1322 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1329 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1336 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1343 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1350 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1357 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1364 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1371 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1378 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1385 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1392 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1399 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1406 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1413 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1420 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1427 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1434 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1441 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1448 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1455 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1462 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1469 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1476 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1483 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1490 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1497 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1504 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1511 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1518 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1525 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1532 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1539 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1546 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1553 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1560 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1567 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1574 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] @MeshInstance3D@1581 aabb_pos=(-2.4, -0.08, -0.225) aabb_size=(4.8, 0.16, 0.45)
-[GEO] Geo0 aabb_pos=(-451, -0.36, -451) aabb_size=(902, 0.41, 902)
-[BAD] Geo0 worst_dev=451
-[GEO] Geo1 aabb_pos=(-391, -0.35, -391) aabb_size=(782, 0.375, 782)
-[BAD] Geo1 worst_dev=391
-[GEO] Geo2 aabb_pos=(-385.15, -0.15, -385.15) aabb_size=(770.3, 0.02, 770.3)
-[BAD] Geo2 worst_dev=385.149993896484
-[GEO] Geo3 aabb_pos=(-172.8405, 0, -174.0475) aabb_size=(235.6905, 2.8, 238.0951)
-[BAD] Geo3 worst_dev=174.047546386719
-[GEO] Geo4 aabb_pos=(-173.13, 2.22, -174.025) aabb_size=(236.26, 0.66, 238.05)
-[BAD] Geo4 worst_dev=174.024993896484
-[GEO] Geo5 aabb_pos=(-173, 2.4, -174.04) aabb_size=(236, 0.3, 238.02)
-[BAD] Geo5 worst_dev=174.039993286133
-[GEO] Geo6 aabb_pos=(-391.45, -0.15, -391.45) aabb_size=(782.9, 0.17, 782.9)
-[BAD] Geo6 worst_dev=391.450012207031
-[GEO] Geo7 aabb_pos=(-379, -0.2, -379) aabb_size=(758, 0.2, 758)
-[BAD] Geo7 worst_dev=379
-[GEO] Geo8 aabb_pos=(-375.8339, 0, -376) aabb_size=(746.8339, 14.9, 752)
-[BAD] Geo8 worst_dev=376
-[GEO] Geo9 aabb_pos=(-376.0589, 0, -376.225) aabb_size=(752.2839, 42.05, 752.45)
-[BAD] Geo9 worst_dev=376.225006103516
-[GEO] Geo10 aabb_pos=(-375.9839, 0, -376.15) aabb_size=(752.1339, 1, 752.3)
-[BAD] Geo10 worst_dev=376.149993896484
-[GEO] Geo11 aabb_pos=(-376.0589, 14.4, -376.225) aabb_size=(752.2839, 25.7, 752.45)
-[BAD] Geo11 worst_dev=376.225006103516
-[GEO] Geo12 aabb_pos=(-376.0089, 15, -376.175) aabb_size=(752.1838, 25.7, 752.35)
-[GEO] Geo13 aabb_pos=(-359.198, 15.25, -372.3817) aabb_size=(732.4851, 26.8, 744.4116)
-[GEO] Geo14 aabb_pos=(-361.4899, 15, -366.57) aabb_size=(727.2198, 26.1, 739.3)
-[GEO] Geo15 aabb_pos=(-366.2499, 9.25, -376.13) aabb_size=(742.3799, 49.7, 752.26)
-[GEO] Geo16 aabb_pos=(-368.6839, 13.09, -377.195) aabb_size=(745.8789, 35.16, 754.39)
-[GEO] Geo17 aabb_pos=(-368.4899, 13.22, -377.695) aabb_size=(746.8599, 36, 755.39)
-[GEO] Geo18 aabb_pos=(-366.5939, 9.049999, -376.75) aabb_size=(743.3439, 48, 753.5)
-[GEO] Geo19 aabb_pos=(-366.7939, 19.26, -377.02) aabb_size=(743.8138, 38.02, 754.04)
-[GEO] Geo20 aabb_pos=(-367.7699, 10.03, -377.65) aabb_size=(745.4199, 12.74, 755.3)
-[GEO] Geo21 aabb_pos=(-367.4149, 7.6, -377.295) aabb_size=(744.7099, 15.1, 754.59)
-[GEO] Geo22 aabb_pos=(-374.3339, 7.55, -376.22) aabb_size=(750.5538, 15.6, 752.44)
-[GEO] Geo23 aabb_pos=(-374.8627, 0, -376) aabb_size=(640.8627, 14.9, 202)
-[GEO] Geo24 aabb_pos=(-369.7202, 0, -368.8157) aabb_size=(738.0363, 2.2, 738.6301)
-[GEO] Geo25 aabb_pos=(-370.9693, 1.4, -371.3721) aabb_size=(740.2154, 3.8, 742.4496)
-[GEO] Geo26 aabb_pos=(-369.858, 1.4, -370.0787) aabb_size=(739.6541, 3.8, 740.6798)
-[GEO] Geo27 aabb_pos=(-371.2423, 1.4, -370.019) aabb_size=(737.6333, 3.8, 740.5267)
-[GEO] Geo28 aabb_pos=(-361.369, -0.005, -365.5444) aabb_size=(723.6708, 0.45, 720.9884)
-[GEO] Geo29 aabb_pos=(-366.7098, 0, -370.1798) aabb_size=(709.3789, 1.1, 721.952)
-[GEO] Geo30 aabb_pos=(-340.2299, 0, -366.1166) aabb_size=(569.6852, 3, 367.4648)
-[GEO] Geo31 aabb_pos=(-368.7729, 0, -365.8154) aabb_size=(720.9695, 2.1, 698.7355)
-[GEO] Geo32 aabb_pos=(-363.9664, 0, -365.8454) aabb_size=(710.7615, 2.4, 698.8354)
-[GEO] Geo33 aabb_pos=(-333.3323, 0, -369.1223) aabb_size=(554.0488, 0.7, 716.8067)
-[GEO] Geo34 aabb_pos=(-290.0682, 0, -311.2287) aabb_size=(643.4897, 0.7, 427.7045)
-[GEO] Geo35 aabb_pos=(-321.3669, 0, -341.8686) aabb_size=(1.289612, 0.7, 1.482727)
-[GEO] Geo36 aabb_pos=(-302.7306, 0, -321.0676) aabb_size=(389.8983, 0.7, 106.6774)
-[GEO] Geo37 aabb_pos=(-369.9929, 0, -370.246) aabb_size=(500.9588, 0.7, 631.6261)
-[GEO] Geo38 aabb_pos=(-370, 0, -369) aabb_size=(746, 14.9, 669)
-[GEO] Geo39 aabb_pos=(-353.4446, 0, -220.0081) aabb_size=(711.5929, 0.7, 332.6435)
-[GEO] Geo40 aabb_pos=(-334.9301, 0, -318.7487) aabb_size=(306.0267, 0.7, 116.8393)
-[GEO] Geo41 aabb_pos=(-294.8355, 0, -365.3108) aabb_size=(482.5804, 0.7, 660.8546)
-[GEO] Geo42 aabb_pos=(-310.7339, 0, -324.4304) aabb_size=(652.3982, 0.7, 456.9765)
-[GEO] Geo43 aabb_pos=(-364.6756, 0, -89.79455) aabb_size=(41.94769, 26.1, 183.6766)
-[GEO] Geo44 aabb_pos=(-339.7046, 26.6, -261.25) aabb_size=(678.443, 20, 609.504)
-[GEO] Geo45 aabb_pos=(-366.1199, 0, -107.4929) aabb_size=(24, 26.1, 20.401)
-[GEO] Geo46 aabb_pos=(-295.146, 0, -133.1435) aabb_size=(1.340149, 0.7, 1.002258)
-[GEO] Geo47 aabb_pos=(-308.6485, 0, -344.6053) aabb_size=(344.1255, 0.7, 259.391)
-[GEO] Geo48 aabb_pos=(-307.4601, 0, -146.0661) aabb_size=(266.5042, 0.7, 496.5148)
-[GEO] Geo49 aabb_pos=(-356.2988, 0, -105.2567) aabb_size=(160.4415, 0.7, 175.144)
-[GEO] Geo50 aabb_pos=(-329.297, 0, -128.7909) aabb_size=(1.519775, 0.7, 1.00592)
-[GEO] Geo51 aabb_pos=(-345, 0, -307) aabb_size=(690, 26.1, 678)
-[GEO] Geo52 aabb_pos=(-345.25, 6.9, -307.25) aabb_size=(690.5, 32.55, 678.5)
-[GEO] Geo53 aabb_pos=(-298, 0, -261.9255) aabb_size=(344, 34.5, 375.9255)
-[GEO] Geo54 aabb_pos=(-298, 0, 118) aabb_size=(14, 26.1, 32)
-[GEO] Geo55 aabb_pos=(-362.0353, 0, 118.9965) aabb_size=(500.6992, 0.7, 90.14888)
-[GEO] Geo56 aabb_pos=(-345.3109, 0, 84.35293) aabb_size=(642.98, 0.7, 105.0203)
-[GEO] Geo57 aabb_pos=(-356.5717, 0, 72.12731) aabb_size=(1.19104, 0.7, 1.411804)
-[GEO] Geo58 aabb_pos=(-342.0194, 0, 222.1269) aabb_size=(24, 34.5, 19.82748)
-[GEO] Geo59 aabb_pos=(-357.6546, 0, 231.5293) aabb_size=(24, 26.1, 18.32611)
-[GEO] Geo60 aabb_pos=(-305.9308, 0, -236.8153) aabb_size=(670.6452, 0.7, 556.7125)
-[GEO] Geo61 aabb_pos=(-330.705, 0, -346.9399) aabb_size=(218.21, 0.7, 555.4976)
-[GEO] Geo62 aabb_pos=(-308.5187, 0, -227.4293) aabb_size=(567.6763, 0.7, 598.3125)
-[GEO] Geo63 aabb_pos=(-350.5613, 0, 189.1159) aabb_size=(215.0303, 0.7, 175.4581)
-[GEO] Geo64 aabb_pos=(-345.6537, 0, -298.2578) aabb_size=(712.1704, 0.7, 548.5944)
-[GEO] Geo65 aabb_pos=(-249.7125, 0, -301.836) aabb_size=(1.35556, 0.7, 1.349609)
-[GEO] Geo66 aabb_pos=(-219.3862, 0, -369.3996) aabb_size=(454.4133, 0.7, 357.9421)
-[GEO] Geo67 aabb_pos=(-243.4669, 0, -333.0054) aabb_size=(532.5308, 0.7, 650.2021)
-[GEO] Geo68 aabb_pos=(-180.6, 0, -294.2) aabb_size=(113.2, 2.7, 662.4)
-[GEO] Geo69 aabb_pos=(-262.27, 0.85, -372.27) aabb_size=(630.27, 0.9, 740.27)
-[GEO] Geo70 aabb_pos=(-180.85, 2.7, -294.45) aabb_size=(113.7, 0.3, 662.9)
-[GEO] Geo71 aabb_pos=(-263, 0, -255) aabb_size=(86, 10.5, 26)
-[GEO] Geo72 aabb_pos=(-264.56, 0, -264.56) aabb_size=(89.12, 1.1, 89.12)
-[GEO] Geo73 aabb_pos=(-266, 0, -265.5927) aabb_size=(422, 34.5, 493.5927)
-[GEO] Geo74 aabb_pos=(-208.2197, 0, -80) aabb_size=(20, 40.1, 16)
-[GEO] Geo75 aabb_pos=(-266, 0, -99.87729) aabb_size=(18, 28.9, 28)
-[GEO] Geo76 aabb_pos=(-192, 0, -155.8926) aabb_size=(18, 40.1, 48)
-[GEO] Geo77 aabb_pos=(-192, -0.000001, -103.8926) aabb_size=(18, 31.7, 32)
-[GEO] Geo78 aabb_pos=(-221.7222, 0, -216.0871) aabb_size=(554.063, 3, 339.9871)
-[GEO] Geo79 aabb_pos=(-258.3829, 0, -359.2942) aabb_size=(346.8621, 0.7, 451.9101)
-[GEO] Geo80 aabb_pos=(-183.6231, 0, -149.298) aabb_size=(0.947174, 0.7, 1.459381)
-[GEO] Geo81 aabb_pos=(-242.0915, 0, -86.77382) aabb_size=(1.106842, 0.7, 1.402222)
-[GEO] Geo82 aabb_pos=(-221.4787, 0, -364.0771) aabb_size=(250.6039, 0.7, 280.9123)
-[GEO] Geo83 aabb_pos=(-266, 0, -156) aabb_size=(637, 14.9, 197)
-[GEO] Geo84 aabb_pos=(-259, 0, -376) aabb_size=(525, 14.9, 752)
-[GEO] Geo85 aabb_pos=(-242.5789, 0, -26.31433) aabb_size=(464.624, 0.7, 339.1281)
-[GEO] Geo86 aabb_pos=(-254.2509, 0, -21.79877) aabb_size=(402.3331, 0.7, 238.1268)
-[GEO] Geo87 aabb_pos=(-192.5796, 0, -367.453) aabb_size=(453.5071, 0.7, 681.7112)
-[GEO] Geo88 aabb_pos=(-266, 0, 64) aabb_size=(92, 26.1, 92)
-[GEO] Geo89 aabb_pos=(-207, 0, 64) aabb_size=(28, 17.7, 18)
-[GEO] Geo90 aabb_pos=(-211, 0, 138) aabb_size=(32, 14.9, 18)
-[GEO] Geo91 aabb_pos=(-192, 0, 119) aabb_size=(18, 17.7, 32)
-[GEO] Geo92 aabb_pos=(-223.8404, 0, -210.9469) aabb_size=(529.0768, 0.7, 295.7824)
-[GEO] Geo93 aabb_pos=(-213.4504, 0, -354.2979) aabb_size=(443.6858, 0.7, 711.7076)
-[GEO] Geo94 aabb_pos=(-213.9403, 0, -184.6929) aabb_size=(284.2667, 0.7, 295.8941)
-[GEO] Geo95 aabb_pos=(-266, -0.2, 174) aabb_size=(92, 0.2, 92)
-[GEO] Geo96 aabb_pos=(-261, 0, 208.7) aabb_size=(46, 3, 22.60001)
-[GEO] Geo97 aabb_pos=(-251, 0, 208.7) aabb_size=(46, 3, 22.60001)
-[GEO] Geo98 aabb_pos=(-241, 0, 208.7) aabb_size=(46, 3, 22.60001)
-[GEO] Geo99 aabb_pos=(-231, 0, 208.7) aabb_size=(46, 3, 22.60001)
-[GEO] Geo100 aabb_pos=(-266, 0, -266) aabb_size=(269.4745, 26.1, 604)
-[GEO] Geo101 aabb_pos=(-266, 0, 342) aabb_size=(18, 17.7, 28)
-[GEO] Geo102 aabb_pos=(-227.5151, 0, 299.6266) aabb_size=(0.923798, 0.7, 1.592407)
-[GEO] Geo103 aabb_pos=(-260.3508, 0, -189.3424) aabb_size=(589.4419, 0.7, 534.2682)
-[GEO] Geo104 aabb_pos=(-206.4419, 0, 330.8183) aabb_size=(1.523163, 0.7, 1.579468)
-[GEO] Geo105 aabb_pos=(-220.543, 0, -371.1878) aabb_size=(477.6825, 0.7, 726.0377)
-[GEO] Geo106 aabb_pos=(-262.6, 0, -38.2) aabb_size=(553.2, 2.7, 332.4)
-[GEO] Geo107 aabb_pos=(-262.85, 2.7, -38.45) aabb_size=(553.7, 0.3, 332.9)
-[GEO] Geo108 aabb_pos=(-148.4609, 0, -376) aabb_size=(40, 14.9, 18)
-[GEO] Geo109 aabb_pos=(-103.0316, 0, -376) aabb_size=(20, 14.9, 16)
-[GEO] Geo110 aabb_pos=(-148.3018, 0, -302) aabb_size=(44.00001, 14.9, 18)
-[GEO] Geo111 aabb_pos=(-98.37833, 0, -302) aabb_size=(20, 14.9, 18)
-[GEO] Geo112 aabb_pos=(-147.5734, 0, -296.7516) aabb_size=(75.30339, 0.7, 210.4996)
-[GEO] Geo113 aabb_pos=(-80.00684, 0, -195.3009) aabb_size=(202.2645, 0.7, 189.776)
-[GEO] Geo114 aabb_pos=(-68.98334, 0, -243.8858) aabb_size=(1.451553, 0.7, 1.569061)
-[GEO] Geo115 aabb_pos=(-126.6149, 0, -249.6952) aabb_size=(32.22314, 0.7, 321.2359)
-[GEO] Geo116 aabb_pos=(-152.6, 0, -368.2) aabb_size=(443.2, 2.7, 662.4)
-[GEO] Geo117 aabb_pos=(-152.85, 2.7, -368.45) aabb_size=(443.7, 0.3, 662.9)
-[GEO] Geo118 aabb_pos=(-149, 0, -260) aabb_size=(483, 26.1, 448)
-[GEO] Geo119 aabb_pos=(-101, 0, -156) aabb_size=(32, 14.9, 18)
-[GEO] Geo120 aabb_pos=(-101, 0, -80) aabb_size=(32, 17.7, 16)
-[GEO] Geo121 aabb_pos=(-78, 0, -105) aabb_size=(14, 17.7, 36)
-[GEO] Geo122 aabb_pos=(-143.9067, 0, -149.0264) aabb_size=(232.2074, 0.7, 35.4566)
-[GEO] Geo123 aabb_pos=(-74.6, 0, -372.2) aabb_size=(443.2, 2.7, 552.4)
-[GEO] Geo124 aabb_pos=(-74.85, 2.7, -372.45) aabb_size=(443.7, 0.3, 552.9)
-[GEO] Geo125 aabb_pos=(-156, 0, -40) aabb_size=(124, 23.3, 190)
-[GEO] Geo126 aabb_pos=(-150, 0, -46) aabb_size=(190, 23.3, 124)
-[GEO] Geo127 aabb_pos=(-116.1827, 0, -29.50662) aabb_size=(105.8681, 0.7, 369.4654)
-[GEO] Geo128 aabb_pos=(-146.6343, 0, -343.3867) aabb_size=(487.1661, 0.7, 598.4139)
-[GEO] Geo129 aabb_pos=(-96.97236, 0, 13.9796) aabb_size=(106.4056, 0.7, 129.3245)
-[GEO] Geo130 aabb_pos=(-79.48149, 0, -298.5762) aabb_size=(285.0884, 0.7, 310.46)
-[GEO] Geo131 aabb_pos=(-152.213, 0, 140) aabb_size=(44, 40.1, 16)
-[GEO] Geo132 aabb_pos=(-99.23712, 0, 142) aabb_size=(20, 40.1, 14)
-[GEO] Geo133 aabb_pos=(-156, 0, 65.35791) aabb_size=(14, 34.5, 44)
-[GEO] Geo134 aabb_pos=(-156, 0, 111.6082) aabb_size=(490.6492, 26.1, 250.4758)
-[GEO] Geo135 aabb_pos=(-82, 0, -44.42962) aabb_size=(270, 40.1, 157.8752)
-[GEO] Geo136 aabb_pos=(-82, -0.000001, 117.4456) aabb_size=(18, 31.7, 32)
-[GEO] Geo137 aabb_pos=(-125, 0, 245) aabb_size=(30, 5.2, 18)
-[GEO] Geo138 aabb_pos=(-150, 0, -192) aabb_size=(410, 34.5, 492)
-[GEO] Geo139 aabb_pos=(-104.2482, 0, -107.379) aabb_size=(260.2482, 26.1, 466.7831)
-[GEO] Geo140 aabb_pos=(-151.0018, 0, 337.6367) aabb_size=(0.956299, 0.7, 1.080139)
-[GEO] Geo141 aabb_pos=(-10.59567, 0, -300.7251) aabb_size=(348.9263, 3, 112.9356)
-[GEO] Geo142 aabb_pos=(-28.22577, 0, -339.4124) aabb_size=(142.3292, 0.7, 298.3854)
-[GEO] Geo143 aabb_pos=(-33.31164, 0, -325.2772) aabb_size=(375.7525, 0.7, 291.6714)
-[GEO] Geo144 aabb_pos=(7.474482, 0, -266) aabb_size=(32, 14.9, 16)
-[GEO] Geo145 aabb_pos=(6.546516, 0, -190) aabb_size=(32, 26.1, 16)
-[GEO] Geo146 aabb_pos=(-46, 0, -209.5927) aabb_size=(18, 28.9, 28)
-[GEO] Geo147 aabb_pos=(28, 0, -213.9255) aabb_size=(18, 28.9, 32)
-[GEO] Geo148 aabb_pos=(24.31909, 0, -186.5875) aabb_size=(2.497271, 0.7, 332.8958)
-[GEO] Geo149 aabb_pos=(28, 0, -150) aabb_size=(18, 20.5, 80)
-[GEO] Geo150 aabb_pos=(-40, 0, -82) aabb_size=(80, 17.7, 18)
-[GEO] Geo151 aabb_pos=(36.97803, 0, -152.2675) aabb_size=(186.5251, 0.7, 131.123)
-[GEO] Geo152 aabb_pos=(-46, -0.2, -46) aabb_size=(92, 0.2, 92)
-[GEO] Geo153 aabb_pos=(-16.9154, 0.025, -16.76168) aabb_size=(33.82825, 0.35, 33.24415)
-[GEO] Geo154 aabb_pos=(-16.85017, 0.025, -16.96316) aabb_size=(33.73075, 0.35, 33.45681)
-[GEO] Geo155 aabb_pos=(-15.62496, 0.025, -16.03276) aabb_size=(31.02034, 0.35, 30.90948)
-[GEO] Geo156 aabb_pos=(32.48157, 0, 80.62874) aabb_size=(1.110252, 0.7, 0.927124)
-[GEO] Geo157 aabb_pos=(-5.397943, 0, -354.5085) aabb_size=(232.796, 0.7, 465.9653)
-[GEO] Geo158 aabb_pos=(12.01519, 0, 109.5632) aabb_size=(13.08137, 0.7, 248.6895)
-[GEO] Geo159 aabb_pos=(-13, 0, 177.5) aabb_size=(26, 5.2, 13)
-[GEO] Geo160 aabb_pos=(-13.3, 7.85, 177.2) aabb_size=(26.6, 0.3, 13.60001)
-[GEO] Geo161 aabb_pos=(-39.01596, 0, -216) aabb_size=(305.016, 26.1, 518)
-[GEO] Geo162 aabb_pos=(5.412403, 0, 284) aabb_size=(20, 14.9, 14)
-[GEO] Geo163 aabb_pos=(13.39001, 0, -202.4891) aabb_size=(311.1629, 26.1, 578.4891)
-[GEO] Geo164 aabb_pos=(-46, 0, 71) aabb_size=(422, 14.9, 264.2519)
-[GEO] Geo165 aabb_pos=(101, 0, -261) aabb_size=(158.5, 4.6, 115.5)
-[GEO] Geo166 aabb_pos=(105.2893, 0, -209.2784) aabb_size=(1.023666, 0.7, 1.284882)
-[GEO] Geo167 aabb_pos=(64, 0, -153.9575) aabb_size=(14, 26.1, 52)
-[GEO] Geo168 aabb_pos=(140, 0, -154.9666) aabb_size=(16, 26.1, 40)
-[GEO] Geo169 aabb_pos=(64, 0, -40) aabb_size=(16, 17.7, 80)
-[GEO] Geo170 aabb_pos=(70, 0, -46) aabb_size=(80, 17.7, 16)
-[GEO] Geo171 aabb_pos=(90.22789, 0, -7.236508) aabb_size=(1.428925, 0.7, 1.406954)
-[GEO] Geo172 aabb_pos=(64.01263, 0, 140) aabb_size=(52, 34.5, 16)
-[GEO] Geo173 aabb_pos=(120.0126, 0, 140) aabb_size=(28, 23.3, 16)
-[GEO] Geo174 aabb_pos=(64, 0, 64.06644) aabb_size=(18, 26.1, 40)
-[GEO] Geo175 aabb_pos=(142, -0.000001, 116.6649) aabb_size=(14, 28.9, 32)
-[GEO] Geo176 aabb_pos=(143.2215, 0, 135.8808) aabb_size=(1.48877, 0.7, 1.479431)
-[GEO] Geo177 aabb_pos=(70, 0, 252) aabb_size=(48, 40.1, 14)
-[GEO] Geo178 aabb_pos=(122, -0.000001, 252) aabb_size=(28, 31.7, 14)
-[GEO] Geo179 aabb_pos=(140, 0, 232) aabb_size=(16, 26.1, 28)
-[GEO] Geo180 aabb_pos=(70, 0, 358) aabb_size=(48, 26.1, 18)
-[GEO] Geo181 aabb_pos=(122, 0, 358) aabb_size=(28, 14.9, 18)
-[GEO] Geo182 aabb_pos=(89.08176, 0, -5.082827) aabb_size=(128.2764, 0.7, 341.0088)
-[GEO] Geo183 aabb_pos=(252, 0, -260) aabb_size=(14, 34.5, 40)
-[GEO] Geo184 aabb_pos=(211.8, 0, -106.2) aabb_size=(16.39999, 5, 8.399994)
-[GEO] Geo185 aabb_pos=(210, 5, -108) aabb_size=(20, 0.4, 12)
-[GEO] Geo186 aabb_pos=(214.6, 0, -102.25) aabb_size=(10.79999, 1.4, 0.5)
-[GEO] Geo187 aabb_pos=(214.75, 0.825, -101.75) aabb_size=(10.5, 0.35, 0.059998)
-[GEO] Geo188 aabb_pos=(177.1692, 0, -46) aabb_size=(48, 34.5, 16)
-[GEO] Geo189 aabb_pos=(229.4045, 0, -46) aabb_size=(103.1851, 34.5, 77.82199)
-[GEO] Geo190 aabb_pos=(174, -0.000001, -16.42962) aabb_size=(14, 31.7, 20)
-[GEO] Geo191 aabb_pos=(174, 0, 10.00673) aabb_size=(18, 26.1, 20)
-[GEO] Geo192 aabb_pos=(197.0593, 0, 27.1296) aabb_size=(1.0755, 0.7, 1.111698)
-[GEO] Geo193 aabb_pos=(233.8539, 0, 111.0792) aabb_size=(20, 34.5, 17.19044)
-[GEO] Geo194 aabb_pos=(193.1042, 0, 78.50512) aabb_size=(20, 34.5, 13.4541)
-[GEO] Geo195 aabb_pos=(200, 0, 224.5) aabb_size=(16, 0.08, 11)
-[GEO] Geo196 aabb_pos=(198.8497, -0.075, 223.7159) aabb_size=(18.16362, 0.25, 12.42662)
-[GEO] Geo197 aabb_pos=(235.3816, 0, -109.7331) aabb_size=(113.4313, 0.7, 407.5117)
-[GEO] Geo198 aabb_pos=(284, 0, -212) aabb_size=(14, 20.5, 32)
-[GEO] Geo199 aabb_pos=(347.3437, 0, -223.4732) aabb_size=(1.590088, 0.7, 1.348724)
-[GEO] Geo200 aabb_pos=(333.4442, 0, -90.15736) aabb_size=(1.558167, 0.7, 1.069107)
-[GEO] Geo201 aabb_pos=(320.6884, 0, -34.48316) aabb_size=(24, 34.5, 16.75706)
-[GEO] Geo202 aabb_pos=(358.2465, 0, 4.963767) aabb_size=(1.301208, 0.7, 1.284311)
-[GEO] Geo203 aabb_pos=(338, 0, 174) aabb_size=(32, 20.5, 14)
-[GEO] Geo204 aabb_pos=(-393.55, 0, -393.55) aabb_size=(785.3201, 6.4, 785.3201)
-[GEO] Geo205 aabb_pos=(-393.75, 5.96, -393.75) aabb_size=(784.1, 0.18, 784.1)
-[GEO] Geo206 aabb_pos=(-158.06, 0, -172.06) aabb_size=(330.12, 4, 330.12)
-[GEO] Geo207 aabb_pos=(-158.4, 3.45, -172.15) aabb_size=(330.55, 0.9, 330.55)
-[GEO] Geo208 aabb_pos=(-158.45, 4.05, -172.1) aabb_size=(330.06, 0.2, 330.2)
-[GEO] Geo209 aabb_pos=(-158.45, 3.8, -172.1) aabb_size=(330.06, 0.2, 330.2)
-[GEO] Geo210 aabb_pos=(-158.45, 3.55, -172.1) aabb_size=(330.06, 0.2, 330.2)
-[GEO] Geo211 aabb_pos=(-158.1, 4.05, -171.61) aabb_size=(330.2, 0.2, 330.06)
-[GEO] Geo212 aabb_pos=(-158.1, 3.8, -171.61) aabb_size=(330.2, 0.2, 330.06)
-[GEO] Geo213 aabb_pos=(-158.1, 3.55, -171.61) aabb_size=(330.2, 0.2, 330.06)
-[GEO] Geo214 aabb_pos=(-237.06, 0, -157.56) aabb_size=(374.12, 2.8, 440.12)
-[GEO] Geo215 aabb_pos=(-237.5, 2.825, -158.5) aabb_size=(375, 0.15, 442)
+SCRIPT ERROR: Parse Error: Cannot find member "EMISSION_OPERATOR_MULTIPLY" in base "BaseMaterial3D".
+          at: GDScript::reload (res://br/texture_lib.gd:203)
+SCRIPT ERROR: Parse Error: Cannot find member "EMISSION_OPERATOR_MULTIPLY" in base "BaseMaterial3D".
+          at: GDScript::reload (res://br/texture_lib.gd:275)
+ERROR: Failed to load script "res://br/texture_lib.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript.cpp:2936)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid call. Nonexistent function 'ground' in base 'GDScript'.
+          at: _ground_and_roads (res://br/city_builder.gd:311)
+SCRIPT ERROR: Invalid call. Nonexistent function 'ground' in base 'GDScript'.
+          at: _blocks (res://br/city_builder.gd:423)
+SCRIPT ERROR: Invalid call. Nonexistent function 'flat' in base 'GDScript'.
+          at: _lamps_and_lights (res://br/city_builder.gd:1202)
+SCRIPT ERROR: Invalid call. Nonexistent function 'flat' in base 'GDScript'.
+          at: build (res://br/humanoid.gd:18)
+ERROR: Parameter "p_child" is null.
+   at: add_child (scene/main/node.cpp:1566)
+SCRIPT ERROR: Invalid call. Nonexistent function 'car_paint' in base 'GDScript'.
+          at: _ready (res://br/vehicle.gd:48)
+SCRIPT ERROR: Invalid call. Nonexistent function 'car_paint' in base 'GDScript'.
+          at: _ready (res://br/vehicle.gd:48)
+SCRIPT ERROR: Invalid call. Nonexistent function 'car_paint' in base 'GDScript'.
+          at: _ready (res://br/vehicle.gd:48)
+SCRIPT ERROR: Invalid call. Nonexistent function 'car_paint' in base 'GDScript'.
+          at: _ready (res://br/vehicle.gd:48)
+SCRIPT ERROR: Invalid call. Nonexistent function 'car_paint' in base 'GDScript'.
+          at: _ready (res://br/vehicle.gd:48)
+SCRIPT ERROR: Invalid call. Nonexistent function 'car_paint' in base 'GDScript'.
+          at: _ready (res://br/vehicle.gd:48)
+SCRIPT ERROR: Invalid call. Nonexistent function 'car_paint' in base 'GDScript'.
+          at: _ready (res://br/vehicle.gd:48)
+SCRIPT ERROR: Invalid call. Nonexistent function 'car_paint' in base 'GDScript'.
+          at: _ready (res://br/vehicle.gd:48)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
+SCRIPT ERROR: Invalid call. Nonexistent function 'set_night' in base 'GDScript'.
+          at: _apply (res://br/day_night.gd:69)
+SCRIPT ERROR: Invalid access to property or key 'rotation' on a base object of type 'Nil'.
+          at: _draw_minimap (res://br/hud.gd:505)
 [AUTOTEST] скриншоты готовы
-ERROR: 1 RID allocations of type 'P11GodotBody3D' were leaked at exit.
-ERROR: 1 RID allocations of type 'P12GodotShape3D' were leaked at exit.
-ERROR: Pages in use exist at exit in PagedAllocator: N20RasterizerSceneGLES323GeometryInstanceSurfaceE
-   at: ~PagedAllocator (./core/templates/paged_allocator.h:170)
-ERROR: Pages in use exist at exit in PagedAllocator: N20RasterizerSceneGLES321GeometryInstanceGLES3E
-   at: ~PagedAllocator (./core/templates/paged_allocator.h:170)
-ERROR: 16 RID allocations of type 'N5GLES34MeshE' were leaked at exit.
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-ERROR: 1 shaders of type SceneShaderGLES3 were never freed
-   at: ~ShaderGLES3 (drivers/gles3/shader_gles3.cpp:835)
-ERROR: 16 RID allocations of type 'N5GLES38MaterialE' were leaked at exit.
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
-     at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
-ERROR: 1 RID allocations of type 'N5GLES36ShaderE' were leaked at exit.
-ERROR: 16 RID allocations of type 'N5GLES37TextureE' were leaked at exit.
-ERROR: Texture with GL ID of 106: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 121: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 146: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 160: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 191: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 205: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 244: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 257: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 258: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 259: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 260: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 261: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 262: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 265: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 268: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Texture with GL ID of 271: leaked 1398100 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:79)
-ERROR: Buffer with GL ID of 700: leaked 8544 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 701: leaked 2848 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 702: leaked 2280 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 705: leaked 8544 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 706: leaked 2848 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 707: leaked 2280 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 708: leaked 8544 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 709: leaked 2848 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 710: leaked 2280 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 711: leaked 8544 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 712: leaked 2848 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 713: leaked 2280 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 714: leaked 8544 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 715: leaked 2848 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 716: leaked 2280 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 717: leaked 2976 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 718: leaked 992 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 719: leaked 912 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 720: leaked 8544 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 721: leaked 2848 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 722: leaked 2280 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 723: leaked 10608 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 724: leaked 3536 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 725: leaked 2832 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 726: leaked 10608 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 727: leaked 3536 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 728: leaked 2832 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 729: leaked 8544 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 730: leaked 2848 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 731: leaked 2280 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 732: leaked 10608 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 733: leaked 3536 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 734: leaked 2832 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 735: leaked 8544 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 736: leaked 2848 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 737: leaked 2280 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 738: leaked 8544 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 739: leaked 2848 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 740: leaked 2280 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 741: leaked 8544 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 742: leaked 2848 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 743: leaked 2280 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 744: leaked 8544 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 745: leaked 2848 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 746: leaked 2280 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 747: leaked 8544 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 748: leaked 2848 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: Buffer with GL ID of 749: leaked 2280 bytes.
-   at: ~Utilities (drivers/gles3/storage/utilities.cpp:110)
-ERROR: 16 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
 WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
      at: cleanup (core/object/object.cpp:2284)
