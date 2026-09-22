@@ -16,3 +16,7 @@ ERROR: Condition "status < 0" is true. Returning: ERR_CANT_OPEN
 WARNING: All audio drivers failed, falling back to the dummy driver.
      at: initialize (servers/audio_server.cpp:218)
  
+SCRIPT ERROR: Parse Error: Cannot pass a value of type "bool" as "Array".
+          at: GDScript::reload (res://main.gd:349)
+SCRIPT ERROR: Parse Error: Invalid argument for "execute()" function: argument 3 should be "Array" but is "bool".
+          at: GDScript::reload (res://main.gd:349)
