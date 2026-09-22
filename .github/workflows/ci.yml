@@ -155,8 +155,17 @@ jobs:
           done
           exit "$fail"
 
+      - name: Publish cache to GitHub Release (latest)
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create latest updates/www/game.pck updates/www/version.json updates/www/news.json             --title "Провинция RP — кэш v$(python3 -c "import json;print(json.load(open('updates/www/version.json'))['version'])")"             --notes "Автоматическая сборка CI. Лаунчер обновится сам."             --clobber || gh release upload latest updates/www/game.pck updates/www/version.json updates/www/news.json --clobber
+          gh release view latest --json assets --jq '.assets[].name'
+
   apk:
-    # Готовый APK лаунчера для Android + exe для Windows — без Godot у пользователя.
+    # Готовый APK лаунчера для Android + exe для Windows — только на зелёные тесты.
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -204,6 +213,13 @@ jobs:
           /tmp/Godot_v4.3-stable_linux.x86_64 --headless --export-debug "Android" builds/provinciya-launcher.apk
           /tmp/Godot_v4.3-stable_linux.x86_64 --headless --export-debug "Windows" builds/provinciya-launcher.exe
           ls -la builds/
+
+      - name: Publish APK/exe to GitHub Release (latest)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create latest launcher/builds/provinciya-launcher.apk launcher/builds/provinciya-launcher.exe             --title "Провинция RP" --notes "Автосборка CI" --clobber             || gh release upload latest launcher/builds/provinciya-launcher.apk launcher/builds/provinciya-launcher.exe --clobber
+          gh release view latest --json assets --jq '.assets[].name'
 
       - name: Upload builds
         uses: actions/upload-artifact@v4

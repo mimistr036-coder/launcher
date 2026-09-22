@@ -8,7 +8,9 @@ const CACHE_DIR := "user://cache"
 const PCK_PATH := "user://cache/game.pck"
 const PCK_TMP := "user://cache/game.pck.tmp"
 const VER_PATH := "user://cache/version.txt"
-const DEFAULT_URL := "http://192.168.1.50:8090"
+## Обновления кэша публикуются CI в GitHub Release "latest" (автоматически).
+## Можно указать свой сервер в НАСТРОЙКАХ (кнопка «ИСТОЧНИК: GITHUB» возвращает авто).
+const DEFAULT_URL := "https://github.com/mimistr036-coder/launcher/releases/latest/download"
 
 var base_url := ""
 var remote := {}           # содержимое version.json
@@ -37,7 +39,8 @@ var _url_edit: LineEdit
 func _ready() -> void:
 	set_anchors_preset(Control.PRESET_FULL_RECT)
 	DirAccess.make_dir_recursive_absolute(CACHE_DIR)
-	base_url = str(_load_cfg().get_value("main", "updates_url", DEFAULT_URL)).strip_edges()
+	var saved_url := str(_load_cfg().get_value("main", "updates_url", "")).strip_edges()
+	base_url = saved_url if saved_url != "" else DEFAULT_URL
 	var env_url := OS.get_environment("LAUNCHER_URL")
 	if env_url != "":
 		base_url = env_url.strip_edges()
@@ -189,6 +192,9 @@ func _build_settings() -> void:
 	_url_edit.text = base_url
 	_url_edit.add_theme_font_size_override("font_size", 17)
 	v.add_child(_url_edit)
+	var gh_btn = UTIL.button("ИСТОЧНИК: GITHUB (авто)", 15)
+	gh_btn.pressed.connect(_use_github)
+	v.add_child(gh_btn)
 	var save := _mk_button("СОХРАНИТЬ", 17, Color(0.2, 0.45, 0.3))
 	save.pressed.connect(_close_settings)
 	v.add_child(save)
@@ -203,6 +209,15 @@ func _close_settings() -> void:
 	base_url = _url_edit.text.strip_edges().trim_suffix("/")
 	var c := _load_cfg()
 	c.set_value("main", "updates_url", base_url)
+	c.save(CFG_PATH)
+	_settings.visible = false
+	_start_check()
+
+
+func _use_github() -> void:
+	base_url = DEFAULT_URL
+	var c := _load_cfg()
+	c.set_value("main", "updates_url", "")
 	c.save(CFG_PATH)
 	_settings.visible = false
 	_start_check()
