@@ -250,6 +250,12 @@ func _start_check() -> void:
 
 
 func _check_failed(reason: String) -> void:
+	# если свой сервер не отвечает — автоматически пробуем GitHub
+	if base_url != DEFAULT_URL:
+		_set_status("Свой сервер не отвечает (" + reason + ") — пробую GitHub...")
+		base_url = DEFAULT_URL
+		_start_check()
+		return
 	_busy = false
 	_state = "error"
 	_set_status("Сервер обновлений недоступен (" + reason + ")")

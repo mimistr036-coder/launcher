@@ -25,7 +25,10 @@ VER_PATH = os.path.join(WWW_DIR, "version.json")
 sys.path.insert(0, HERE)
 from pck import pack_files  # noqa: E402
 
-INCLUDE_EXT = (".gd", ".tscn", ".tres", ".res", ".json", ".txt", ".cfg")
+INCLUDE_EXT = (".gd", ".tscn", ".tres", ".res", ".json", ".txt", ".cfg",
+              ".glb", ".gltf", ".obj",  # свои 3D-модели
+              ".png", ".jpg", ".jpeg", ".webp", ".svg",  # свои текстуры/картинки
+              ".wav", ".ogg", ".mp3")  # свои звуки
 SKIP_DIRS = {".godot", "builds", "__pycache__"}
 
 
