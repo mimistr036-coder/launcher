@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Vorz1k V2Box VLESS Reality",
+    "url": "https://raw.githubusercontent.com/vorz1k/v2box/main/supreme_vpns_1.txt",
+    "protocol": "vless",
+    "priority": 1,
+    "description": "Clean VLESS Reality servers across Europe and US"
+  },
+  {
+    "name": "Vorz1k Supreme Mirror 2",
+    "url": "https://raw.githubusercontent.com/vorz1k/v2box/main/supreme_vpns_2.txt",
+    "protocol": "vless",
+    "priority": 1,
+    "description": "Backup VLESS Reality list"
+  },
+  {
+    "name": "Barry-far VLESS Feed",
+    "url": "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/vless.txt",
+    "protocol": "vless",
+    "priority": 2,
+    "description": "Massive VLESS collector updated every 15 mins"
+  },
+  {
+    "name": "Barry-far Trojan Feed",
+    "url": "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/trojan.txt",
+    "protocol": "trojan",
+    "priority": 2,
+    "description": "Trojan TLS / Reality nodes"
+  },
+  {
+    "name": "Barry-far Sub1 (Mix)",
+    "url": "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Sub1.txt",
+    "protocol": "mix",
+    "priority": 2,
+    "description": "Mixed VLESS / VMess / Trojan / Hy2"
+  },
+  {
+    "name": "Pawdroid Free Servers",
+    "url": "https://raw.githubusercontent.com/Pawdroid/Free-servers/refs/heads/main/sub",
+    "protocol": "mix",
+    "priority": 2,
+    "description": "Auto-scraped & tested proxy collector"
+  },
+  {
+    "name": "Ripaojiedian FreeNode",
+    "url": "https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
+    "protocol": "mix",
+    "priority": 3,
+    "description": "Daily Asian & European proxies"
+  }
+]
