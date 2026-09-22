@@ -1,6 +1,7 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
-SCRIPT ERROR: Parse Error: Identifier "UTIL" not declared in the current scope.
-          at: GDScript::reload (res://main.gd:195)
-ERROR: Failed to load script "res://main.gd" with error "Parse error".
-   at: load (modules/gdscript/gdscript.cpp:2936)
+[launcher] Проверка обновлений...
+[launcher] Скачивание кэша v46 (127 КБ)...
+[launcher] Скачивание кэша... 64 КБ / 127 КБ
+[launcher] Готово! Кэш v46 установлен.
+[LAUNCHER_AUTOTEST] OK version=46 size=129973 scene=found
