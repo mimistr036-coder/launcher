@@ -5,6 +5,26 @@ extends RefCounted
 # В Godot 4.0 нет static var — кэш храним в метаданных скрипта
 # (скрипт кэшируется движком по пути, метаданные живут всю сессию).
 
+static func _is40() -> bool:
+	var s: Script = load("res://br/texture_lib.gd")
+	if not s.has_meta("is40"):
+		var vi := Engine.get_version_info()
+		s.set_meta("is40", vi.major == 4 and vi.minor == 0)
+	return s.get_meta("is40")
+
+
+## В Godot 4.0 (GL Compatibility) рантайм-текстуры темнеют — гамма-компенсация по пикселям.
+static func _fix_img(img: Image) -> void:
+	if not _is40():
+		return
+	for y in range(img.get_height()):
+		for x in range(img.get_width()):
+			var c := img.get_pixel(x, y)
+			if c.a < 0.01:
+				continue
+			img.set_pixel(x, y, Color(pow(c.r, 0.75), pow(c.g, 0.75), pow(c.b, 0.75), c.a))
+
+
 static func _cache():
 	var s: Script = load("res://br/texture_lib.gd")
 	if not s.has_meta("mats"):
@@ -51,6 +71,7 @@ static func noise_img(w: int, h: int, freq: float, seedv: int, base: Color, vary
 			var v := n.get_noise_2d(float(x), float(y))
 			var f := clampf(0.5 + v * vary, 0.0, 1.0)
 			img.set_pixel(x, y, Color(base.r * f, base.g * f, base.b * f))
+	_fix_img(img)
 	return img
 
 
