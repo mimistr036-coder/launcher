@@ -1,5 +1,4 @@
 Godot Engine v4.0.stable.official.92bee43ad - https://godotengine.org
  
-[launcher] Проверка обновлений...
-[launcher] Кэш актуален (v46). Готов к запуску!
-[LAUNCHER_AUTOTEST] OK version=46 size=129973 scene=found
+SCRIPT ERROR: Parse Error: Identifier "UTIL" not declared in the current scope.
+          at: GDScript::reload (res://main.gd:195)
