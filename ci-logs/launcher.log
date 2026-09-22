@@ -1,7 +1,7 @@
 Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 
 [launcher] Проверка обновлений...
-[launcher] Скачивание кэша v57 (481 КБ)...
+[launcher] Скачивание кэша v58 (481 КБ)...
 [launcher] Скачивание кэша... 64 КБ / 481 КБ
 [launcher] Скачивание кэша... 128 КБ / 481 КБ
 [launcher] Скачивание кэша... 192 КБ / 481 КБ
@@ -9,11 +9,5 @@ Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
 [launcher] Скачивание кэша... 320 КБ / 481 КБ
 [launcher] Скачивание кэша... 384 КБ / 481 КБ
 [launcher] Скачивание кэша... 448 КБ / 481 КБ
-[launcher] Готово! Кэш v57 установлен.
-SCRIPT ERROR: Parse Error: Cannot find member "EMISSION_OPERATOR_MULTIPLY" in base "BaseMaterial3D".
-          at: GDScript::reload (res://br/texture_lib.gd:203)
-SCRIPT ERROR: Parse Error: Cannot find member "EMISSION_OPERATOR_MULTIPLY" in base "BaseMaterial3D".
-          at: GDScript::reload (res://br/texture_lib.gd:275)
-ERROR: Failed to load script "res://br/texture_lib.gd" with error "Parse error".
-   at: load (modules/gdscript/gdscript.cpp:2936)
-[LAUNCHER_AUTOTEST] FAIL scene=<PackedScene#-9223372008702605892> boot=<GDScript#-9223372008887155266> bad_scripts=texture_lib.gd 
+[launcher] Готово! Кэш v58 установлен.
+[LAUNCHER_AUTOTEST] OK version=58 size=492460 scene=found
