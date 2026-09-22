@@ -199,11 +199,11 @@ static func facade(cols: int, floors: int, variant: int) -> StandardMaterial3D:
 	m.albedo_texture = ImageTexture.create_from_image(img)
 	m.emission_enabled = true
 	m.emission_texture = ImageTexture.create_from_image(emis)
-	m.emission = Color(1, 1, 1)
+	m.emission = Color(1.0, 0.82, 0.6)
 	m.emission_energy_multiplier = 0.0
 	m.roughness = 0.95
 	_cache()[key] = m
-	_night_mats().append([m, 1.9])
+	_night_mats().append([m, 1.1])
 	return m
 
 
@@ -270,11 +270,11 @@ static func facade_brick(cols: int, floors: int, brick_idx: int) -> StandardMate
 	m.albedo_texture = ImageTexture.create_from_image(img)
 	m.emission_enabled = true
 	m.emission_texture = ImageTexture.create_from_image(emis)
-	m.emission = Color(1, 1, 1)
+	m.emission = Color(1.0, 0.82, 0.6)
 	m.emission_energy_multiplier = 0.0
 	m.roughness = 0.95
 	_cache()[key] = m
-	_night_mats().append([m, 1.9])
+	_night_mats().append([m, 1.1])
 	return m
 
 

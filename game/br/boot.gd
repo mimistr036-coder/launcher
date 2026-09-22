@@ -66,6 +66,9 @@ func _autotest(mode: String) -> void:
 		_start_world(false, "", 0, "ТестБот")
 		if world != null and world.day_night != null and mode == "shot15":
 			world.day_night.time_h = 15.57
+		var stime := OS.get_environment("SHOT_TIME")
+		if stime != "" and world != null and world.day_night != null:
+			world.day_night.time_h = float(stime)
 		var sp := OS.get_environment("SHOT_POS")
 		var syaw := OS.get_environment("SHOT_YAW")
 		if sp != "" or syaw != "":

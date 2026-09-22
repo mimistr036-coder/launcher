@@ -207,6 +207,49 @@ func _cyl(mat: Material, base: Vector3, r_bottom: float, r_top: float, h: float,
 		prev_cos = cs
 
 
+## Бордюр мешает только машинам (слой 8) — пешеходы свободно переступают
+func _col_box_l8(center: Vector3, size: Vector3) -> void:
+	var b := StaticBody3D.new()
+	b.collision_layer = 8
+	b.collision_mask = 0
+	var cs := CollisionShape3D.new()
+	var sh := BoxShape3D.new()
+	sh.size = size
+	cs.shape = sh
+	cs.position = center
+	b.add_child(cs)
+	add_child(b)
+
+
+## Пандус-въезд на тротуар/двор (наклонный бокс, слой 8)
+func _ramp_l8(center: Vector3, size: Vector3, along_x: bool) -> void:
+	var b := StaticBody3D.new()
+	b.collision_layer = 8
+	b.collision_mask = 0
+	var cs := CollisionShape3D.new()
+	var sh := BoxShape3D.new()
+	sh.size = size
+	cs.shape = sh
+	cs.position = center
+	if along_x:
+		cs.rotation.x = deg_to_rad(3.9)
+	else:
+		cs.rotation.z = deg_to_rad(-3.9)
+	b.add_child(cs)
+	add_child(b)
+	var mi := MeshInstance3D.new()
+	var bm := BoxMesh.new()
+	bm.size = size
+	bm.material = TL.flat(Color(0.62, 0.62, 0.60))
+	mi.mesh = bm
+	mi.position = center
+	if along_x:
+		mi.rotation.x = deg_to_rad(3.9)
+	else:
+		mi.rotation.z = deg_to_rad(-3.9)
+	add_child(mi)
+
+
 func _col_box(center: Vector3, size: Vector3) -> void:
 	var cs := CollisionShape3D.new()
 	var sh := BoxShape3D.new()
@@ -269,23 +312,25 @@ func _ground_and_roads() -> void:
 	var asph = TL.ground("asphalt")
 	var L := 2.0 * HALF + ROAD_W
 	var gsize := L + 120.0
-	# сплошной пол-коллизия под всем городом (верх ровно на y=0, как верх дорог)
-	_col_box(Vector3(0, -0.5, 0), Vector3(gsize, 1.0, gsize))
-	# трава вокруг города
+	# земля до горизонта — город не «плавает в пустоте»
+	_box(grass, Vector3(0, -0.26, 0), Vector3(900, 0.2, 900))
+	# сплошной пол-коллизия: верх на уровне дороги (дорога НИЖЕ тротуара на 15 см)
+	_col_box(Vector3(0, -0.575, 0), Vector3(gsize, 0.85, gsize))
+	# трава вокруг города (верх на уровне тротуара y=0)
 	_box(grass, Vector3(0, -0.1, -HALF - ROAD_W * 0.5 - 30.0), Vector3(gsize, 0.2, 60.0))
 	_box(grass, Vector3(0, -0.1, HALF + ROAD_W * 0.5 + 30.0), Vector3(gsize, 0.2, 60.0))
 	_box(grass, Vector3(-HALF - ROAD_W * 0.5 - 30.0, -0.1, 0), Vector3(60.0, 0.2, L))
 	_box(grass, Vector3(HALF + ROAD_W * 0.5 + 30.0, -0.1, 0), Vector3(60.0, 0.2, L))
-	# вертикальные дороги
+	# вертикальные дороги (проезжая часть на 15 см ниже тротуара)
 	for i in range(GRID + 1):
-		_box(asph, Vector3(line_coord(i), -0.1, 0), Vector3(ROAD_W, 0.2, L), false, 2.5)
+		_box(asph, Vector3(line_coord(i), -0.25, 0), Vector3(ROAD_W, 0.2, L), false, 2.5)
 	# горизонтальные дороги (сегменты между вертикальными)
 	for j in range(GRID + 1):
 		var z := line_coord(j)
 		for i in range(GRID):
 			var x0 := line_coord(i) + ROAD_W * 0.5
 			var x1 := line_coord(i + 1) - ROAD_W * 0.5
-			_box(asph, Vector3((x0 + x1) * 0.5, -0.1, z), Vector3(x1 - x0, 0.2, ROAD_W), false, 2.5)
+			_box(asph, Vector3((x0 + x1) * 0.5, -0.25, z), Vector3(x1 - x0, 0.2, ROAD_W), false, 2.5)
 	# разметка (визуал, без коллизии)
 	var white = TL.flat(Color(0.85, 0.85, 0.82))
 	for i in [0, 3, 7]:
@@ -293,14 +338,14 @@ func _ground_and_roads() -> void:
 		var z2 := -HALF + 5.0
 		while z2 < HALF:
 			if _away_from_lines(z2):
-				_box(white, Vector3(x, 0.01, z2), Vector3(0.3, 0.02, 3.5))
+				_box(white, Vector3(x, -0.14, z2), Vector3(0.3, 0.02, 3.5))
 			z2 += 10.0
 	for j2 in [0, 3, 7]:
 		var zz := line_coord(j2)
 		var xx := -HALF + 5.0
 		while xx < HALF:
 			if _away_from_lines(xx):
-				_box(white, Vector3(xx, 0.01, zz), Vector3(3.5, 0.02, 0.3))
+				_box(white, Vector3(xx, -0.14, zz), Vector3(3.5, 0.02, 0.3))
 			xx += 10.0
 	# зебры на внутренних перекрёстках
 	for i3 in range(2, 6):
@@ -310,7 +355,7 @@ func _ground_and_roads() -> void:
 			for side in [-1.0, 1.0]:
 				var zc: float = zj + side * (ROAD_W * 0.5 + 2.2)
 				for k in range(-2, 3):
-					_box(white, Vector3(xi + k * 1.4, 0.01, zc), Vector3(0.7, 0.02, 3.0))
+					_box(white, Vector3(xi + k * 1.4, -0.14, zc), Vector3(0.7, 0.02, 3.0))
 	# дорожные знаки «пешеходный переход» у некоторых зебр
 	for i6 in [2, 4]:
 		for j6 in [2, 4]:
@@ -318,28 +363,42 @@ func _ground_and_roads() -> void:
 			var szc := line_coord(j6)
 			_road_sign(Vector3(sx + ROAD_W * 0.5 + 1.8, 0, szc - ROAD_W * 0.5 - 3.0))
 			_road_sign(Vector3(sx - ROAD_W * 0.5 - 1.8, 0, szc + ROAD_W * 0.5 + 3.0))
-	# бордюры: сегменты вдоль дорог между перекрёстками
+	# бордюры: бетон от дна дороги (-0.15) до верха тротуара (+0.02), коллизия для машин,
+	# в середине каждого сегмента — пандус-въезд во двор
 	var curb = TL.flat(Color(0.62, 0.62, 0.60))
 	var edge := ROAD_W * 0.5 + 0.25
 	var pad := ROAD_W * 0.5 + 0.9
+	var GAP := 4.2
 	for i4 in range(GRID + 1):
 		var lx := line_coord(i4)
 		for side4 in [-1.0, 1.0]:
 			for j4 in range(GRID):
 				var z0 := line_coord(j4) + pad
 				var z1 := line_coord(j4 + 1) - pad
-				if z1 - z0 < 4.0:
+				if z1 - z0 < 8.0:
 					continue
-				_box(curb, Vector3(lx + side4 * edge, 0.12, (z0 + z1) * 0.5), Vector3(0.35, 0.35, z1 - z0))
+				var zm := (z0 + z1) * 0.5
+				var half := (z1 - z0) * 0.5 - GAP * 0.5
+				for sgn in [-1.0, 1.0]:
+					var c := zm + sgn * (GAP * 0.5 + half * 0.5)
+					_box(curb, Vector3(lx + side4 * edge, -0.065, c), Vector3(0.4, 0.17, half))
+					_col_box_l8(Vector3(lx + side4 * edge, -0.065, c), Vector3(0.4, 0.17, half))
+				_ramp_l8(Vector3(lx + side4 * edge, -0.08, zm), Vector3(0.45, 0.16, GAP + 0.6), false)
 	for j5 in range(GRID + 1):
 		var lz := line_coord(j5)
 		for side5 in [-1.0, 1.0]:
 			for i5 in range(GRID):
 				var x0 := line_coord(i5) + pad
 				var x1 := line_coord(i5 + 1) - pad
-				if x1 - x0 < 4.0:
+				if x1 - x0 < 8.0:
 					continue
-				_box(curb, Vector3((x0 + x1) * 0.5, 0.12, lz + side5 * edge), Vector3(x1 - x0, 0.35, 0.35))
+				var xm := (x0 + x1) * 0.5
+				var half2 := (x1 - x0) * 0.5 - GAP * 0.5
+				for sgn2 in [-1.0, 1.0]:
+					var c2 := xm + sgn2 * (GAP * 0.5 + half2 * 0.5)
+					_box(curb, Vector3(c2, -0.065, lz + side5 * edge), Vector3(half2, 0.17, 0.4))
+					_col_box_l8(Vector3(c2, -0.065, lz + side5 * edge), Vector3(half2, 0.17, 0.4))
+				_ramp_l8(Vector3(xm, -0.08, lz + side5 * edge), Vector3(GAP + 0.6, 0.16, 0.45), true)
 
 func _away_from_lines(t: float) -> bool:
 	for j in range(GRID + 1):
@@ -377,6 +436,7 @@ func _blocks() -> void:
 			var cz1: float = area.z1 - w
 			var cc := Vector3((cx0 + cx1) * 0.5, -0.1, (cz0 + cz1) * 0.5)
 			var cs := Vector3(cx1 - cx0, 0.2, cz1 - cz0)
+			_col_box(cc, cs)  # тротуар/двор выше дороги — машины заезжают только по пандусам
 			match t:
 				BT_PLAZA:
 					_block_plaza(cx0, cx1, cz0, cz1)

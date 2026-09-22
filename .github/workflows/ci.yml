@@ -99,6 +99,8 @@ jobs:
           GAME_AUTOTEST=shot LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.0-stable_linux.x86_64 --path game > /tmp/shot40.log 2>&1
           echo "shot40 exit: $?"
           [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-4.0.png && echo "скриншот 4.0 готов"
+          SHOT_TIME="19.6" GAME_AUTOTEST=shot LIBGL_ALWAYS_SOFTWARE=1 timeout 120 xvfb-run -a --server-args="-screen 0 1280x720x24" /tmp/Godot_v4.0-stable_linux.x86_64 --path game > /tmp/shotdusk.log 2>&1
+          [ -f /tmp/city.png ] && cp /tmp/city.png /tmp/city-dusk.png && echo "сумерки готовы"
           # сквозной путь пользователя: лаунчер качает кэш, монтирует и запускает игру
           python3 tools/serve_updates.py 8092 > /tmp/http2.log 2>&1 &
           sleep 2
@@ -119,7 +121,7 @@ jobs:
             [ -f /tmp/$f.log ] && cp /tmp/$f.log ci-logs/$f.log
             [ -f /tmp/$f.code ] && cp /tmp/$f.code ci-logs/$f.code
           done
-          for p in city-4.3 city-4.0 city-day1534 city-west city-north city-via-launcher city-close; do
+          for p in city-4.3 city-4.0 city-day1534 city-west city-north city-via-launcher city-close city-dusk; do
             [ -f /tmp/$p.png ] && cp /tmp/$p.png ci-logs/$p.png
           done
           # вердикт Gate для разбора в репозитории (нужен, т.к. логи джоб из песочницы не скачать)

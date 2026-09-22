@@ -25,10 +25,10 @@ func _ready() -> void:
 	# ставим на полосу
 	var lane := _lane_pos()
 	if axis == "x":
-		global_position = Vector3(lane.x, 0.2, lane.z)
+		global_position = Vector3(lane.x, -0.14, lane.z)
 		rotation.y = 0.0 if dir > 0 else PI
 	else:
-		global_position = Vector3(lane.x, 0.2, lane.z)
+		global_position = Vector3(lane.x, -0.14, lane.z)
 		rotation.y = -PI / 2.0 if dir > 0 else PI / 2.0
 
 

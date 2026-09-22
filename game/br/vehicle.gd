@@ -43,7 +43,7 @@ func _mkangled(sz: Vector3, mat: Material, pos: Vector3, ang_x: float) -> void:
 
 func _ready() -> void:
 	collision_layer = 4
-	collision_mask = 1 | 2 | 4
+	collision_mask = 1 | 2 | 4 | 8
 	var T: Dictionary = CT.TYPES[type_idx]
 	var paint = TL.car_paint(CT.PAINTS[paint_idx])
 	var glass = TL.car_glass()
